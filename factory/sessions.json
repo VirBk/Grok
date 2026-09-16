@@ -1,0 +1,41 @@
+{
+  "rule": "Git is memory. The session is a fuse. Compaction is not a briefing.",
+  "thesis": "Every model — Grok, Claude, GPT, Qwen, DeepSeek — rots if it stays. The curve differs. The failure mode does not. Do not pick a model that does not rot. Split the session.",
+  "duties": {
+    "controlPlane": "Owns lifetime, split triggers, successor envelope. Never a transcript dump.",
+    "writer": "Re-reads the envelope. On a decay sign: stop, print the signs, return.",
+    "reviewer": "Always a fresh session. Never the author. Never a session id from prose."
+  },
+  "splitTriggers": [
+    "envelope done",
+    "correction cap",
+    "spend or turn cap",
+    "named decay sign",
+    "challenge (always fresh, empty resume)",
+    "control plane restamping from memory"
+  ],
+  "decaySigns": [
+    "as-we-discussed used as evidence",
+    "invented or derived clock",
+    "recipe claimed remembered",
+    "file contents asserted without a read",
+    "counts typed from memory",
+    "envelope holds drifting",
+    "failed approach repeated with new confidence",
+    "answering a question that was not asked",
+    "conversation summary written into a live file",
+    "session id copied from prose",
+    "compaction about to become the briefing",
+    "model shopping mid-envelope because this one got tired"
+  ],
+  "successorReads": ["AGENTS.md", "BOARD.md", "the envelope", "factory/traps.yaml once"],
+  "successorNever": ["transcript", "compaction", "SESSION_LOG", "session id from a document", "here's what we were doing"],
+  "seating": {
+    "rotating": "fresh instance of the same tier",
+    "sweepWriter": "short fuse, DeepSeek Flash or local Qwen",
+    "keystoneWriter": "same model for the whole envelope; rise of tier is a new envelope",
+    "reviewer": "never weaker, always new session",
+    "controlPlane": "Claude desktop or Grok cloud; splits itself",
+    "summarizer": "may not write AGENTS, BOARD, decisions, or traps"
+  }
+}

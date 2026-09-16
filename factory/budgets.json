@@ -6,7 +6,8 @@
     { "path": "factory/decisions.json", "capKb": 80 },
     { "path": "factory/board.json", "capKb": 40 },
     { "path": "factory/traps.yaml", "capKb": 48 },
-    { "path": "factory/lineage.json", "capKb": 24 }
+    { "path": "factory/lineage.json", "capKb": 24 },
+    { "path": "factory/sessions.json", "capKb": 16 }
   ],
   "globs": [
     { "pattern": "docs/log/*.md", "capKb": 8 }
