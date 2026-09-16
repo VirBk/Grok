@@ -156,4 +156,19 @@
   title: Tokens saved by weakening judgment
   rule: Cut the write. Do not remap the control plane. Do not skip review. Do not put a model on hands.
 
+- id: T32
+  kind: portable
+  title: Token-zero treated as no-scope
+  rule: A ZERO names every container, including empty ones. Product source is a container. The board's later sections are a container.
+
+- id: T33
+  kind: portable
+  title: Named issuance asked of the owner
+  rule: A named law, circular, IRR, RFC, or PDF is a fetch. Quote it or stamp the miss. Asking the owner is for documents that do not exist.
+
+- id: T34
+  kind: portable
+  title: Collection treated as no statute
+  rule: An agency still collecting is a second fact. Transcribe the issuance. Do not collapse practice into "no legal basis."
+
 

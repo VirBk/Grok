@@ -25,6 +25,7 @@ Verification
 
 Look hardest at
   <the ways this lane usually lies>
+  If this lane names a law, circular, IRR, RFC, or PDF: the control plane fetched it before issue. If this lane is a queue name: scopeSearch opened every container, including empty ones.
 
 Runtime
   Stamp from factory/project.json (topology id, or local-hands | cloud-grok | desktop-two-process | desktop-qwen).

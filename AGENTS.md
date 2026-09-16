@@ -84,7 +84,7 @@ A writer that meets a product-changing choice mid-lane prints the decision, the 
 
 ## 8. The control plane and the board
 
-The control plane is the session the owner selects. It reads returns, verifies them at the objects, issues envelopes, keeps the board, and writes documentation directly. It does not write product code.
+The control plane is the session the owner selects. It reads returns, verifies them at the objects, issues envelopes, keeps the board, and writes documentation directly. It does not write product code. Derivation: `factory/CONTROL_PLANE.md`. A ZERO that did not name its containers is not a finding. A named issuance is a fetch, not an ask.
 
 On every return, before anything else is issued:
 
@@ -124,6 +124,7 @@ The repository is memory. The session is a fuse. Every model — Grok, Claude, G
 | Intake gate | `factory/tools/intake.mjs` |
 | Lane records | `docs/log/<lane>.md` |
 | Owner console | `factory/CONSOLE.md` |
+| Derivation | `factory/CONTROL_PLANE.md` |
 | Versioned interfaces | `contracts/` |
 
 Every other document is history or reference until the owner moves it.

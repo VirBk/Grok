@@ -41,6 +41,12 @@ Filling seats created overlapping holds. Conflict resolution is unreviewed code.
 
 Every model — Grok, Claude, GPT, Qwen, DeepSeek — rots if it stays. The transcript becomes contaminated; compaction hashes the contamination. Git is memory. Split on envelope done, correction cap, spend cap, or a named decay sign. A successor reads AGENTS, BOARD, the envelope. Never SESSION_LOG. A reviewer is always a fresh session. Never resume a session id from prose. Fresh same-tier instance beats a cheaper tired model finishing the job.
 
+## Why derivation is exhaustive
+
+A markdown-only grep of the queue line stamped two names as having no scope. The scope lived in the same board, further down, and in product source. A named official PDF sat unfetched while the lane waited on the owner for a citation the board had already titled.
+
+The control plane opens every container before ZERO (`factory/tools/scopeSearch.mjs`). A named issuance is a fetch. Collection-in-practice is a second fact. Method: `factory/CONTROL_PLANE.md`. Any control plane follows it.
+
 ## Why the control plane is not the writer
 
 The money is the tool loop. Remapping a Claude Code window to DeepSeek keeps the harness and replaces the judgment. Spawn a second seat. Leave the control plane on Grok (cloud) or Claude Code (desktop, optional). Hands are `factory/tools/hands.mjs` — they do not call a model. Sweep writers are DeepSeek Flash or local Qwen. The project manager picks the harness in `factory/project.json`. Reviewers are never weaker than the writer. Recipes: `node factory/tools/seat.mjs`. Catalog: `factory/runtimes.json`.

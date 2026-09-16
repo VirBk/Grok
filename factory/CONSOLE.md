@@ -33,4 +33,4 @@ F3 — first cheap writer envelope. Hold: a DeepSeek or Qwen key, or owner word 
 
 ## Successor
 
-Read `AGENTS.md`, `BOARD.md`, `factory/traps.yaml` once. Git is memory. There is no handoff.md. Compaction is not a briefing.
+Read `AGENTS.md`, `BOARD.md`, `factory/traps.yaml` once. A control plane that will issue or drop also reads `factory/CONTROL_PLANE.md`. Git is memory. There is no handoff.md. Compaction is not a briefing.

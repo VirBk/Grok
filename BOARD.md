@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Owner console spec is factory/CONSOLE.md. Token mix is lean: cheap write, strong review, hands with no weights. F3 still queued on a writer key. This control plane session is retired. Successor reads AGENTS.md, BOARD.md, factory/traps.yaml once.
+Derivation is factory/CONTROL_PLANE.md. Any control plane opens every container before ZERO, and fetches a named issuance. Token-zero and issuance-ask absorbed from Virbos as I09–I11. F3 still queued on a writer key.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -45,6 +45,7 @@ No envelope opens a gate.
 - contracts/project.v1.json — control plane
 - factory/sessions.json — control plane
 - factory/CONSOLE.md — control plane
+- factory/CONTROL_PLANE.md — control plane
 
 ## Keystones
 
@@ -65,3 +66,4 @@ No envelope opens a gate.
 - 2026-09-16 F5 landed. Session fuse. Git is memory. Compaction is not a briefing. Fresh same-tier instance after a split.
 - 2026-09-16 F6 landed. Hands are a dumb runner. Claude Code optional. PM picks in project.json. Default topology local-hands.
 - 2026-09-17 F7 landed. Owner console spec in factory/CONSOLE.md. Lean token mix. Control plane session retired.
+- 2026-09-17 Virbos derivation miss absorbed. CONTROL_PLANE.md required for any control plane. scopeSearch on the landing gate. Intakes I09 I10 I11. Traps T32 T33 T34.

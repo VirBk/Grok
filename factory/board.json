@@ -1,5 +1,5 @@
 {
-  "now": "Owner console spec is factory/CONSOLE.md. Token mix is lean: cheap write, strong review, hands with no weights. F3 still queued on a writer key. This control plane session is retired. Successor reads AGENTS.md, BOARD.md, factory/traps.yaml once.",
+  "now": "Derivation is factory/CONTROL_PLANE.md. Any control plane opens every container before ZERO, and fetches a named issuance. Token-zero and issuance-ask absorbed from Virbos as I09–I11. F3 still queued on a writer key.",
   "remote": "VirBk/Grok",
   "references": ["VirBk/Otto", "VirBk/virbos"],
   "gates": [
@@ -33,7 +33,8 @@
     { "name": "contracts/intake.v1.json", "holder": "control plane" },
     { "name": "contracts/project.v1.json", "holder": "control plane" },
     { "name": "factory/sessions.json", "holder": "control plane" },
-    { "name": "factory/CONSOLE.md", "holder": "control plane" }
+    { "name": "factory/CONSOLE.md", "holder": "control plane" },
+    { "name": "factory/CONTROL_PLANE.md", "holder": "control plane" }
   ],
   "shelf": [
     { "item": "GitHub Action writer runner", "trigger": "Owner places a writer secret. Do not add the workflow while it would stay red." }
@@ -46,6 +47,7 @@
     { "at": "2026-09-16", "event": "F4 landed. Lineage register, intake contract, intake gate. Otto and Virbos absorbed. Next child copies the kit." },
     { "at": "2026-09-16", "event": "F5 landed. Session fuse. Git is memory. Compaction is not a briefing. Fresh same-tier instance after a split." },
     { "at": "2026-09-16", "event": "F6 landed. Hands are a dumb runner. Claude Code optional. PM picks in project.json. Default topology local-hands." },
-    { "at": "2026-09-17", "event": "F7 landed. Owner console spec in factory/CONSOLE.md. Lean token mix. Control plane session retired." }
+    { "at": "2026-09-17", "event": "F7 landed. Owner console spec in factory/CONSOLE.md. Lean token mix. Control plane session retired." },
+    { "at": "2026-09-17", "event": "Virbos derivation miss absorbed. CONTROL_PLANE.md required for any control plane. scopeSearch on the landing gate. Intakes I09 I10 I11. Traps T32 T33 T34." }
   ]
 }

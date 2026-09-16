@@ -76,6 +76,13 @@
       "status": "adopted",
       "summary": "Lean token mix: save on the write, not on judgment. Hands have no weights. Sweep writer on ordinary lanes. Keystone only when the control plane names the lane. Review every loop, never the author, never weaker. Do not remap the control-plane session.",
       "reversible": true
+    },
+    {
+      "id": "D-12",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "Control-plane derivation is factory/CONTROL_PLANE.md. Any control plane — Grok in the cloud or Claude Code on the desktop — opens every container before ZERO, fetches a named issuance, and stamps collection as a second fact. A markdown-only grep of the queue line is not a finding.",
+      "reversible": true
     }
   ]
 }

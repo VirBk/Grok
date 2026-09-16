@@ -23,7 +23,7 @@
       "name": "Virbos",
       "repo": "VirBk/virbos",
       "status": "absorbed",
-      "take": "Decision register, authority levels, walkthrough as acceptance."
+      "take": "Decision register, authority levels, walkthrough as acceptance, derivation containers."
     },
     {
       "id": "next",
@@ -127,6 +127,42 @@
       "charged": "A laptop without Anthropic and a cloud Grok session could not run the loop.",
       "rule": "Judgment is Grok or Claude. Hands are a dumb runner. Writer harness is a PM pick in factory/project.json.",
       "check": "hands.mjs --self-test fails a project.json whose pick is not in runtimes.json.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I09",
+      "child": "virbos",
+      "at": "2026-09-17",
+      "kind": "trap",
+      "title": "Token-zero treated as no-scope",
+      "charged": "A queue name was stamped absent because a markdown-only grep missed the wave table in the same board and the product source.",
+      "rule": "A ZERO names every container, including empty ones. Product source is a container. The board's later sections are a container.",
+      "check": "node factory/tools/scopeSearch.mjs --self-test fails if a token that lives only in source is reported absent.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I10",
+      "child": "virbos",
+      "at": "2026-09-17",
+      "kind": "trap",
+      "title": "Named issuance asked of the owner",
+      "charged": "A lane sat blocked on the citation while the board already named the section of the official PDF.",
+      "rule": "A named law, circular, IRR, RFC, or PDF is a fetch. Quote it or stamp the miss. Asking the owner is for documents that do not exist.",
+      "check": "CONTROL_PLANE.md is required CP reading. A blocked-on-issuance ledger row without a fetch URL is a diary.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I11",
+      "child": "virbos",
+      "at": "2026-09-17",
+      "kind": "lesson",
+      "title": "Collection treated as no statute",
+      "charged": "Practice still collecting was read as missing law, so the lane could not start.",
+      "rule": "An agency still collecting is a second fact. Transcribe the issuance. Do not collapse practice into no legal basis.",
+      "check": "CONTROL_PLANE.md requires both facts stamped. The issuance URL is in the ledger row.",
       "portable": "portable",
       "status": "absorbed"
     }
