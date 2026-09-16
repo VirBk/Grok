@@ -1,6 +1,6 @@
 # GROK Factory
 
-The copyable operating system for the next product. Distilled from [Otto](https://github.com/VirBk/Otto) and [Virbos](https://github.com/VirBk/virbos), which remain read-only references.
+The parent operating system for the next product. Distilled from [Otto](https://github.com/VirBk/Otto) and [Virbos](https://github.com/VirBk/virbos), which remain read-only references. Children copy this kit, pay for a lesson, and return one intake. Grok is the only writer of the kit.
 
 **Start at [`AGENTS.md`](AGENTS.md).** Then `BOARD.md`, then your envelope.
 
@@ -10,19 +10,19 @@ Claude Code (or Grok) stays the control plane. DeepSeek or Qwen run the writer l
 
 The next project copies this kit instead of reinventing seating, reviews, landing, and the record. The bar is the [assessment](factory/ASSESSMENT.md): ten dimensions, forty checks, six hard fails. Ten is a gate, not a vibe.
 
-Writer recipes live in [`factory/tools/seat.mjs`](factory/tools/seat.mjs). Runtimes in [`factory/runtimes.json`](factory/runtimes.json).
+Writer recipes live in [`factory/tools/seat.mjs`](factory/tools/seat.mjs). Runtimes in [`factory/runtimes.json`](factory/runtimes.json). Lineage in [`factory/lineage.json`](factory/lineage.json). Return a lesson with [`factory/templates/INTAKE.md`](factory/templates/INTAKE.md).
 
 ## Copy
 
-See [`factory/COPY.md`](factory/COPY.md). Do not copy `BOARD.md` contents or any `SESSION_LOG`. Start a new `factory/board.json`.
+See [`factory/COPY.md`](factory/COPY.md). Do not copy `BOARD.md` contents or any `SESSION_LOG`. Start a new `factory/board.json`. Do not push this child to VirBk/Grok.
 
 ## What was kept, killed, and changed
 
-Kept: envelope as authorization, three-file reading, control plane split, live-main worktrees, correction cap, closed keystones, idle-is-success, the short owner-ask list, contracts as product, real-data gates, authority levels, walkthrough as acceptance.
+Kept: envelope as authorization, three-file reading, control plane split, live-main worktrees, correction cap, closed keystones, idle-is-success, the short owner-ask list, contracts as product, real-data gates, authority levels, walkthrough as acceptance, parent as the only writer of the kit.
 
-Killed: `SESSION_LOG.md`, copied counts, documentation as a lane, permanently red CI, issuing from an unlanded tip, invented clocks, rules with no check, remapping the control-plane session onto a cheap model.
+Killed: `SESSION_LOG.md`, copied counts, documentation as a lane, permanently red CI, issuing from an unlanded tip, invented clocks, rules with no check, remapping the control-plane session onto a cheap model, merging a child's board into the parent.
 
-Changed: the board is JSON, the landing gate runs from a fresh archive of the commit, holds are proved at issue, long jobs are polled in the foreground, a Linux compile is named as the platform adversary, the writer meter is DeepSeek or Qwen.
+Changed: the board is JSON, the landing gate runs from a fresh archive of the commit, holds are proved at issue, long jobs are polled in the foreground, a Linux compile is named as the platform adversary, the writer meter is DeepSeek or Qwen, lessons return as intakes.
 
 ## Size
 
@@ -30,4 +30,4 @@ Live files have caps. The landing gate fails a commit that breaks them. Counts a
 
 ## Remotes
 
-Otto and Virbos are references. This is the working remote. One private remote. No deploy without the owner.
+Otto and Virbos are references. This is the working remote and the parent. One private remote. No deploy without the owner.

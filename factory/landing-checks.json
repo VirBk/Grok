@@ -3,6 +3,7 @@
   "note": "Steps are parsed from this file as it exists in the commit under test. The gate does not fall back to the working tree.",
   "steps": [
     { "name": "Size budgets", "run": "node factory/tools/sizeBudget.mjs" },
-    { "name": "Board is generated", "run": "node factory/tools/renderBoard.mjs --check" }
+    { "name": "Board is generated", "run": "node factory/tools/renderBoard.mjs --check" },
+    { "name": "Intakes pass the gate", "run": "node factory/tools/intake.mjs --check-register" }
   ]
 }

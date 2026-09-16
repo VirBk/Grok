@@ -6,11 +6,13 @@ This file is capped at 12 KB. If a change would grow it, move the detail to a na
 
 ## 1. What this repository is
 
-GROK Factory is a dual-runtime build operating system. A strong control plane — Claude Code on the desktop, or Grok in the cloud — issues one-page envelopes, reviews returns, and lands. Cheap writer seats — DeepSeek or Qwen, local or cloud — execute the envelope in a worktree.
+GROK Factory is the parent build operating system. Child projects copy `AGENTS.md` and `factory/`. They return portable intakes — the charge, the rule, the check. Grok is the only writer of the kit.
 
-Acceptance: the owner walks spec → envelope stamped with a runtime → cheap writer return → strong review → land → spend pasted in the lane log.
+It is dual-runtime. A strong control plane — Claude Code on the desktop, or Grok in the cloud — issues one-page envelopes, reviews returns, and lands. Cheap writer seats — DeepSeek or Qwen, local or cloud — execute the envelope in a worktree.
 
-A sweep must not spend a keystone model. Idle seats stay idle.
+Acceptance: the owner walks spec → envelope stamped with a runtime → cheap writer return → strong review → land → spend pasted in the lane log. A child that paid for a lesson files an intake; absorbing it is a Grok envelope.
+
+A sweep must not spend a keystone model. Idle seats stay idle. A child's board is not a gradient.
 
 ## 2. How work starts
 
@@ -56,6 +58,8 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 - A reviewer is never a weaker model than the writer.
 - API keys live in a seat's environment, never in git, never in a `VITE_` variable.
 - A cloud writer receives a worktree of the envelope holds, not the owner's disk.
+- A child never writes VirBk/Grok. Returns arrive as intakes. Absorbing is a Grok envelope.
+- An intake without a check is refused. A trap without a check is a diary.
 
 ## 6. Data rules that never move
 
@@ -106,6 +110,9 @@ A handoff is this file plus `BOARD.md`. There is no handoff document.
 | How to copy | `factory/COPY.md` |
 | Runtimes | `factory/runtimes.json` |
 | Writer recipes | `factory/tools/seat.mjs` |
+| Parent register | `factory/lineage.json` |
+| Intake template | `factory/templates/INTAKE.md` |
+| Intake gate | `factory/tools/intake.mjs` |
 | Lane records | `docs/log/<lane>.md` |
 | Versioned interfaces | `contracts/` |
 

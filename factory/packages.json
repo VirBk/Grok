@@ -2,7 +2,8 @@
   "packages": [
     { "id": "F0", "title": "Stand up the factory kit", "status": "landed" },
     { "id": "F1", "title": "Owner specs land", "status": "landed" },
-    { "id": "F2", "title": "Name the product paragraph", "status": "landing" },
-    { "id": "F3", "title": "First cheap writer envelope", "status": "queued" }
+    { "id": "F2", "title": "Name the product paragraph", "status": "landed" },
+    { "id": "F3", "title": "First cheap writer envelope", "status": "queued" },
+    { "id": "F4", "title": "Parent factory lineage loop", "status": "landed" }
   ]
 }
