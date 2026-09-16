@@ -6,17 +6,17 @@ This file is capped at 12 KB. If a change would grow it, move the detail to a na
 
 ## 1. What this repository is
 
-GROK Factory is the copyable operating system for the next product. It is not the product. Product identity lives in this paragraph only, and it is filled when the owner names it.
+GROK Factory is a dual-runtime build operating system. A strong control plane — Claude Code on the desktop, or Grok in the cloud — issues one-page envelopes, reviews returns, and lands. Cheap writer seats — DeepSeek or Qwen, local or cloud — execute the envelope in a worktree.
 
-**Until that sentence exists, idle is success.** No envelope invents a product.
+Acceptance: the owner walks spec → envelope stamped with a runtime → cheap writer return → strong review → land → spend pasted in the lane log.
 
-Acceptance, once a product is named: the owner walks a closed loop whose every line opens to its evidence and its follow-up record.
+A sweep must not spend a keystone model. Idle seats stay idle.
 
 ## 2. How work starts
 
-An envelope from the control plane is the authorization. There is no coding hold. A backlog item, a recommendation, or "continue" is not an envelope.
+An envelope from the control plane is the authorization. There is no coding hold. A backlog item, a recommendation, or “continue” is not an envelope.
 
-An envelope is one page: the work and its acceptance, the base commit from `git ls-remote origin refs/heads/main`, the scope and holds, what must stay true, the verification, the return format, and the two print-mode sentences.
+An envelope is one page: the work and its acceptance, the base commit from `git ls-remote origin refs/heads/main`, the scope and holds, what must stay true, the verification, the runtime, the spend cap, the return format, and the two print-mode sentences.
 
 Product delivery is the critical path. A document is changed only when a change makes it false, and only that line. Documentation is never a lane of its own.
 
@@ -33,7 +33,7 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 - Nothing is issued from an unlanded tip. Siblings only when the board names their files disjoint.
 - Shared files are single-writer holds: `contracts/` and any generated client, the package manifest and lockfile, the app shell and routes, `factory/board.json`, this file.
 - Every writer envelope carries a self-check: drive the list a reviewer of the lane would be given, fix what it finds, record what changed in the lane log.
-- Main is frozen between a landing's branch push and its fast-forward. Hold board edits until after.
+- Main is frozen between a landing’s branch push and its fast-forward. Hold board edits until after.
 
 ## 4. The record
 
@@ -47,11 +47,15 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 ## 5. Boundaries that never move
 
 - Never commit real people, pay, client, or credential data. Fixtures are synthetic and obviously so.
-- One private remote. No second remote, no sync client, no deployment without the owner's word.
-- Merge, release, deployment, destructive action, and protected-data access are the owner's acts.
+- One private remote. No second remote, no sync client, no deployment without the owner’s word.
+- Merge, release, deployment, destructive action, and protected-data access are the owner’s acts.
 - Every route declares its permission or its authenticated-only status; a route with neither is refused.
 - No envelope opens a gate. Gates live on the board. The owner closes them with a word.
-- Product-specific never-move rules are added here when the product is named. Until then this list is the whole list.
+- Do not point the control-plane session at DeepSeek or Qwen. Spawn a writer seat.
+- A writer never fast-forwards main and never reviews its own branch.
+- A reviewer is never a weaker model than the writer.
+- API keys live in a seat's environment, never in git, never in a `VITE_` variable.
+- A cloud writer receives a worktree of the envelope holds, not the owner's disk.
 
 ## 6. Data rules that never move
 
@@ -65,7 +69,7 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 
 The control plane decides engineering and product defaults and records each as a dated row. The owner reverses any row with a word.
 
-Ask, in one line at the moment it is needed, only for: money, real people's names, anything that sends a message to a client or writes to a CRM, opening a gate, release or destructive action.
+Ask, in one line at the moment it is needed, only for: money, writer API keys, real people’s names, anything that sends a message to a client or writes to a CRM, opening a gate, release or destructive action.
 
 A deferral is a decision with a stated trigger. It is not re-raised until the trigger.
 
@@ -77,12 +81,12 @@ The control plane is the session the owner selects. It reads returns, verifies t
 
 On every return, before anything else is issued:
 
-1. Read live main. Confirm the return's base and the commit's parent chain.
-2. Confirm the changed file set is the envelope's and nothing more. A stray file is a stop.
+1. Read live main. Confirm the return’s base and the commit’s parent chain.
+2. Confirm the changed file set is the envelope’s and nothing more. A stray file is a stop.
 3. Run or read the tests the return names.
 4. Issue the one review, naming the commit. After approval, land, restamp, delete the envelope.
 
-Keystones are a closed named list on the board. A challenge pass runs only on one of those, only with the owner's word, and produces leads rather than a verdict. Never Fable.
+Keystones are a closed named list on the board. A challenge pass runs only on one of those, only with the owner’s word, and produces leads rather than a verdict. Never Fable.
 
 A handoff is this file plus `BOARD.md`. There is no handoff document.
 
@@ -100,6 +104,8 @@ A handoff is this file plus `BOARD.md`. There is no handoff document.
 | Envelope template | `factory/templates/ENVELOPE.md` |
 | 10/10 rubric | `factory/ASSESSMENT.md` |
 | How to copy | `factory/COPY.md` |
+| Runtimes | `factory/runtimes.json` |
+| Writer recipes | `factory/tools/seat.mjs` |
 | Lane records | `docs/log/<lane>.md` |
 | Versioned interfaces | `contracts/` |
 

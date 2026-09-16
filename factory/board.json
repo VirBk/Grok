@@ -1,5 +1,5 @@
 {
-  "now": "Factory kit standing. Product unnamed. Idle is success. Waiting on owner specs.",
+  "now": "Dual-runtime named. Claude/Grok stay the control plane. Waiting on a DeepSeek or Qwen key to cut the first writer envelope.",
   "remote": "VirBk/Grok",
   "references": ["VirBk/Otto", "VirBk/virbos"],
   "gates": [
@@ -11,23 +11,23 @@
   ],
   "lanes": [
     { "id": "F0", "title": "Stand up the factory kit", "state": "landed", "hold": "factory/, AGENTS.md" },
-    { "id": "F1", "title": "Owner specs land", "state": "queued", "hold": "none" },
-    { "id": "F2", "title": "Name the product paragraph and never-move rules", "state": "queued", "hold": "AGENTS.md §1 and §5" },
-    { "id": "F3", "title": "First product envelope", "state": "shelved", "hold": "unnamed" }
+    { "id": "F1", "title": "Owner specs land", "state": "landed", "hold": "none" },
+    { "id": "F2", "title": "Name the product paragraph and never-move rules", "state": "landing", "hold": "AGENTS.md §1 and §5" },
+    { "id": "F3", "title": "First cheap writer envelope", "state": "queued", "hold": "a DeepSeek or Qwen key" }
   ],
-  "keystones": [],
+  "keystones": ["Dual-runtime closed loop: spec → runtime-stamped envelope → cheap writer return → strong review → land → spend in the lane log"],
   "holds": [
     { "name": "AGENTS.md / factory rules", "holder": "control plane" },
     { "name": "factory/board.json", "holder": "control plane" },
-    { "name": "contracts/", "holder": "idle" }
+    { "name": "contracts/seat-return.v1.json", "holder": "control plane" }
   ],
   "shelf": [
-    { "item": "Seat launchers for print-mode on the existing laptop", "trigger": "Owner asks to run parallel seats." },
-    { "item": "Product-specific never-move rules", "trigger": "Owner names the product." },
-    { "item": "Keystone list", "trigger": "First architecture envelope." }
+    { "item": "GitHub Action writer runner", "trigger": "Owner places a writer secret. Do not add the workflow while it would stay red." },
+    { "item": "Seat launchers for print-mode on the existing laptop", "trigger": "Owner runs desktop-two-process in parallel. Ceiling remains two writers." }
   ],
   "ledger": [
     { "at": "2026-09-16", "event": "Factory opened. Otto and Virbos read-only. Working remote VirBk/Grok, previously empty." },
-    { "at": "2026-09-16", "event": "F0 landed. Kit on VirBk/Grok. Board is JSON. Waiting on owner specs." }
+    { "at": "2026-09-16", "event": "F0 landed. Kit on VirBk/Grok. Board is JSON. Waiting on owner specs." },
+    { "at": "2026-09-16", "event": "F1 spec landed: cheap writer seats, desktop and cloud. Dual-runtime named. Do not remap the CP session." }
   ]
 }

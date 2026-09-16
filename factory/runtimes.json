@@ -1,0 +1,39 @@
+{
+  "product": "Dual-runtime factory. Strong control plane, cheap writer seats, desktop or cloud.",
+  "mistake": "Do not remap the control-plane Claude Code session to DeepSeek or Qwen.",
+  "topologies": [
+    {
+      "id": "desktop-two-process",
+      "recommended": true,
+      "cp": "Claude Code on Anthropic",
+      "writer": "Claude Code harness pointed at DeepSeek, print-mode, worktree only"
+    },
+    {
+      "id": "desktop-qwen",
+      "recommended": false,
+      "cp": "Claude Code on Anthropic",
+      "writer": "Qwen Code via Ollama or DashScope, worktree only"
+    },
+    {
+      "id": "cloud-grok",
+      "recommended": true,
+      "cp": "Grok cloud session",
+      "writer": "DeepSeek or Qwen on a clone of the worktree, not the owner's disk"
+    }
+  ],
+  "routing": {
+    "sweepWriter": "deepseek-flash or local qwen",
+    "keystoneWriter": "deepseek-v4-pro or Claude",
+    "controlPlane": "Claude Code desktop or Grok cloud",
+    "reviewer": "never weaker than the writer, never the writer"
+  },
+  "ratesUsdPerM": {
+    "note": "Indicative September 2026. Derive from the vendor page before you spend.",
+    "claude-opus": { "in": 5, "out": 25 },
+    "claude-sonnet": { "in": 3, "out": 15 },
+    "deepseek-flash": { "in": 0.14, "out": 0.28 },
+    "deepseek-pro": { "in": 0.435, "out": 0.87 },
+    "qwen-local": { "in": 0, "out": 0 }
+  },
+  "recipes": ["desktop-deepseek", "desktop-qwen", "cloud-grok"]
+}
