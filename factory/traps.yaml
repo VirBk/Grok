@@ -110,3 +110,13 @@
   kind: portable
   title: Cloud writer on the owner's disk
   rule: Worktree of the envelope holds. Nothing else.
+
+- id: T23
+  kind: portable
+  title: Child writes the parent kit
+  rule: A child never writes VirBk/Grok. Returns arrive as intakes. Absorbing is a Grok envelope.
+
+- id: T24
+  kind: portable
+  title: Intake without a check
+  rule: Every absorbed row names the command, gate step, or hold that would catch a repeat. Else reject.

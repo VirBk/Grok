@@ -23,8 +23,8 @@ The console at the GROK Factory preview ticks these interactively. This file is 
 6. **Record hygiene** — size budgets; no copied numbers; lane logs a few lines; no SESSION_LOG, no strikethrough, no docs lane.
 7. **Decisions** — owner asked only for money, names, live effects; deferrals have triggers; JSON rows; authority levels do not blend.
 8. **Contracts** — versioned schemas; code and schema held equal; externals behind interfaces; a false sentence is a blocking defect.
-9. **Boundaries** — synthetic until an owner-closed gate; one private remote; every route declares permission; product never-move rules in AGENTS.
-10. **Walkthrough** — owner walk of the closed loop; a trigger is a command; production build walked; a successor needs no briefing.
+9. **Boundaries** — synthetic until an owner-closed gate; one private remote; every route declares permission; product never-move rules in AGENTS. A child never writes the parent.
+10. **Walkthrough** — owner walk of the closed loop; a trigger is a command; production build walked; a successor needs no briefing. A lesson returns as an intake, not a board.
 
 Score: checks earned / 4, averaged across ten dimensions, times ten. A hard fail makes it zero.
 

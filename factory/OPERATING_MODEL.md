@@ -16,6 +16,14 @@ An envelope is the only start. A writer self-checks. A reviewer who is not the a
 - Challenger: named keystone, owner word, leads not verdicts. Never Fable.
 - Owner: money, names, live effects, gates, release.
 
+## Why Grok is the parent
+
+Otto and Virbos paid once. Distilling them once is not a factory. A factory is a loop: copy, run, return, absorb, copy again.
+
+The kit is the weights. A child is a run. An intake is the gradient — one charge, one rule, one check. Size budgets are regularization. Merging a child's board is overfitting. A trap with no check is underfit.
+
+Grok is the only writer of the kit. A child never pushes VirBk/Grok.
+
 ## Why the board is JSON
 
 Hand-edited markdown tables were a carrier class in Otto and Virbos: invented clocks, backticks in bash, f-string braces, PII-shaped literals that trip sweeps, and files that grew past a megabyte. `factory/board.json` is the source. `BOARD.md` is generated.

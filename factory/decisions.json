@@ -41,6 +41,13 @@
       "status": "adopted",
       "summary": "Cloud path is Grok as control plane plus a writer on a worktree clone. No GitHub Action until the secret exists.",
       "reversible": true
+    },
+    {
+      "id": "D-07",
+      "at": "2026-09-16",
+      "status": "adopted",
+      "summary": "Grok is the parent factory. Children copy the kit and return portable intakes. A child never writes VirBk/Grok. An intake without a check is refused. Size budgets regularize.",
+      "reversible": true
     }
   ]
 }
