@@ -48,6 +48,13 @@
       "status": "adopted",
       "summary": "Grok is the parent factory. Children copy the kit and return portable intakes. A child never writes VirBk/Grok. An intake without a check is refused. Size budgets regularize.",
       "reversible": true
+    },
+    {
+      "id": "D-08",
+      "at": "2026-09-16",
+      "status": "adopted",
+      "summary": "The session is a fuse. Git is memory. Split on envelope done, correction cap, spend cap, or a named decay sign. Successor reads AGENTS, BOARD, envelope. Never a transcript or compaction. Fresh same-tier instance after a split. Reviewer is always a fresh session. Never resume a session id from prose.",
+      "reversible": true
     }
   ]
 }

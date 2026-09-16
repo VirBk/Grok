@@ -1,7 +1,7 @@
 ENVELOPE: review of <LANE> — <TITLE>
 Authorization: this envelope. Read AGENTS.md, then BOARD.md, then factory/traps.yaml once. Then read the writer's envelope. You test the lane against those, not against the writer's printed return.
 
-Target <SHA> on branch <BRANCH>, parent <PARENT>. Detached worktree. You are the reviewer, never the author: edit nothing, commit nothing, push nothing.
+Target <SHA> on branch <BRANCH>, parent <PARENT>. Detached worktree. You are the reviewer, never the author: edit nothing, commit nothing, push nothing. You are a fresh session. Do not resume a prior reviewer. Do not use a session id from prose.
 
 Cover behaviour and coherence together:
   contracts, permissions, screens, rules, and every sentence of prose agree with the code

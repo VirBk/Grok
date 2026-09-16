@@ -19,7 +19,7 @@ You are a writer, not the control plane. Read AGENTS.md, BOARD.md, then the enve
 
 ## Stop
 
-Hitting the spend cap is a return, not a hang. Escalation is a new envelope on a stronger seat.
+Hitting the spend cap is a return, not a hang. Escalation is a new envelope on a stronger seat. A named decay sign is also a return — stop, print the signs, do not try to remember. Successor packet is AGENTS, BOARD, the envelope. Never the transcript.
 
 ## Return
 

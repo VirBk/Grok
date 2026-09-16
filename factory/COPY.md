@@ -17,7 +17,7 @@ The kit is the thing you copy. The product is not. Grok stays the parent.
 11. Wait for a spec. Idle is success.
 12. When this child pays for a lesson, file an intake (`factory/templates/INTAKE.md`). Validate with `node factory/tools/intake.mjs`. Absorbing is a Grok envelope.
 
-Writer seats: `node factory/tools/seat.mjs recipe desktop-deepseek`. Do not remap the control-plane session.
+Writer seats: `node factory/tools/seat.mjs recipe desktop-deepseek`. Do not remap the control-plane session. Sessions are a fuse: `factory/sessions.json`. Do not brief a successor from a transcript.
 
 ## Do not
 

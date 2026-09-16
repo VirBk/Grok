@@ -36,6 +36,10 @@ Hosted CI that cannot pass taught people to stop reading badges. Minutes ran out
 
 Filling seats created overlapping holds. Conflict resolution is unreviewed code. Two writers is a ceiling.
 
+## Why the session is a fuse
+
+Every model — Grok, Claude, GPT, Qwen, DeepSeek — rots if it stays. The transcript becomes contaminated; compaction hashes the contamination. Git is memory. Split on envelope done, correction cap, spend cap, or a named decay sign. A successor reads AGENTS, BOARD, the envelope. Never SESSION_LOG. A reviewer is always a fresh session. Never resume a session id from prose. Fresh same-tier instance beats a cheaper tired model finishing the job.
+
 ## Why the control plane is not the writer
 
 The money is the tool loop. Remapping the Claude Code window to DeepSeek keeps the harness and replaces the judgment. Spawn a second seat. Leave the control plane on Claude Code (desktop) or Grok (cloud). Sweep writers are DeepSeek Flash or local Qwen. Reviewers are never weaker than the writer. Recipes: `node factory/tools/seat.mjs`.
