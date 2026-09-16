@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://factory.grok/contracts/seat-return.v1.json",
+  "title": "SeatReturn",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["lane", "runtime", "model", "base", "branch", "changed", "verify", "spendUsd"],
+  "properties": {
+    "lane": { "type": "string", "minLength": 1 },
+    "runtime": {
+      "type": "string",
+      "enum": ["desktop-deepseek", "desktop-qwen", "cloud-grok"]
+    },
+    "model": { "type": "string", "minLength": 1 },
+    "base": { "type": "string", "minLength": 7 },
+    "branch": { "type": "string", "minLength": 1 },
+    "changed": { "type": "array", "items": { "type": "string" } },
+    "verify": { "type": "string", "minLength": 1 },
+    "spendUsd": { "type": "number", "minimum": 0 },
+    "note": { "type": "string" }
+  }
+}

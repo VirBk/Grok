@@ -17,8 +17,29 @@
     {
       "id": "D-03",
       "at": "2026-09-16",
-      "status": "adopted",
+      "status": "superseded",
       "summary": "Idle is success until the owner names the product and drops a spec.",
+      "reversible": true
+    },
+    {
+      "id": "D-04",
+      "at": "2026-09-16",
+      "status": "adopted",
+      "summary": "Product is dual-runtime: Claude Code or Grok as control plane; DeepSeek or Qwen as writer. Do not remap the control-plane session.",
+      "reversible": true
+    },
+    {
+      "id": "D-05",
+      "at": "2026-09-16",
+      "status": "adopted",
+      "summary": "Sweep writer is DeepSeek Flash or local Qwen. Keystone writer is DeepSeek V4 Pro or Claude. Reviewer is never weaker than the writer. One correction then split, escalate model on the next envelope.",
+      "reversible": true
+    },
+    {
+      "id": "D-06",
+      "at": "2026-09-16",
+      "status": "adopted",
+      "summary": "Cloud path is Grok as control plane plus a writer on a worktree clone. No GitHub Action until the secret exists.",
       "reversible": true
     }
   ]
