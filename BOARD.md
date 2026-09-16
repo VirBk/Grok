@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Sitting 2. Look at factory/sparks.json — S01 S02 open, not law. Absorb or drop before next close. F3 still queued on a writer key.
+Sitting 2. Sparks S01-S05 open, look not law. S01 S02 due this sitting. Cap full. F3 still queued on a writer key.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 

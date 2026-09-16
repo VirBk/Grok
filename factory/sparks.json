@@ -19,6 +19,33 @@
       "whyNotLaw": "Named decay signs already cover rot; hours would be an invented clock.",
       "status": "open",
       "openedOn": 1
+    },
+    {
+      "id": "S03",
+      "kind": "trap",
+      "claim": "A hosted or private-index code search that returns zero is not a ZERO.",
+      "object": "factory/tools/scopeSearch.mjs",
+      "whyNotLaw": "The search product is not a container. GitHub search of Virbos was empty; the objects were not.",
+      "status": "open",
+      "openedOn": 2
+    },
+    {
+      "id": "S04",
+      "kind": "trap",
+      "claim": "A control plane that will issue or drop reads factory/CONTROL_PLANE.md.",
+      "object": "factory/sessions.json",
+      "whyNotLaw": "successorReads names sparks but not CONTROL_PLANE.md; CONSOLE does. Drift, not yet a check.",
+      "status": "open",
+      "openedOn": 2
+    },
+    {
+      "id": "S05",
+      "kind": "lesson",
+      "claim": "An owner paste of a missed spark is a lead, not law.",
+      "object": "factory/CONTROL_PLANE.md",
+      "whyNotLaw": "No check that a successor treated a chat paste as AGENTS.",
+      "status": "open",
+      "openedOn": 2
     }
   ]
 }
