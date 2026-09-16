@@ -34,6 +34,11 @@ Spend cap
   <USD or turns, then stop and return>
   Hitting the cap is a return, not a hang. Escalation is a new envelope on a stronger seat.
 
+Fuse
+  Split on envelope done, correction cap, spend cap, or a named decay sign (factory/sessions.json).
+  Successor reads AGENTS, BOARD, this envelope. Never the transcript. Never a compaction.
+  A fresh same-tier instance beats a cheaper tired model finishing the job. On a decay sign: stop, print the signs, return.
+
 Self-check
   Before returning, drive the list a reviewer of this lane would be given and fix what you find. Record in docs/log/<lane>.md what the self-check changed.
 

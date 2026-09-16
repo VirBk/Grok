@@ -31,6 +31,7 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 - A code envelope gets one review that covers behaviour and coherence together. A records envelope gets none.
 - The reviewer is never the author, and is never a weaker model than the writer.
 - Corrections stay with the writer. Sweep-tier: one correction, then split. Keystone: two, then split. No third round.
+- A session is a fuse. Split on envelope done, correction cap, spend cap, or a named decay sign (`factory/sessions.json`). A successor reads this file, BOARD, the envelope — never a transcript, never a compaction.
 - The control plane lands: it verifies the return at the objects, proves any rebase with `git range-diff` and a blob sweep, runs the landing gate from a fresh archive of the commit, fast-forwards main, restamps the board, deletes the envelope.
 - Nothing is issued from an unlanded tip. Siblings only when the board names their files disjoint.
 - Shared files are single-writer holds: `contracts/` and any generated client, the package manifest and lockfile, the app shell and routes, `factory/board.json`, this file.
@@ -94,6 +95,8 @@ Keystones are a closed named list on the board. A challenge pass runs only on on
 
 A handoff is this file plus `BOARD.md`. There is no handoff document.
 
+The repository is memory. The session is a fuse. Every model — Grok, Claude, GPT, Qwen, DeepSeek — rots if it stays. Do not pick a model that “doesn’t rot.” Split it. A reviewer is always a fresh session. Never resume a session id from prose. A challenge seat is never resumed. A writer that notices its own decay stops and returns; it does not try to remember. Detail: `factory/sessions.json`.
+
 ## 9. Where things are
 
 | Need | File |
@@ -107,6 +110,7 @@ A handoff is this file plus `BOARD.md`. There is no handoff document.
 | Landing gate | `factory/tools/landingGate.mjs` |
 | Envelope template | `factory/templates/ENVELOPE.md` |
 | 10/10 rubric | `factory/ASSESSMENT.md` |
+| Session fuse | `factory/sessions.json` |
 | How to copy | `factory/COPY.md` |
 | Runtimes | `factory/runtimes.json` |
 | Writer recipes | `factory/tools/seat.mjs` |

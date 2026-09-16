@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Parent factory named. Children return intakes. Waiting on a DeepSeek or Qwen key to cut the first writer envelope.
+Session fuse is standing. All models rot if they stay. Waiting on a DeepSeek or Qwen key to cut the first writer envelope.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -29,6 +29,7 @@ No envelope opens a gate.
 | F2 | landed | AGENTS.md §1 and §5 | Name the product paragraph and never-move rules |
 | F3 | queued | a DeepSeek or Qwen key | First cheap writer envelope |
 | F4 | landed | factory/lineage.json | Parent factory lineage loop |
+| F5 | landed | factory/sessions.json | Session fuse protocol |
 
 ## Holds
 
@@ -37,6 +38,7 @@ No envelope opens a gate.
 - factory/lineage.json — control plane
 - contracts/seat-return.v1.json — control plane
 - contracts/intake.v1.json — control plane
+- factory/sessions.json — control plane
 
 ## Keystones
 
@@ -55,3 +57,4 @@ No envelope opens a gate.
 - 2026-09-16 F1 spec landed: cheap writer seats, desktop and cloud. Dual-runtime named. Do not remap the CP session.
 - 2026-09-16 F2 landed. Product paragraph is parent factory plus dual-runtime. Never-move: child does not write Grok.
 - 2026-09-16 F4 landed. Lineage register, intake contract, intake gate. Otto and Virbos absorbed. Next child copies the kit.
+- 2026-09-16 F5 landed. Session fuse. Git is memory. Compaction is not a briefing. Fresh same-tier instance after a split.
