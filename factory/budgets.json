@@ -1,0 +1,13 @@
+{
+  "files": [
+    { "path": "AGENTS.md", "capKb": 12 },
+    { "path": "BOARD.md", "capKb": 40 },
+    { "path": "README.md", "capKb": 12 },
+    { "path": "factory/decisions.json", "capKb": 80 },
+    { "path": "factory/board.json", "capKb": 40 },
+    { "path": "factory/traps.yaml", "capKb": 48 }
+  ],
+  "globs": [
+    { "pattern": "docs/log/*.md", "capKb": 8 }
+  ]
+}

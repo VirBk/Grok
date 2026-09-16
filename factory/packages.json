@@ -1,0 +1,7 @@
+{
+  "packages": [
+    { "id": "F0", "title": "Stand up the factory kit", "status": "review" },
+    { "id": "F1", "title": "Owner specs land", "status": "blocked" },
+    { "id": "F2", "title": "Name the product paragraph", "status": "blocked" }
+  ]
+}

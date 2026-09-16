@@ -1,0 +1,25 @@
+{
+  "decisions": [
+    {
+      "id": "D-01",
+      "at": "2026-09-16",
+      "status": "adopted",
+      "summary": "VirBk/Grok is the working remote. Otto and Virbos are read-only references.",
+      "reversible": true
+    },
+    {
+      "id": "D-02",
+      "at": "2026-09-16",
+      "status": "adopted",
+      "summary": "The factory is copied as AGENTS.md plus factory/. SESSION_LOG is not created. BOARD is generated from JSON.",
+      "reversible": true
+    },
+    {
+      "id": "D-03",
+      "at": "2026-09-16",
+      "status": "adopted",
+      "summary": "Idle is success until the owner names the product and drops a spec.",
+      "reversible": true
+    }
+  ]
+}

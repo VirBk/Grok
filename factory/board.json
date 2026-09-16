@@ -1,0 +1,32 @@
+{
+  "now": "Factory kit standing. Product unnamed. Idle is success. Waiting on owner specs.",
+  "remote": "VirBk/Grok",
+  "references": ["VirBk/Otto", "VirBk/virbos"],
+  "gates": [
+    { "id": "G0", "title": "Synthetic data only", "open": true },
+    { "id": "G1", "title": "Real product data in systems (never in git)", "open": false },
+    { "id": "G2", "title": "Live alerts / client messages", "open": false },
+    { "id": "G3", "title": "Downstream writes", "open": false },
+    { "id": "G4", "title": "Production deploy", "open": false }
+  ],
+  "lanes": [
+    { "id": "F0", "title": "Stand up the factory kit", "state": "landing", "hold": "factory/, AGENTS.md" },
+    { "id": "F1", "title": "Owner specs land", "state": "queued", "hold": "none" },
+    { "id": "F2", "title": "Name the product paragraph and never-move rules", "state": "queued", "hold": "AGENTS.md §1 and §5" },
+    { "id": "F3", "title": "First product envelope", "state": "shelved", "hold": "unnamed" }
+  ],
+  "keystones": [],
+  "holds": [
+    { "name": "AGENTS.md / factory rules", "holder": "control plane" },
+    { "name": "factory/board.json", "holder": "control plane" },
+    { "name": "contracts/", "holder": "idle" }
+  ],
+  "shelf": [
+    { "item": "Seat launchers for print-mode on the existing laptop", "trigger": "Owner asks to run parallel seats." },
+    { "item": "Product-specific never-move rules", "trigger": "Owner names the product." },
+    { "item": "Keystone list", "trigger": "First architecture envelope." }
+  ],
+  "ledger": [
+    { "at": "2026-09-16", "event": "Factory opened. Otto and Virbos read-only. Working remote VirBk/Grok, previously empty." }
+  ]
+}
