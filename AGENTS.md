@@ -31,7 +31,7 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 - A code envelope gets one review that covers behaviour and coherence together. A records envelope gets none.
 - The reviewer is never the author, and is never a weaker model than the writer.
 - Corrections stay with the writer. Sweep-tier: one correction, then split. Keystone: two, then split. No third round.
-- A session is a fuse. Split on envelope done, correction cap, spend cap, or a named decay sign (`factory/sessions.json`). A successor reads this file, BOARD, the envelope — never a transcript, never a compaction.
+- A session is a fuse. Split on envelope done, correction cap, spend cap, or a named decay sign (`factory/sessions.json`). A successor reads this file, BOARD, the envelope — never a transcript, never a compaction. It looks at `factory/sparks.json`; it does not obey it.
 - The control plane lands: it verifies the return at the objects, proves any rebase with `git range-diff` and a blob sweep, runs the landing gate from a fresh archive of the commit, fast-forwards main, restamps the board, deletes `factory/envelopes/<lane>.md`.
 - Nothing is issued from an unlanded tip. Siblings only when the board names their files disjoint.
 - Shared files are single-writer holds: `contracts/` and any generated client, the package manifest and lockfile, the app shell and routes, `factory/board.json`, this file.
@@ -95,7 +95,7 @@ On every return, before anything else is issued:
 
 Keystones are a closed named list on the board. A challenge pass runs only on one of those, only with the owner’s word, and produces leads rather than a verdict. Never Fable.
 
-A handoff is this file plus `BOARD.md`. There is no handoff document.
+A handoff is this file plus `BOARD.md`. There is no handoff document. A eureka lands as a spark (`factory/sparks.json`), not as a trap. A session-only waiver is the envelope or gitignored `factory/.waiver`. Last act: `node factory/tools/sitting.mjs close`.
 
 The repository is memory. The session is a fuse. Every model — Grok, Claude, GPT, Qwen, DeepSeek — rots if it stays. Do not pick a model that “doesn’t rot.” Split it. A reviewer is always a fresh session. Never resume a session id from prose. A challenge seat is never resumed. A writer that notices its own decay stops and returns; it does not try to remember. Detail: `factory/sessions.json`.
 
@@ -126,6 +126,7 @@ The repository is memory. The session is a fuse. Every model — Grok, Claude, G
 | Owner console | `factory/CONSOLE.md` |
 | Derivation | `factory/CONTROL_PLANE.md` |
 | Owner-ask list | `factory/owner-ask.json` |
+| Sparks (look, not law) | `factory/sparks.json` |
 | Versioned interfaces | `contracts/` |
 
 Every other document is history or reference until the owner moves it.

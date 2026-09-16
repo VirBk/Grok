@@ -33,4 +33,4 @@ F3 — first cheap writer envelope. Hold: a DeepSeek or Qwen key, or owner word 
 
 ## Successor
 
-Read `AGENTS.md`, `BOARD.md`, `factory/traps.yaml` once. A control plane that will issue or drop also reads `factory/CONTROL_PLANE.md`. The owner-ask list is `factory/owner-ask.json`. Git is memory. There is no handoff.md. Compaction is not a briefing.
+Read `AGENTS.md`, `BOARD.md`, `factory/traps.yaml` once. Look at `factory/sparks.json` (look, not law). A control plane that will issue or drop also reads `factory/CONTROL_PLANE.md`. The owner-ask list is `factory/owner-ask.json`. Git is memory. There is no handoff.md. Compaction is not a briefing. Last act: `node factory/tools/sitting.mjs close`.

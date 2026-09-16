@@ -2,7 +2,7 @@
   "rule": "Git is memory. The session is a fuse. Compaction is not a briefing.",
   "thesis": "Every model — Grok, Claude, GPT, Qwen, DeepSeek — rots if it stays. The curve differs. The failure mode does not. Do not pick a model that does not rot. Split the session.",
   "duties": {
-    "controlPlane": "Owns lifetime, split triggers, successor envelope. Never a transcript dump.",
+    "controlPlane": "Owns lifetime, split triggers, successor envelope. Never a transcript dump. Last act is sitting close.",
     "writer": "Re-reads the envelope. On a decay sign: stop, print the signs, return.",
     "reviewer": "Always a fresh session. Never the author. Never a session id from prose."
   },
@@ -28,8 +28,22 @@
     "compaction about to become the briefing",
     "model shopping mid-envelope because this one got tired"
   ],
-  "successorReads": ["AGENTS.md", "BOARD.md", "the envelope", "factory/traps.yaml once"],
-  "successorNever": ["transcript", "compaction", "SESSION_LOG", "session id from a document", "here's what we were doing"],
+  "successorReads": [
+    "AGENTS.md",
+    "BOARD.md",
+    "the envelope",
+    "factory/traps.yaml once",
+    "factory/sparks.json (look, not law)"
+  ],
+  "successorNever": [
+    "transcript",
+    "compaction",
+    "SESSION_LOG",
+    "session id from a document",
+    "here's what we were doing",
+    "factory/.waiver",
+    "handoff.md"
+  ],
   "seating": {
     "rotating": "fresh instance of the same tier",
     "sweepWriter": "short fuse, DeepSeek Flash or local Qwen",

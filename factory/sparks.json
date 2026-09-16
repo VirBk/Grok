@@ -1,0 +1,24 @@
+{
+  "sitting": 1,
+  "note": "Look, not law. Absorb or drop next sitting. A spark is not a trap.",
+  "items": [
+    {
+      "id": "S01",
+      "kind": "trap",
+      "claim": "A control-plane sitting is one class of work; a second class is a split.",
+      "object": "factory/sessions.json",
+      "whyNotLaw": "No check yet that a multi-repo transcript fails a sitting.",
+      "status": "open",
+      "openedOn": 1
+    },
+    {
+      "id": "S02",
+      "kind": "lesson",
+      "claim": "A wall-clock is not a control-plane fuse.",
+      "object": "factory/sessions.json",
+      "whyNotLaw": "Named decay signs already cover rot; hours would be an invented clock.",
+      "status": "open",
+      "openedOn": 1
+    }
+  ]
+}

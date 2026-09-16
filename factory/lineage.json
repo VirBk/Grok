@@ -213,6 +213,30 @@
       "check": "CONTROL_PLANE.md. A register row that cites a seat return as fact must name the command the control plane ran.",
       "portable": "portable",
       "status": "absorbed"
+    },
+    {
+      "id": "I16",
+      "child": "grok",
+      "at": "2026-09-17",
+      "kind": "trap",
+      "title": "Eureka left in the transcript",
+      "charged": "A sitting's lesson died at the fuse because git had no quarantine short of a trap.",
+      "rule": "Mid-sitting, spark.mjs add. Successor looks at factory/sparks.json. Absorbing is an envelope with a check. Do not write handoff.md.",
+      "check": "node factory/tools/spark.mjs --self-test fails if CONTROL_PLANE.md does not say look, not law.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I17",
+      "child": "grok",
+      "at": "2026-09-17",
+      "kind": "trap",
+      "title": "Session-only waiver inherited as law",
+      "charged": "A temporary approval restamped onto AGENTS or waited as if it were standing policy.",
+      "rule": "A waiver is the envelope or gitignored factory/.waiver. Sitting close expires it. Never BOARD, never traps.",
+      "check": "node factory/tools/spark.mjs --self-test fails if factory/.waiver is tracked or present in the archive.",
+      "portable": "portable",
+      "status": "absorbed"
     }
   ]
 }

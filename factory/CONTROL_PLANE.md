@@ -1,6 +1,6 @@
 # Control-plane derivation
 
-Required reading for the control plane — Grok in the cloud or Claude Code on the desktop. Not required for a writer seat. A successor that will issue, stamp, drop, or wait reads this with AGENTS, BOARD, and traps.
+Required reading for the control plane — Grok in the cloud or Claude Code on the desktop. Not required for a writer seat. A successor that will issue, stamp, drop, or wait reads this with AGENTS, BOARD, traps, and `factory/sparks.json` (look, not law).
 
 The method is exhaustive on containers and issuances. It does not wait on the owner for a click. It is not a long essay.
 
@@ -56,13 +56,34 @@ A seat return that looks like a drive is a lead until the control plane runs one
 
 A strong control plane that waits is still a wait. Remapping it onto a cheaper model does not launch a refused seat and makes a ZERO more likely. Keep the control plane on Grok or Opus. Cut the write. Hands launch. Idle seats stay idle.
 
-## 7. Exhaustive, not long
+## 7. Sparks and waivers
 
-Open the named document. Open the containers. Quote. Launch or leave. Stop. Do not start a study. Do not fill a seat because a slot is empty. Do not drop a name you have not searched in source. Do not write a handoff.md.
+A eureka that is not yet a trap is a **spark**. Mid-sitting:
 
-## 8. Check
+```
+node factory/tools/spark.mjs add --kind trap --claim "..." --object path --why "..."
+```
+
+Successor **looks** at `factory/sparks.json`. It does not obey it. Absorbing is an envelope with a check. Dropping names because. An open spark older than one sitting fails the landing gate.
+
+A session-only approval is a **waiver**. Envelope holds, or gitignored `factory/.waiver`. Never AGENTS, never traps, never BOARD. Last act:
+
+```
+node factory/tools/sitting.mjs close
+```
+
+Waivers expire. Sitting increments. A tracked `.waiver` fails the gate. A spark that would weaken AGENTS §5 is refused.
+
+Do not write `handoff.md`. The tired session quarantines. The fresh session writes law.
+
+## 8. Exhaustive, not long
+
+Open the named document. Open the containers. Quote. Launch or leave. Spark or drop. Stop. Do not start a study. Do not fill a seat because a slot is empty. Do not drop a name you have not searched in source. Do not write a handoff.md.
+
+## 9. Check
 
 - `node factory/tools/scopeSearch.mjs --self-test`
 - `node factory/tools/ownerAsk.mjs --self-test`
+- `node factory/tools/spark.mjs --self-test`
 
-A `blocked-on-issuance` stamp without a fetch URL is a diary. A wait whose reason is `Start-Process` is a diary.
+A `blocked-on-issuance` stamp without a fetch URL is a diary. A wait whose reason is `Start-Process` is a diary. A eureka that exists only in the transcript is a diary.

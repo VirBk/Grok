@@ -1,5 +1,5 @@
 {
-  "now": "Derivation is factory/CONTROL_PLANE.md. Owner-ask list is closed: factory/owner-ask.json. A tool-policy refusal is not an owner wait; hands launch. Otto I12-I15 absorbed. F3 still queued on a writer key.",
+  "now": "Sparks are factory/sparks.json (look, not law). Waivers die at sitting close. S01 and S02 are open. F3 still queued on a writer key.",
   "remote": "VirBk/Grok",
   "references": ["VirBk/Otto", "VirBk/virbos"],
   "gates": [
@@ -35,7 +35,8 @@
     { "name": "factory/sessions.json", "holder": "control plane" },
     { "name": "factory/CONSOLE.md", "holder": "control plane" },
     { "name": "factory/CONTROL_PLANE.md", "holder": "control plane" },
-    { "name": "factory/owner-ask.json", "holder": "control plane" }
+    { "name": "factory/owner-ask.json", "holder": "control plane" },
+    { "name": "factory/sparks.json", "holder": "control plane" }
   ],
   "shelf": [
     { "item": "GitHub Action writer runner", "trigger": "Owner places a writer secret. Do not add the workflow while it would stay red." }
@@ -50,6 +51,7 @@
     { "at": "2026-09-16", "event": "F6 landed. Hands are a dumb runner. Claude Code optional. PM picks in project.json. Default topology local-hands." },
     { "at": "2026-09-17", "event": "F7 landed. Owner console spec in factory/CONSOLE.md. Lean token mix. Control plane session retired." },
     { "at": "2026-09-17", "event": "Virbos derivation miss absorbed. CONTROL_PLANE.md required for any control plane. scopeSearch on the landing gate. Intakes I09 I10 I11. Traps T32 T33 T34." },
-    { "at": "2026-09-17", "event": "Otto owner-wait absorbed. Closed ask list, hands launch, ruling-fits-hold, named checks. Intakes I12 I13 I14 I15. Traps T35 T36 T37 T38." }
+    { "at": "2026-09-17", "event": "Otto owner-wait absorbed. Closed ask list, hands launch, ruling-fits-hold, named checks. Intakes I12 I13 I14 I15. Traps T35 T36 T37 T38." },
+    { "at": "2026-09-17", "event": "Spark/waiver quarantine landed. factory/sparks.json look-not-law. factory/.waiver gitignored. sitting close. Intakes I16 I17. Traps T39 T40. S01 S02 open." }
   ]
 }

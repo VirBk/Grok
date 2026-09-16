@@ -191,4 +191,14 @@
   title: Negative finding stamped without a drive
   rule: A seat return that looks like a drive is a lead until the control plane runs one command at the objects.
 
+- id: T39
+  kind: portable
+  title: Eureka left in the transcript
+  rule: Mid-sitting, spark.mjs add. Successor looks at factory/sparks.json. Do not write handoff.md. Absorbing is an envelope with a check.
+
+- id: T40
+  kind: portable
+  title: Session-only waiver inherited as law
+  rule: A waiver is the envelope or gitignored factory/.waiver. Sitting close expires it. Landing fails if .waiver is tracked.
+
 
