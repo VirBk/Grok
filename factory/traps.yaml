@@ -90,3 +90,23 @@
   kind: machine
   title: Stop a cluster by process name
   rule: Stop by data directory or port.
+
+- id: T19
+  kind: portable
+  title: Control plane session pointed at a cheap model
+  rule: Spawn a writer seat. Do not remap the control-plane session.
+
+- id: T20
+  kind: portable
+  title: Cheap writer reviews itself
+  rule: Reviewer is a stronger session. Never the writer.
+
+- id: T21
+  kind: portable
+  title: API keys in git or VITE_
+  rule: Seat environment only. Never git. Never a VITE_ variable.
+
+- id: T22
+  kind: portable
+  title: Cloud writer on the owner's disk
+  rule: Worktree of the envelope holds. Nothing else.

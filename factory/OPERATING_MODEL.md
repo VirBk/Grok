@@ -27,3 +27,7 @@ Hosted CI that cannot pass taught people to stop reading badges. Minutes ran out
 ## Why idle is success
 
 Filling seats created overlapping holds. Conflict resolution is unreviewed code. Two writers is a ceiling.
+
+## Why the control plane is not the writer
+
+The money is the tool loop. Remapping the Claude Code window to DeepSeek keeps the harness and replaces the judgment. Spawn a second seat. Leave the control plane on Claude Code (desktop) or Grok (cloud). Sweep writers are DeepSeek Flash or local Qwen. Reviewers are never weaker than the writer. Recipes: `node factory/tools/seat.mjs`.

@@ -26,6 +26,14 @@ Verification
 Look hardest at
   <the ways this lane usually lies>
 
+Runtime
+  <desktop-deepseek | desktop-qwen | cloud-grok>
+  Writer seat only. Do not remap the control-plane session. Print-mode in the worktree.
+
+Spend cap
+  <USD or turns, then stop and return>
+  Hitting the cap is a return, not a hang. Escalation is a new envelope on a stronger seat.
+
 Self-check
   Before returning, drive the list a reviewer of this lane would be given and fix what you find. Record in docs/log/<lane>.md what the self-check changed.
 
