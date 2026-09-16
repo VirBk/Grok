@@ -62,6 +62,20 @@
       "status": "adopted",
       "summary": "Hands are a dumb runner. Claude Code is optional. Live picks live in factory/project.json; allowed ids in factory/runtimes.json. Default topology is local-hands (Grok + hands.mjs + Qwen Code + worktree + ff-only). Project managers mix from the catalog. Envelopes are git blobs. Hands never call a model.",
       "reversible": true
+    },
+    {
+      "id": "D-10",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "The owner console is the live surface: setup, local/cloud floor, product chassis (clickable iff landed), token mix. Spec lives in factory/CONSOLE.md. The running app is the Grok App Builder project named GROK Factory. Kit memory is this repository.",
+      "reversible": true
+    },
+    {
+      "id": "D-11",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "Lean token mix: save on the write, not on judgment. Hands have no weights. Sweep writer on ordinary lanes. Keystone only when the control plane names the lane. Review every loop, never the author, never weaker. Do not remap the control-plane session.",
+      "reversible": true
     }
   ]
 }

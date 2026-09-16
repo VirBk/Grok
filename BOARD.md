@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Hands split landed. Project managers pick from factory/runtimes.json into factory/project.json. Default is local-hands. F3 still queued on a writer key; local Qwen is an option that does not need one.
+Owner console spec is factory/CONSOLE.md. Token mix is lean: cheap write, strong review, hands with no weights. F3 still queued on a writer key. This control plane session is retired. Successor reads AGENTS.md, BOARD.md, factory/traps.yaml once.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -31,6 +31,7 @@ No envelope opens a gate.
 | F4 | landed | factory/lineage.json | Parent factory lineage loop |
 | F5 | landed | factory/sessions.json | Session fuse protocol |
 | F6 | landed | factory/project.json, factory/tools/hands.mjs | Hands split; PM-pickable topologies |
+| F7 | landed | factory/CONSOLE.md | Owner console and token mix |
 
 ## Holds
 
@@ -43,6 +44,7 @@ No envelope opens a gate.
 - contracts/intake.v1.json — control plane
 - contracts/project.v1.json — control plane
 - factory/sessions.json — control plane
+- factory/CONSOLE.md — control plane
 
 ## Keystones
 
@@ -62,3 +64,4 @@ No envelope opens a gate.
 - 2026-09-16 F4 landed. Lineage register, intake contract, intake gate. Otto and Virbos absorbed. Next child copies the kit.
 - 2026-09-16 F5 landed. Session fuse. Git is memory. Compaction is not a briefing. Fresh same-tier instance after a split.
 - 2026-09-16 F6 landed. Hands are a dumb runner. Claude Code optional. PM picks in project.json. Default topology local-hands.
+- 2026-09-17 F7 landed. Owner console spec in factory/CONSOLE.md. Lean token mix. Control plane session retired.

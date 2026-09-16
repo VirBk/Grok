@@ -151,3 +151,9 @@
   title: Envelope stored as an Issue
   rule: Envelope is a git blob under factory/envelopes/. Issues are not the board.
 
+- id: T31
+  kind: portable
+  title: Tokens saved by weakening judgment
+  rule: Cut the write. Do not remap the control plane. Do not skip review. Do not put a model on hands.
+
+

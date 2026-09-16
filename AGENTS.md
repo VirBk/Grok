@@ -123,6 +123,7 @@ The repository is memory. The session is a fuse. Every model — Grok, Claude, G
 | Intake template | `factory/templates/INTAKE.md` |
 | Intake gate | `factory/tools/intake.mjs` |
 | Lane records | `docs/log/<lane>.md` |
+| Owner console | `factory/CONSOLE.md` |
 | Versioned interfaces | `contracts/` |
 
 Every other document is history or reference until the owner moves it.
