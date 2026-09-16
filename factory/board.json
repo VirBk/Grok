@@ -10,7 +10,7 @@
     { "id": "G4", "title": "Production deploy", "open": false }
   ],
   "lanes": [
-    { "id": "F0", "title": "Stand up the factory kit", "state": "landing", "hold": "factory/, AGENTS.md" },
+    { "id": "F0", "title": "Stand up the factory kit", "state": "landed", "hold": "factory/, AGENTS.md" },
     { "id": "F1", "title": "Owner specs land", "state": "queued", "hold": "none" },
     { "id": "F2", "title": "Name the product paragraph and never-move rules", "state": "queued", "hold": "AGENTS.md §1 and §5" },
     { "id": "F3", "title": "First product envelope", "state": "shelved", "hold": "unnamed" }
@@ -27,6 +27,7 @@
     { "item": "Keystone list", "trigger": "First architecture envelope." }
   ],
   "ledger": [
-    { "at": "2026-09-16", "event": "Factory opened. Otto and Virbos read-only. Working remote VirBk/Grok, previously empty." }
+    { "at": "2026-09-16", "event": "Factory opened. Otto and Virbos read-only. Working remote VirBk/Grok, previously empty." },
+    { "at": "2026-09-16", "event": "F0 landed. Kit on VirBk/Grok. Board is JSON. Waiting on owner specs." }
   ]
 }

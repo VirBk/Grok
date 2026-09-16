@@ -23,8 +23,8 @@ No envelope opens a gate.
 ## Lanes
 
 | ID | State | Hold | Title |
-| --- | --- | --- | --- |
-| F0 | landing | factory/, AGENTS.md | Stand up the factory kit |
+| --- | --- | --- |
+| F0 | landed | factory/, AGENTS.md | Stand up the factory kit |
 | F1 | queued | none | Owner specs land |
 | F2 | queued | AGENTS.md §1 and §5 | Name the product paragraph and never-move rules |
 | F3 | shelved | unnamed | First product envelope |
@@ -48,3 +48,4 @@ Closed list, empty until the product is named.
 ## Ledger
 
 - 2026-09-16 Factory opened. Otto and Virbos read-only. Working remote VirBk/Grok, previously empty.
+- 2026-09-16 F0 landed. Kit on VirBk/Grok. Board is JSON. Waiting on owner specs.
