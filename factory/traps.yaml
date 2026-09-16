@@ -129,7 +129,7 @@
 - id: T26
   kind: docs
   title: Compaction or transcript used as briefing
-  rule: No SESSION_LOG. No handoff.md. No compaction.md as live memory.
+  rule: No SESSION_LOG. No handoff.md. No CONTROL_PLANE_HANDOFF. No compaction.md as live memory.
 
 - id: T27
   kind: portable
@@ -170,5 +170,25 @@
   kind: portable
   title: Collection treated as no statute
   rule: An agency still collecting is a second fact. Transcribe the issuance. Do not collapse practice into "no legal basis."
+
+- id: T35
+  kind: portable
+  title: Tool-policy refusal treated as owner wait
+  rule: A refused launch is not an owner ask. Binary underneath, then hands launch, then print the one-line and split. Do not wait.
+
+- id: T36
+  kind: portable
+  title: Ruling that cannot fit the hold
+  rule: Before issue, every sentence of the ruling is implementable in the named holds. Split what cannot. Do not issue a lane whose other half is owed.
+
+- id: T37
+  kind: portable
+  title: Green gate quoted as the whole check
+  rule: A landing line names which check covered what. A green gate is not evidence about a suite it does not contain.
+
+- id: T38
+  kind: portable
+  title: Negative finding stamped without a drive
+  rule: A seat return that looks like a drive is a lead until the control plane runs one command at the objects.
 
 

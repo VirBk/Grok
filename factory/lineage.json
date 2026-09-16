@@ -16,7 +16,7 @@
       "name": "Otto",
       "repo": "VirBk/Otto",
       "status": "absorbed",
-      "take": "Envelope, landing gate, keystones, idle-is-success, real-data gates."
+      "take": "Envelope, landing gate, keystones, idle-is-success, real-data gates, closed owner-ask, ruling-fits-hold."
     },
     {
       "id": "virbos",
@@ -163,6 +163,54 @@
       "charged": "Practice still collecting was read as missing law, so the lane could not start.",
       "rule": "An agency still collecting is a second fact. Transcribe the issuance. Do not collapse practice into no legal basis.",
       "check": "CONTROL_PLANE.md requires both facts stamped. The issuance URL is in the ledger row.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I12",
+      "child": "otto",
+      "at": "2026-09-17",
+      "kind": "trap",
+      "title": "Tool-policy refusal treated as owner wait",
+      "charged": "A correction envelope sat unlaunched because Start-Process was refused, and hours waited on a click.",
+      "rule": "A refused launch is not an owner ask. Binary underneath, then hands launch, then print the one-line and split. Do not wait.",
+      "check": "node factory/tools/ownerAsk.mjs --self-test fails if CONTROL_PLANE.md does not name tool-policy and hands launch.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I13",
+      "child": "otto",
+      "at": "2026-09-17",
+      "kind": "trap",
+      "title": "Ruling that cannot fit the hold",
+      "charged": "Two halves were ruled then scoped out of the issued lane, so both were owed rather than dropped.",
+      "rule": "Before issue, every sentence of the ruling is implementable in the named holds. Split what cannot.",
+      "check": "CONTROL_PLANE.md section on ruling and hold. Envelope holds are the bound. A lane whose other half is owed is a control-plane defect.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I14",
+      "child": "otto",
+      "at": "2026-09-17",
+      "kind": "lesson",
+      "title": "Green gate quoted as the whole check",
+      "charged": "A gate line was quoted at four landings as if it had run a suite it does not contain.",
+      "rule": "A landing line names which check covered what. A green gate is not evidence about a suite it does not contain.",
+      "check": "landing-checks.json note says the gate is these steps only. CONTROL_PLANE.md requires the integration run named or named as not run.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I15",
+      "child": "otto",
+      "at": "2026-09-17",
+      "kind": "trap",
+      "title": "Negative finding stamped without a drive",
+      "charged": "A seat return looked like a drive and entered a register row without one command against the classes.",
+      "rule": "A seat return that looks like a drive is a lead until the control plane runs one command at the objects.",
+      "check": "CONTROL_PLANE.md. A register row that cites a seat return as fact must name the command the control plane ran.",
       "portable": "portable",
       "status": "absorbed"
     }

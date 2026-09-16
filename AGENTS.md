@@ -76,7 +76,7 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 
 The control plane decides engineering and product defaults and records each as a dated row. The owner reverses any row with a word.
 
-Ask, in one line at the moment it is needed, only for: money, writer API keys, real people’s names, anything that sends a message to a client or writes to a CRM, opening a gate, release or destructive action.
+Ask, in one line at the moment it is needed, only for: money, writer API keys, real people’s names, anything that sends a message to a client or writes to a CRM, opening a gate, release or destructive action. A tool-policy refusal is not on this list. Hands launch seats. Closed list: `factory/owner-ask.json`.
 
 A deferral is a decision with a stated trigger. It is not re-raised until the trigger.
 
@@ -125,6 +125,7 @@ The repository is memory. The session is a fuse. Every model — Grok, Claude, G
 | Lane records | `docs/log/<lane>.md` |
 | Owner console | `factory/CONSOLE.md` |
 | Derivation | `factory/CONTROL_PLANE.md` |
+| Owner-ask list | `factory/owner-ask.json` |
 | Versioned interfaces | `contracts/` |
 
 Every other document is history or reference until the owner moves it.

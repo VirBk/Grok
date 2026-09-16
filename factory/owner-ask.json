@@ -1,0 +1,21 @@
+{
+  "ask": [
+    "money",
+    "writer API keys",
+    "real people's names",
+    "a message to a client",
+    "a CRM write",
+    "opening a gate",
+    "release",
+    "destructive action"
+  ],
+  "notAsk": [
+    "Start-Process",
+    "launching a seat",
+    "Artifact publish",
+    "taskkill",
+    "fetching a named issuance",
+    "a recommendation already made",
+    "a tool-policy refusal"
+  ]
+}

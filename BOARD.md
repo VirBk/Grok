@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Derivation is factory/CONTROL_PLANE.md. Any control plane opens every container before ZERO, and fetches a named issuance. Token-zero and issuance-ask absorbed from Virbos as I09–I11. F3 still queued on a writer key.
+Derivation is factory/CONTROL_PLANE.md. Owner-ask list is closed: factory/owner-ask.json. A tool-policy refusal is not an owner wait; hands launch. Otto I12-I15 absorbed. F3 still queued on a writer key.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -46,6 +46,7 @@ No envelope opens a gate.
 - factory/sessions.json — control plane
 - factory/CONSOLE.md — control plane
 - factory/CONTROL_PLANE.md — control plane
+- factory/owner-ask.json — control plane
 
 ## Keystones
 
@@ -67,3 +68,4 @@ No envelope opens a gate.
 - 2026-09-16 F6 landed. Hands are a dumb runner. Claude Code optional. PM picks in project.json. Default topology local-hands.
 - 2026-09-17 F7 landed. Owner console spec in factory/CONSOLE.md. Lean token mix. Control plane session retired.
 - 2026-09-17 Virbos derivation miss absorbed. CONTROL_PLANE.md required for any control plane. scopeSearch on the landing gate. Intakes I09 I10 I11. Traps T32 T33 T34.
+- 2026-09-17 Otto owner-wait absorbed. Closed ask list, hands launch, ruling-fits-hold, named checks. Intakes I12 I13 I14 I15. Traps T35 T36 T37 T38.

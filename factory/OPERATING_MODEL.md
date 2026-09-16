@@ -41,6 +41,14 @@ Filling seats created overlapping holds. Conflict resolution is unreviewed code.
 
 Every model — Grok, Claude, GPT, Qwen, DeepSeek — rots if it stays. The transcript becomes contaminated; compaction hashes the contamination. Git is memory. Split on envelope done, correction cap, spend cap, or a named decay sign. A successor reads AGENTS, BOARD, the envelope. Never SESSION_LOG. A reviewer is always a fresh session. Never resume a session id from prose. Fresh same-tier instance beats a cheaper tired model finishing the job.
 
+## Why the control plane does not wait
+
+A desktop session's tool policy refused `Start-Process`. The correction envelope was written. The seat sat. Hours waited on a click the owner-ask list does not name. The control plane was Opus. Remapping it cheaper would not have launched the seat.
+
+Hands launch (`factory/tools/hands.mjs launch`). A tool-policy refusal is tried as the binary underneath, then hands, then a one-line leave. It is not an owner ask. Closed list: `factory/owner-ask.json`.
+
+A ruling that cannot be implemented in the named holds is not issued. A green gate is named as the steps it ran, not as a suite it does not contain.
+
 ## Why derivation is exhaustive
 
 A markdown-only grep of the queue line stamped two names as having no scope. The scope lived in the same board, further down, and in product source. A named official PDF sat unfetched while the lane waited on the owner for a citation the board had already titled.

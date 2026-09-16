@@ -9,10 +9,11 @@
 //   node factory/tools/hands.mjs envelope --lane F3
 //   node factory/tools/hands.mjs gate --sha <sha>
 //   node factory/tools/hands.mjs land --lane F3 --sha <sha>
+//   node factory/tools/hands.mjs launch -- <command> [args...]
 //   node factory/tools/hands.mjs --self-test
 
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
-import { spawnSync } from "node:child_process";
+import { spawnSync, spawn } from "node:child_process";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -196,6 +197,23 @@ if (cmd === "gate") {
   process.exit(r.status === null ? 1 : r.status);
 }
 
+if (cmd === "launch") {
+  const raw = process.argv.slice(3);
+  const args = raw[0] === "--" ? raw.slice(1) : raw;
+  if (!args.length) {
+    fail("usage", ["node factory/tools/hands.mjs launch -- <command> [args...]"]);
+  }
+  const child = spawn(args[0], args.slice(1), {
+    cwd: root,
+    detached: true,
+    stdio: "ignore",
+    windowsHide: true,
+  });
+  child.unref();
+  console.log("launched pid " + child.pid);
+  process.exit(0);
+}
+
 if (cmd === "land") {
   const lane = flag("--lane");
   const sha = flag("--sha");
@@ -240,6 +258,6 @@ if (cmd === "--self-test") {
 }
 
 console.error(
-  "usage: node factory/tools/hands.mjs check|pick|apply-topology|recipe|isolate|envelope|gate|land|--self-test",
+  "usage: node factory/tools/hands.mjs check|pick|apply-topology|recipe|isolate|envelope|gate|land|launch|--self-test",
 );
 process.exit(1);

@@ -17,7 +17,7 @@ The kit is the thing you copy. The product is not. Grok stays the parent.
 11. Score the empty factory against `factory/ASSESSMENT.md`. Below 8 is a kit defect. Fix the kit first.
 12. Wait for a spec. Idle is success.
 13. When this child pays for a lesson, file an intake (`factory/templates/INTAKE.md`). Validate with `node factory/tools/intake.mjs`. Absorbing is a Grok envelope.
-14. A control plane that will issue or drop reads `factory/CONTROL_PLANE.md`. A ZERO that did not name its containers is not a finding.
+14. A control plane that will issue or drop reads `factory/CONTROL_PLANE.md`. A ZERO that did not name its containers is not a finding. A tool-policy refusal is not an owner ask.
 
 Writer seats: `node factory/tools/hands.mjs recipe`. Do not remap the control-plane session. Hands never call a model. Sessions are a fuse: `factory/sessions.json`. Do not brief a successor from a transcript. Detail: `factory/HANDS.md`.
 
