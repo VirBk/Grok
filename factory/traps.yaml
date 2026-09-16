@@ -1,0 +1,92 @@
+# Paid-for lessons. Read once. Portable first.
+# Full catalogue with charges lives in the GROK Factory console.
+
+- id: T01
+  kind: docs
+  title: Live files that grow forever
+  rule: Hard size budgets. Archive at 80%. Generated board, not a diary.
+
+- id: T02
+  kind: docs
+  title: Copied counts
+  rule: Paste from a command, with the command, or omit.
+
+- id: T03
+  kind: docs
+  title: Struck-through archaeology
+  rule: Edit in place. History is git.
+
+- id: T04
+  kind: agent
+  title: Clock derived from the previous stamp
+  rule: Read the host clock every time.
+
+- id: T05
+  kind: agent
+  title: Backticks inside double-quoted bash
+  rule: Write the script to a file and run the file.
+
+- id: T06
+  kind: agent
+  title: Print-mode seat ends the turn on a background job
+  rule: Detached log, rc marker, poll in the foreground.
+
+- id: T07
+  kind: agent
+  title: Recipe remembered, not read
+  rule: The envelope names the recipe. A claim of installed is a claim a seat will test.
+
+- id: T08
+  kind: portable
+  title: Gate reads the working tree, tests the commit
+  rule: Parse the check list from the git archive of the commit under test.
+
+- id: T09
+  kind: portable
+  title: Permanently red workflow
+  rule: A check that cannot pass is removed or skipped loudly.
+
+- id: T10
+  kind: portable
+  title: Exit code thrown away by a pipe
+  rule: Capture status before piping.
+
+- id: T11
+  kind: portable
+  title: Conflict resolution is unreviewed code
+  rule: Probe the merge before the second sibling launches.
+
+- id: T12
+  kind: portable
+  title: Adversaries share the platform
+  rule: A Linux compile of the landed bytes, or the board names why not.
+
+- id: T13
+  kind: portable
+  title: Test that cannot fail
+  rule: A new test must fail on revert of the fix.
+
+- id: T14
+  kind: portable
+  title: Switched-off mechanism looks working
+  rule: Every gate step runs through bash -e from a file.
+
+- id: T15
+  kind: portable
+  title: Main moves under a landing
+  rule: Freeze main between branch push and fast-forward.
+
+- id: T16
+  kind: machine
+  title: Worktree remove follows junctions
+  rule: Never junction node_modules into a worktree that will be removed.
+
+- id: T17
+  kind: machine
+  title: npx silently installs
+  rule: Run node node_modules/… directly. Abort when absent.
+
+- id: T18
+  kind: machine
+  title: Stop a cluster by process name
+  rule: Stop by data directory or port.
