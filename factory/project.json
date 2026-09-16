@@ -1,0 +1,9 @@
+{
+  "controlPlane": "grok-cloud",
+  "hands": "hands.mjs",
+  "writerHarness": "qwen-code",
+  "writerModel": "qwen3-coder",
+  "isolate": "worktree",
+  "land": "ff-only",
+  "envelopeStore": "git-blob"
+}

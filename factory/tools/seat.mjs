@@ -2,9 +2,13 @@
 // Writer seat helper. Prints a recipe or cuts a worktree from live main.
 //
 //   node factory/tools/seat.mjs list
-//   node factory/tools/seat.mjs recipe desktop-deepseek
-//   node factory/tools/seat.mjs recipe desktop-qwen
-//   node factory/tools/seat.mjs recipe cloud-grok
+//   node factory/tools/seat.mjs recipe qwen-code
+//   node factory/tools/seat.mjs recipe aider
+//   node factory/tools/seat.mjs recipe opencode
+//   node factory/tools/seat.mjs recipe goose
+//   node factory/tools/seat.mjs recipe deepseek-openai
+//   node factory/tools/seat.mjs recipe claude-code
+//   node factory/tools/seat.mjs recipe local-hands
 //   node factory/tools/seat.mjs worktree --lane F4 --base <sha>
 //
 // Does not call a model. Does not read API keys. The recipe is the launch.
@@ -16,8 +20,62 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "../..");
 
 const RECIPES = {
-  "desktop-deepseek": `# Writer seat — DeepSeek through the Claude Code harness.
-# Control plane stays on Anthropic in a different terminal.
+  "qwen-code": `# Writer seat — Qwen Code.
+# Control plane stays Grok (or Claude desktop). Do not remap the CP session.
+
+export OPENAI_BASE_URL="\${OPENAI_BASE_URL:-http://127.0.0.1:11434/v1}"
+export OPENAI_API_KEY="\${OPENAI_API_KEY:-local}"
+
+# Local:
+#   ollama pull qwen3-coder
+#   qwen --auth-type openai --model qwen3-coder
+#
+# Hosted instead:
+#   export OPENAI_BASE_URL="https://dashscope.aliyuncs.com/compatible-mode/v1"
+#   export OPENAI_API_KEY="\${DASHSCOPE_API_KEY}"
+#
+# Print-mode. Envelope on stdin. Poll long jobs in the foreground.
+`,
+  aider: `# Writer seat — Aider. Git-native. OpenAI-compat.
+# Control plane stays Grok. Do not remap the CP session.
+
+# Local Qwen:
+#   export OPENAI_API_BASE="http://127.0.0.1:11434/v1"
+#   export OPENAI_API_KEY="local"
+#   aider --model ollama/qwen3-coder
+#
+# DeepSeek:
+#   export OPENAI_API_BASE="https://api.deepseek.com/v1"
+#   export OPENAI_API_KEY="\${DEEPSEEK_API_KEY}"
+#   aider --model deepseek/deepseek-chat
+#
+# Paste the envelope. Print-mode. Worktree only.
+`,
+  opencode: `# Writer seat — OpenCode. Multi-model local harness.
+# Point it at Qwen local or DeepSeek. Control plane stays Grok.
+
+#   opencode run --model <the project.json writerModel>
+# Envelope as stdin. Worktree only. Print-mode.
+`,
+  goose: `# Writer seat — Goose recipes. Local.
+# Control plane stays Grok. Writer is the recipe, not the CP chat.
+
+#   goose run --recipe <file> --path .
+# Worktree only. Print-mode. Poll in the foreground.
+`,
+  "deepseek-openai": `# Writer seat — DeepSeek through any OpenAI-compat client.
+# Not Claude Code. Control plane stays Grok.
+
+export OPENAI_BASE_URL="https://api.deepseek.com/v1"
+export OPENAI_API_KEY="\${DEEPSEEK_API_KEY}"
+export OPENAI_MODEL="deepseek-chat"
+
+# Sweep: deepseek-flash. Keystone writer: deepseek-v4-pro.
+# Print-mode. Envelope on stdin. Worktree only.
+`,
+  "claude-code": `# Writer seat — DeepSeek through the Claude Code harness.
+# Optional. Control plane stays on Anthropic in a different terminal,
+# or on Grok in the browser. Never this process.
 
 export ANTHROPIC_BASE_URL="https://api.deepseek.com/anthropic"
 export ANTHROPIC_API_KEY="\${DEEPSEEK_API_KEY}"
@@ -31,26 +89,21 @@ export CLAUDE_CODE_SUBAGENT_MODEL="deepseek-flash"
 # Cut the worktree from live main, then start Claude Code in that tree.
 # Paste the envelope. Print-mode. Poll long jobs in the foreground.
 `,
-  "desktop-qwen": `# Writer seat — Qwen Code in the worktree.
-# Control plane stays Claude Code on Anthropic.
+  "local-hands": `# Local path. Grok judges. hands.mjs runs git. Writer is the PM pick.
 
-export OPENAI_BASE_URL="\${OPENAI_BASE_URL:-http://127.0.0.1:11434/v1}"
-export OPENAI_API_KEY="\${OPENAI_API_KEY:-local}"
-
-# Local:
-#   ollama pull qwen3-coder
-#   qwen --auth-type openai --model qwen3-coder
-#
-# Hosted instead:
-#   export OPENAI_BASE_URL="https://dashscope.aliyuncs.com/compatible-mode/v1"
-#   export OPENAI_API_KEY="\${DASHSCOPE_API_KEY}"
+# 1. node factory/tools/hands.mjs check
+# 2. git ls-remote origin refs/heads/main
+# 3. node factory/tools/hands.mjs isolate --lane <ID> --base <sha>
+# 4. node factory/tools/hands.mjs recipe
+# 5. writer pushes the branch only
+# 6. Grok reviews in a fresh session, lands, restamps
 `,
   "cloud-grok": `# Cloud path. Grok issues the envelope and reviews the return.
-# Writer runs on a clone, same recipe as desktop-deepseek or desktop-qwen.
+# Writer runs on a clone, not the owner's disk.
 
 # 1. git ls-remote origin refs/heads/main
-# 2. clone that SHA into a throwaway worktree (cloud machine, not the owner's disk)
-# 3. run the writer recipe there, print-mode, envelope as stdin
+# 2. clone that SHA into a throwaway worktree (cloud machine)
+# 3. node factory/tools/hands.mjs recipe
 # 4. writer pushes the branch only
 # 5. Grok reviews, lands, restamps
 #
@@ -58,6 +111,9 @@ export OPENAI_API_KEY="\${OPENAI_API_KEY:-local}"
 # A permanently red workflow is a hard fail.
 `,
 };
+
+RECIPES["desktop-qwen"] = RECIPES["qwen-code"];
+RECIPES["desktop-deepseek"] = RECIPES["claude-code"];
 
 const cmd = process.argv[2] || "list";
 

@@ -9,7 +9,13 @@
     "lane": { "type": "string", "minLength": 1 },
     "runtime": {
       "type": "string",
-      "enum": ["desktop-deepseek", "desktop-qwen", "cloud-grok"]
+      "enum": [
+        "local-hands",
+        "cloud-grok",
+        "desktop-two-process",
+        "desktop-qwen",
+        "desktop-deepseek"
+      ]
     },
     "model": { "type": "string", "minLength": 1 },
     "base": { "type": "string", "minLength": 7 },

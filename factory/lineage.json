@@ -117,6 +117,18 @@
       "check": "Envelope names a runtime. A writer return whose model equals the CP is a stop.",
       "portable": "portable",
       "status": "absorbed"
+    },
+    {
+      "id": "I08",
+      "child": "grok",
+      "at": "2026-09-16",
+      "kind": "practice",
+      "title": "Control plane was a Claude Code window",
+      "charged": "A laptop without Anthropic and a cloud Grok session could not run the loop.",
+      "rule": "Judgment is Grok or Claude. Hands are a dumb runner. Writer harness is a PM pick in factory/project.json.",
+      "check": "hands.mjs --self-test fails a project.json whose pick is not in runtimes.json.",
+      "portable": "portable",
+      "status": "absorbed"
     }
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://factory.grok/contracts/project.v1.json",
+  "title": "ProjectPicks",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "controlPlane",
+    "hands",
+    "writerHarness",
+    "writerModel",
+    "isolate",
+    "land",
+    "envelopeStore"
+  ],
+  "properties": {
+    "controlPlane": { "type": "string", "minLength": 1 },
+    "hands": { "type": "string", "minLength": 1 },
+    "writerHarness": { "type": "string", "minLength": 1 },
+    "writerModel": { "type": "string", "minLength": 1 },
+    "isolate": { "type": "string", "minLength": 1 },
+    "land": { "type": "string", "minLength": 1 },
+    "envelopeStore": { "type": "string", "minLength": 1 }
+  },
+  "description": "The project manager's live picks. Allowed ids live in factory/runtimes.json catalog. hands.mjs check is the gate."
+}

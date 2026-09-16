@@ -4,6 +4,7 @@
   "steps": [
     { "name": "Size budgets", "run": "node factory/tools/sizeBudget.mjs" },
     { "name": "Board is generated", "run": "node factory/tools/renderBoard.mjs --check" },
-    { "name": "Intakes pass the gate", "run": "node factory/tools/intake.mjs --check-register" }
+    { "name": "Intakes pass the gate", "run": "node factory/tools/intake.mjs --check-register" },
+    { "name": "PM picks match the catalog", "run": "node factory/tools/hands.mjs --self-test" }
   ]
 }

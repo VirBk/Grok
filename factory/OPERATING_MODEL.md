@@ -11,10 +11,11 @@ An envelope is the only start. A writer self-checks. A reviewer who is not the a
 ## Roles
 
 - Control plane: envelopes, landing, board, docs. Never product code.
-- Writer: one envelope, one worktree, one branch.
+- Hands: `factory/tools/hands.mjs`. Git, worktrees, the landing gate. Never a model.
+- Writer: one envelope, one worktree, one branch. Harness is a PM pick.
 - Reviewer: same tier as the writer. Verdict on line one. Edit nothing.
 - Challenger: named keystone, owner word, leads not verdicts. Never Fable.
-- Owner: money, names, live effects, gates, release.
+- Owner / project manager: money, names, live effects, gates, release, and the picks in `factory/project.json`.
 
 ## Why Grok is the parent
 
@@ -42,4 +43,8 @@ Every model — Grok, Claude, GPT, Qwen, DeepSeek — rots if it stays. The tran
 
 ## Why the control plane is not the writer
 
-The money is the tool loop. Remapping the Claude Code window to DeepSeek keeps the harness and replaces the judgment. Spawn a second seat. Leave the control plane on Claude Code (desktop) or Grok (cloud). Sweep writers are DeepSeek Flash or local Qwen. Reviewers are never weaker than the writer. Recipes: `node factory/tools/seat.mjs`.
+The money is the tool loop. Remapping a Claude Code window to DeepSeek keeps the harness and replaces the judgment. Spawn a second seat. Leave the control plane on Grok (cloud) or Claude Code (desktop, optional). Hands are `factory/tools/hands.mjs` — they do not call a model. Sweep writers are DeepSeek Flash or local Qwen. The project manager picks the harness in `factory/project.json`. Reviewers are never weaker than the writer. Recipes: `node factory/tools/seat.mjs`. Catalog: `factory/runtimes.json`.
+
+## Why hands are not a model
+
+Claude Code was judgment plus hands in one window. The factory needs the split. A runner with a model is a third seat with no envelope. `hands.mjs` cuts worktrees, prints recipes, runs the landing gate, and fast-forwards. It does not pick a model, does not read a key, and does not open a GitHub Action while that Action would stay red.

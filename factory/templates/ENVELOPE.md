@@ -27,8 +27,9 @@ Look hardest at
   <the ways this lane usually lies>
 
 Runtime
-  <desktop-deepseek | desktop-qwen | cloud-grok>
+  Stamp from factory/project.json (topology id, or local-hands | cloud-grok | desktop-two-process | desktop-qwen).
   Writer seat only. Do not remap the control-plane session. Print-mode in the worktree.
+  Hands: node factory/tools/hands.mjs. Never a model.
 
 Spend cap
   <USD or turns, then stop and return>

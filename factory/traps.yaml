@@ -140,3 +140,14 @@
   kind: portable
   title: Model shopping mid-envelope because this one got tired
   rule: Fresh same-tier instance. Rising the tier is a new envelope.
+
+- id: T29
+  kind: portable
+  title: Hands that have a model
+  rule: The runner does not call a model and does not read API keys. Judgment stays in the control-plane session.
+
+- id: T30
+  kind: portable
+  title: Envelope stored as an Issue
+  rule: Envelope is a git blob under factory/envelopes/. Issues are not the board.
+

@@ -18,7 +18,7 @@ The console at the GROK Factory preview ticks these interactively. This file is 
 
 1. **Entry contract** — AGENTS under 12 KB; required reading is AGENTS, BOARD, envelope; BOARD generated from factory/board.json; handoff is those two files.
 2. **Authorization** — every code change cites an envelope; envelope is one page; idle is success; nothing issued from an unlanded tip.
-3. **Isolation** — worktrees from live main; single-writer holds named; merge probed before a second sibling; writer self-check in the envelope.
+3. **Isolation** — worktrees from live main; single-writer holds named; merge probed before a second sibling; writer self-check in the envelope; hands have no model.
 4. **Review** — never the author; correction cap then split (also decay sign, spend cap, envelope done); keystones a closed list; coherence in the review.
 5. **Landing proof** — gate from a fresh archive; every exit code captured; changed files equal holds; Linux compile named or waived.
 6. **Record hygiene** — size budgets; no copied numbers; lane logs a few lines; no SESSION_LOG, no strikethrough, no docs lane, no compaction as memory.

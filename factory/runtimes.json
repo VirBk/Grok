@@ -1,30 +1,108 @@
 {
-  "product": "Dual-runtime factory. Strong control plane, cheap writer seats, desktop or cloud.",
-  "mistake": "Do not remap the control-plane Claude Code session to DeepSeek or Qwen.",
+  "product": "Dual-runtime factory. Strong control plane, dumb hands, cheap writer seats. Claude Code is optional.",
+  "mistake": "Do not remap the control-plane session to DeepSeek or Qwen. Do not give hands a model.",
+  "default": {
+    "controlPlane": "grok-cloud",
+    "hands": "hands.mjs",
+    "writerHarness": "qwen-code",
+    "writerModel": "qwen3-coder",
+    "isolate": "worktree",
+    "land": "ff-only",
+    "envelopeStore": "git-blob"
+  },
+  "catalog": {
+    "controlPlane": [
+      { "id": "grok-cloud", "recommended": true, "note": "Grok chat. Fuse. Successor is AGENTS, BOARD, envelope." },
+      { "id": "claude-desktop", "recommended": false, "note": "Optional. Claude Code as judgment if the project manager already has it." }
+    ],
+    "hands": [
+      { "id": "hands.mjs", "recommended": true, "note": "Dumb runner. No model. No keys. factory/tools/hands.mjs." },
+      { "id": "claude-code", "recommended": false, "note": "Hands stay inside Claude Code. Do not remap that session onto a cheap model." }
+    ],
+    "writerHarness": [
+      { "id": "qwen-code", "recommended": true, "note": "Qwen Code. Local Ollama or DashScope." },
+      { "id": "aider", "recommended": true, "note": "Git-native CLI. OpenAI-compat." },
+      { "id": "opencode", "recommended": false, "note": "Multi-model local harness." },
+      { "id": "goose", "recommended": false, "note": "Recipe runner. Local." },
+      { "id": "deepseek-openai", "recommended": true, "note": "Any OpenAI-compat client pointed at DeepSeek." },
+      { "id": "claude-code", "recommended": false, "note": "Claude Code harness with ANTHROPIC_BASE_URL remapped. Writer seat only." }
+    ],
+    "writerModel": [
+      { "id": "qwen3-coder", "recommended": true, "note": "Local. Zero dollars." },
+      { "id": "deepseek-flash", "recommended": true, "note": "Sweep writer." },
+      { "id": "deepseek-v4-pro", "recommended": true, "note": "Keystone writer." }
+    ],
+    "isolate": [
+      { "id": "worktree", "recommended": true, "note": "git worktree from live main on the machine that runs hands." },
+      { "id": "cloud-clone", "recommended": true, "note": "Throwaway clone. Codespace, VPS, or Fly. Not the owner's disk." }
+    ],
+    "land": [
+      { "id": "ff-only", "recommended": true, "note": "git merge --ff-only after APPROVED. Local hands." },
+      { "id": "github-rebase-after-approved", "recommended": true, "note": "PR rebase after VERDICT: APPROVED. Printed, not a red Action." }
+    ],
+    "envelopeStore": [
+      { "id": "git-blob", "recommended": true, "note": "factory/envelopes/<lane>.md. Deleted on land. Issues are not the board." }
+    ]
+  },
   "topologies": [
     {
-      "id": "desktop-two-process",
+      "id": "local-hands",
       "recommended": true,
-      "cp": "Claude Code on Anthropic",
-      "writer": "Claude Code harness pointed at DeepSeek, print-mode, worktree only"
-    },
-    {
-      "id": "desktop-qwen",
-      "recommended": false,
-      "cp": "Claude Code on Anthropic",
-      "writer": "Qwen Code via Ollama or DashScope, worktree only"
+      "picks": {
+        "controlPlane": "grok-cloud",
+        "hands": "hands.mjs",
+        "writerHarness": "qwen-code",
+        "writerModel": "qwen3-coder",
+        "isolate": "worktree",
+        "land": "ff-only",
+        "envelopeStore": "git-blob"
+      }
     },
     {
       "id": "cloud-grok",
       "recommended": true,
-      "cp": "Grok cloud session",
-      "writer": "DeepSeek or Qwen on a clone of the worktree, not the owner's disk"
+      "picks": {
+        "controlPlane": "grok-cloud",
+        "hands": "hands.mjs",
+        "writerHarness": "deepseek-openai",
+        "writerModel": "deepseek-flash",
+        "isolate": "cloud-clone",
+        "land": "github-rebase-after-approved",
+        "envelopeStore": "git-blob"
+      }
+    },
+    {
+      "id": "desktop-two-process",
+      "recommended": false,
+      "picks": {
+        "controlPlane": "claude-desktop",
+        "hands": "claude-code",
+        "writerHarness": "claude-code",
+        "writerModel": "deepseek-flash",
+        "isolate": "worktree",
+        "land": "ff-only",
+        "envelopeStore": "git-blob"
+      }
+    },
+    {
+      "id": "desktop-qwen",
+      "recommended": false,
+      "picks": {
+        "controlPlane": "claude-desktop",
+        "hands": "claude-code",
+        "writerHarness": "qwen-code",
+        "writerModel": "qwen3-coder",
+        "isolate": "worktree",
+        "land": "ff-only",
+        "envelopeStore": "git-blob"
+      }
     }
   ],
   "routing": {
     "sweepWriter": "deepseek-flash or local qwen",
     "keystoneWriter": "deepseek-v4-pro or Claude",
-    "controlPlane": "Claude Code desktop or Grok cloud",
+    "controlPlane": "Grok cloud or Claude desktop",
+    "hands": "hands.mjs; Claude Code only if the PM picked it",
     "reviewer": "never weaker than the writer, never the writer"
   },
   "ratesUsdPerM": {
@@ -35,5 +113,16 @@
     "deepseek-pro": { "in": 0.435, "out": 0.87 },
     "qwen-local": { "in": 0, "out": 0 }
   },
-  "recipes": ["desktop-deepseek", "desktop-qwen", "cloud-grok"]
+  "recipes": [
+    "qwen-code",
+    "aider",
+    "opencode",
+    "goose",
+    "deepseek-openai",
+    "claude-code",
+    "desktop-deepseek",
+    "desktop-qwen",
+    "cloud-grok",
+    "local-hands"
+  ]
 }

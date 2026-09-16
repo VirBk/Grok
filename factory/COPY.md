@@ -8,16 +8,17 @@ The kit is the thing you copy. The product is not. Grok stays the parent.
 2. Copy `contracts/` (schemas, not a child's board) and empty `docs/log/`.
 3. Start a new `factory/board.json`. Do not copy BOARD contents, ledger novels, or any `SESSION_LOG`.
 4. Keep `factory/lineage.json` as the parent register. Do not append this child's board to it.
-5. Fill AGENTS §1 with one product paragraph whose acceptance is an owner walk of a closed loop.
-6. Add the product’s never-move rules to AGENTS §5. Keep: a child never writes VirBk/Grok.
-7. Name keystones and single-writer holds on the board. Closed lists.
-8. Name gates. G0 is synthetic only. No envelope opens a gate.
-9. Point `factory/landing-checks.json` at this stack’s real commands.
-10. Score the empty factory against `factory/ASSESSMENT.md`. Below 8 is a kit defect. Fix the kit first.
-11. Wait for a spec. Idle is success.
-12. When this child pays for a lesson, file an intake (`factory/templates/INTAKE.md`). Validate with `node factory/tools/intake.mjs`. Absorbing is a Grok envelope.
+5. Copy `factory/project.json`. Pick a topology (`node factory/tools/hands.mjs apply-topology local-hands` or `cloud-grok`) or edit one field. `node factory/tools/hands.mjs check` must pass. Claude Code is optional.
+6. Fill AGENTS §1 with one product paragraph whose acceptance is an owner walk of a closed loop.
+7. Add the product’s never-move rules to AGENTS §5. Keep: a child never writes VirBk/Grok.
+8. Name keystones and single-writer holds on the board. Closed lists.
+9. Name gates. G0 is synthetic only. No envelope opens a gate.
+10. Point `factory/landing-checks.json` at this stack’s real commands.
+11. Score the empty factory against `factory/ASSESSMENT.md`. Below 8 is a kit defect. Fix the kit first.
+12. Wait for a spec. Idle is success.
+13. When this child pays for a lesson, file an intake (`factory/templates/INTAKE.md`). Validate with `node factory/tools/intake.mjs`. Absorbing is a Grok envelope.
 
-Writer seats: `node factory/tools/seat.mjs recipe desktop-deepseek`. Do not remap the control-plane session. Sessions are a fuse: `factory/sessions.json`. Do not brief a successor from a transcript.
+Writer seats: `node factory/tools/hands.mjs recipe`. Do not remap the control-plane session. Hands never call a model. Sessions are a fuse: `factory/sessions.json`. Do not brief a successor from a transcript. Detail: `factory/HANDS.md`.
 
 ## Do not
 
@@ -26,6 +27,8 @@ Writer seats: `node factory/tools/seat.mjs recipe desktop-deepseek`. Do not rema
 - Type counts into README.
 - Open a second remote.
 - Fill seats because they exist.
+- Install Claude Code in order to run this kit.
+- Give `hands.mjs` a model or an API key.
 - Push to VirBk/Grok from this child.
 - Merge this child's BOARD into the parent.
 

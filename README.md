@@ -4,13 +4,13 @@ The parent operating system for the next product. Distilled from [Otto](https://
 
 **Start at [`AGENTS.md`](AGENTS.md).** Then `BOARD.md`, then your envelope.
 
-Claude Code (or Grok) stays the control plane. DeepSeek or Qwen run the writer loop. Same envelope, desktop or cloud.
+Grok stays the control plane. Hands are a dumb runner. DeepSeek or Qwen run the writer loop. The project manager picks the harness in [`factory/project.json`](factory/project.json). Claude Code is optional. Same envelope, laptop or cloud.
 
 ## What this is for
 
 The next project copies this kit instead of reinventing seating, reviews, landing, and the record. The bar is the [assessment](factory/ASSESSMENT.md): ten dimensions, forty checks, six hard fails. Ten is a gate, not a vibe.
 
-Writer recipes live in [`factory/tools/seat.mjs`](factory/tools/seat.mjs). Runtimes in [`factory/runtimes.json`](factory/runtimes.json). Lineage in [`factory/lineage.json`](factory/lineage.json). Return a lesson with [`factory/templates/INTAKE.md`](factory/templates/INTAKE.md).
+Writer recipes live in [`factory/tools/seat.mjs`](factory/tools/seat.mjs). Hands in [`factory/tools/hands.mjs`](factory/tools/hands.mjs). Picks in [`factory/project.json`](factory/project.json). Catalog in [`factory/runtimes.json`](factory/runtimes.json). Lineage in [`factory/lineage.json`](factory/lineage.json). Return a lesson with [`factory/templates/INTAKE.md`](factory/templates/INTAKE.md).
 
 ## Copy
 
@@ -22,7 +22,7 @@ Kept: envelope as authorization, three-file reading, control plane split, live-m
 
 Killed: `SESSION_LOG.md`, copied counts, documentation as a lane, permanently red CI, issuing from an unlanded tip, invented clocks, rules with no check, remapping the control-plane session onto a cheap model, merging a child's board into the parent.
 
-Changed: the board is JSON, the landing gate runs from a fresh archive of the commit, holds are proved at issue, long jobs are polled in the foreground, a Linux compile is named as the platform adversary, the writer meter is DeepSeek or Qwen, lessons return as intakes.
+Changed: the board is JSON, the landing gate runs from a fresh archive of the commit, holds are proved at issue, long jobs are polled in the foreground, a Linux compile is named as the platform adversary, the writer meter is DeepSeek or Qwen, lessons return as intakes, Claude Code is optional, hands are a runner without a model, the project manager picks a topology.
 
 ## Size
 

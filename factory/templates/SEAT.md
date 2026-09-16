@@ -4,9 +4,9 @@ You are a writer, not the control plane. Read AGENTS.md, BOARD.md, then the enve
 
 ## Start
 
-1. The envelope names the runtime and the spend cap.
-2. Cut a worktree from the envelope's base SHA. Never from a lagging checkout.
-3. Run the recipe for that runtime (`node factory/tools/seat.mjs recipe <id>`).
+1. The envelope names the runtime and the spend cap. Live picks are `factory/project.json`.
+2. Cut a worktree from the envelope's base SHA (`node factory/tools/hands.mjs isolate --lane <id> --base <sha>`). Never from a lagging checkout.
+3. Run the recipe for that harness (`node factory/tools/hands.mjs recipe`).
 4. Work only the holds. Print-mode. Poll long jobs in the foreground.
 
 ## Never
@@ -14,6 +14,7 @@ You are a writer, not the control plane. Read AGENTS.md, BOARD.md, then the enve
 - Fast-forward main.
 - Review your own branch.
 - Export ANTHROPIC_BASE_URL into a control-plane terminal.
+- Give hands.mjs a model or an API key.
 - Write API keys to a file that can be committed.
 - Touch files outside the hold.
 

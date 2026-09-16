@@ -8,7 +8,7 @@ This file is capped at 12 KB. If a change would grow it, move the detail to a na
 
 GROK Factory is the parent build operating system. Child projects copy `AGENTS.md` and `factory/`. They return portable intakes — the charge, the rule, the check. Grok is the only writer of the kit.
 
-It is dual-runtime. A strong control plane — Claude Code on the desktop, or Grok in the cloud — issues one-page envelopes, reviews returns, and lands. Cheap writer seats — DeepSeek or Qwen, local or cloud — execute the envelope in a worktree.
+It is dual-runtime. A strong control plane — Grok in the cloud, or Claude Code on the desktop — issues one-page envelopes, reviews returns, and lands. Hands are a dumb runner (`factory/tools/hands.mjs`), never a model. Cheap writer seats — DeepSeek or Qwen; harness the project manager picks in `factory/project.json` — execute the envelope in a worktree.
 
 Acceptance: the owner walks spec → envelope stamped with a runtime → cheap writer return → strong review → land → spend pasted in the lane log. A child that paid for a lesson files an intake; absorbing it is a Grok envelope.
 
@@ -18,7 +18,7 @@ A sweep must not spend a keystone model. Idle seats stay idle. A child's board i
 
 An envelope from the control plane is the authorization. There is no coding hold. A backlog item, a recommendation, or “continue” is not an envelope.
 
-An envelope is one page: the work and its acceptance, the base commit from `git ls-remote origin refs/heads/main`, the scope and holds, what must stay true, the verification, the runtime, the spend cap, the return format, and the two print-mode sentences.
+An envelope is one page: the work and its acceptance, the base commit from `git ls-remote origin refs/heads/main`, the scope and holds, what must stay true, the verification, the runtime stamped from `factory/project.json`, the spend cap, the return format, and the two print-mode sentences.
 
 Product delivery is the critical path. A document is changed only when a change makes it false, and only that line. Documentation is never a lane of its own.
 
@@ -32,7 +32,7 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 - The reviewer is never the author, and is never a weaker model than the writer.
 - Corrections stay with the writer. Sweep-tier: one correction, then split. Keystone: two, then split. No third round.
 - A session is a fuse. Split on envelope done, correction cap, spend cap, or a named decay sign (`factory/sessions.json`). A successor reads this file, BOARD, the envelope — never a transcript, never a compaction.
-- The control plane lands: it verifies the return at the objects, proves any rebase with `git range-diff` and a blob sweep, runs the landing gate from a fresh archive of the commit, fast-forwards main, restamps the board, deletes the envelope.
+- The control plane lands: it verifies the return at the objects, proves any rebase with `git range-diff` and a blob sweep, runs the landing gate from a fresh archive of the commit, fast-forwards main, restamps the board, deletes `factory/envelopes/<lane>.md`.
 - Nothing is issued from an unlanded tip. Siblings only when the board names their files disjoint.
 - Shared files are single-writer holds: `contracts/` and any generated client, the package manifest and lockfile, the app shell and routes, `factory/board.json`, this file.
 - Every writer envelope carries a self-check: drive the list a reviewer of the lane would be given, fix what it finds, record what changed in the lane log.
@@ -55,6 +55,8 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 - Every route declares its permission or its authenticated-only status; a route with neither is refused.
 - No envelope opens a gate. Gates live on the board. The owner closes them with a word.
 - Do not point the control-plane session at DeepSeek or Qwen. Spawn a writer seat.
+- Hands never call a model and never read API keys. Claude Code is optional.
+- Envelopes live as git blobs in `factory/envelopes/`. Issues are not the board.
 - A writer never fast-forwards main and never reviews its own branch.
 - A reviewer is never a weaker model than the writer.
 - API keys live in a seat's environment, never in git, never in a `VITE_` variable.
@@ -113,6 +115,9 @@ The repository is memory. The session is a fuse. Every model — Grok, Claude, G
 | Session fuse | `factory/sessions.json` |
 | How to copy | `factory/COPY.md` |
 | Runtimes | `factory/runtimes.json` |
+| PM picks | `factory/project.json` |
+| Hands | `factory/tools/hands.mjs` |
+| Envelope blobs | `factory/envelopes/` |
 | Writer recipes | `factory/tools/seat.mjs` |
 | Parent register | `factory/lineage.json` |
 | Intake template | `factory/templates/INTAKE.md` |
