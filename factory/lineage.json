@@ -1,0 +1,122 @@
+{
+  "parent": "VirBk/Grok",
+  "role": "Only writer of the kit. Children copy. Portable intakes absorb.",
+  "flywheel": ["copy", "run", "return", "promote", "regularize"],
+  "refuse": [
+    "BOARD.md or board.json from a child",
+    "SESSION_LOG.md or any ledger novel",
+    "Copied counts",
+    "Real people, pay, or client data",
+    "A rule with no check",
+    "A direct write to VirBk/Grok from a child remote"
+  ],
+  "children": [
+    {
+      "id": "otto",
+      "name": "Otto",
+      "repo": "VirBk/Otto",
+      "status": "absorbed",
+      "take": "Envelope, landing gate, keystones, idle-is-success, real-data gates."
+    },
+    {
+      "id": "virbos",
+      "name": "Virbos",
+      "repo": "VirBk/virbos",
+      "status": "absorbed",
+      "take": "Decision register, authority levels, walkthrough as acceptance."
+    },
+    {
+      "id": "next",
+      "name": "Next child",
+      "repo": null,
+      "status": "empty",
+      "take": "Does not exist until this kit is copied into a new product remote."
+    }
+  ],
+  "intakes": [
+    {
+      "id": "I01",
+      "child": "both",
+      "at": "2026-09-16",
+      "kind": "practice",
+      "title": "Envelope as the only authorization",
+      "charged": "Work that started from continue could not be verified.",
+      "rule": "No envelope, no code. One page: acceptance, base SHA, holds, check.",
+      "check": "Landing refuses a branch whose return does not cite an envelope id.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I02",
+      "child": "virbos",
+      "at": "2026-09-16",
+      "kind": "lesson",
+      "title": "SESSION_LOG.md as a living file",
+      "charged": "Newest-first essays. Nobody could hand off from it.",
+      "rule": "Do not create SESSION_LOG.md. Lane logs are a few lines. History is git.",
+      "check": "Size budget and a landing-gate glob fail any SESSION_LOG.md.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I03",
+      "child": "both",
+      "at": "2026-09-16",
+      "kind": "lesson",
+      "title": "BOARD.md as hand-edited markdown",
+      "charged": "Invented clocks, backticks, f-string braces. Files grew past a sitting.",
+      "rule": "factory/board.json is the source. BOARD.md is generated.",
+      "check": "renderBoard.mjs --check fails a landing if the markdown drifted.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I04",
+      "child": "otto",
+      "at": "2026-09-16",
+      "kind": "trap",
+      "title": "Gate reads the working tree, tests the commit",
+      "charged": "Same SHA gated as different step counts in two trees.",
+      "rule": "Parse the check list from a fresh git archive of the commit under test.",
+      "check": "landingGate.mjs exits 1 if factory/landing-checks.json is missing from the archive.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I05",
+      "child": "otto",
+      "at": "2026-09-16",
+      "kind": "practice",
+      "title": "Idle is success",
+      "charged": "Filling seats created overlapping holds. Conflict resolution is unreviewed code.",
+      "rule": "Two writers is a ceiling, not a target. Empty seats stay empty.",
+      "check": "The board names disjoint holds before a second sibling launches.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I06",
+      "child": "virbos",
+      "at": "2026-09-16",
+      "kind": "trap",
+      "title": "Copied counts in prose",
+      "charged": "README quoted rule counts that were wrong by the time they were read.",
+      "rule": "Paste from the command that produced the number, with the command, or omit.",
+      "check": "Landing gate forbids digits in README/AGENTS/BOARD except in generated tables.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I07",
+      "child": "grok",
+      "at": "2026-09-16",
+      "kind": "trap",
+      "title": "Control plane session pointed at a cheap model",
+      "charged": "The harness looked the same. Judgment did not.",
+      "rule": "Spawn a writer seat. Do not remap the control-plane session.",
+      "check": "Envelope names a runtime. A writer return whose model equals the CP is a stop.",
+      "portable": "portable",
+      "status": "absorbed"
+    }
+  ]
+}
