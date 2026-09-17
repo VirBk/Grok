@@ -87,7 +87,7 @@ F3 — first cheap writer envelope. Topology pc-dashscope. Path dashscope. Hoste
 
 ## Issued
 
-F15 — map hosted writer model to a real DashScope id. Live pick `qwen3-coder-plus`. Catalog `qwen3-coder` is Ollama-only. Holds: factory/tools/seat.mjs, docs/log/f15.md.
+F16 — hosted recipes print the live DashScope id. Writer is qwen3.7-plus. F15 split (escaped ${writerModel}). Holds: factory/tools/seat.mjs, docs/log/f16.md.
 
 ## Successor
 

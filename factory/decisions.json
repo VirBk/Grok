@@ -160,6 +160,13 @@
       "status": "adopted",
       "summary": "Catalog id qwen3-coder is the local Ollama tag, not a DashScope API name. Hosted topologies pc-dashscope and cloud-dashscope pick qwen3-coder-plus. Live writerModel is qwen3-coder-plus until the owner picks another ladder id that DashScope serves. Seat recipes must print the live pick, not a hardcoded alias.",
       "reversible": true
+    },
+    {
+      "id": "D-25",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "F15 does not land. qwen3-coder-plus escaped template interpolation twice. Split to F16 on qwen3.7-plus. Hosted recipe acceptance is the printed live writerModel id, not a ${} placeholder.",
+      "reversible": true
     }
   ]
 }

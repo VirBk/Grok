@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. F15 issued. Map hosted writerModel to a real DashScope API id. Live pick qwen3-coder-plus. Path dashscope. Sparks S01-S05 open.",
+  "now": "Sitting 2. F15 split. F16 issued on qwen3.7-plus. Hosted recipes must print the live DashScope id. Path dashscope. Sparks S01-S05 open.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -126,8 +126,14 @@
     {
       "id": "F15",
       "title": "Map hosted writer model to a real DashScope id",
-      "state": "issued",
+      "state": "split",
       "hold": "factory/tools/seat.mjs, docs/log/f15.md"
+    },
+    {
+      "id": "F16",
+      "title": "Hosted recipes print the live DashScope model id",
+      "state": "issued",
+      "hold": "factory/tools/seat.mjs, docs/log/f16.md"
     }
   ],
   "keystones": [
@@ -294,6 +300,10 @@
     {
       "at": "2026-09-17",
       "event": "F15 issued. Catalog: qwen3-coder is Ollama-only. pc-dashscope and cloud-dashscope pick qwen3-coder-plus. Writer interpolates live writerModel. D-24."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "F15 split. Writer escaped JS ${writerModel}; recipes printed a placeholder. F16 issued on qwen3.7-plus. D-25."
     }
   ]
 }

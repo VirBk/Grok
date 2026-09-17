@@ -78,6 +78,11 @@
     {
       "id": "F15",
       "title": "Map hosted writer model to a real DashScope id",
+      "status": "split"
+    },
+    {
+      "id": "F16",
+      "title": "Hosted recipes print the live DashScope model id",
       "status": "issued"
     }
   ]
