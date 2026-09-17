@@ -3,97 +3,44 @@
     {
       "id": "F0",
       "title": "Stand up the factory kit",
-      "status": "landed"
+      "status": "landed",
+      "charged": "Next project should copy a kit and score 10/10. Otto and Virbos paid once; the operating system was still trapped in those remotes.",
+      "why": "Distill keep/kill/change into AGENTS plus factory/. Console is the owner's map."
     },
     {
       "id": "F1",
       "title": "Owner specs land",
-      "status": "landed"
+      "status": "landed",
+      "charged": "Claude on the whole tool loop is the cost. Owner wants Claude/Grok as control plane and DeepSeek/Qwen as writer, desktop and cloud.",
+      "why": "Split the meter, not the window. Dual-runtime named. Do not remap the CP session."
     },
     {
       "id": "F2",
       "title": "Name the product paragraph",
-      "status": "landed"
+      "status": "landed",
+      "charged": "A factory with no product paragraph issues envelopes into a vacuum.",
+      "why": "AGENTS §1 is parent factory plus dual-runtime. §5 never-move: child does not write Grok."
     },
     {
       "id": "F3",
       "title": "First cheap writer envelope",
-      "status": "landed"
+      "status": "queued",
+      "charged": "Owner asked for DeepSeek/Qwen keys, then said later.",
+      "why": "First real cheap-writer loop. Hold is a key. Idle until the owner sends one."
     },
     {
       "id": "F4",
       "title": "Parent factory lineage loop",
-      "status": "landed"
+      "status": "landed",
+      "charged": "Owner asked Grok to learn continuously from children, like ML. Merging a child's board is overfitting.",
+      "why": "Children copy the kit and return charge/rule/check. Absorbing is a Grok envelope."
     },
     {
       "id": "F5",
       "title": "Session fuse protocol",
-      "status": "landed"
-    },
-    {
-      "id": "F6",
-      "title": "Hands split; PM-pickable topologies",
-      "status": "landed"
-    },
-    {
-      "id": "F7",
-      "title": "Owner console and token mix",
-      "status": "landed"
-    },
-    {
-      "id": "F8",
-      "title": "Alumni drops for Otto and Virbos",
-      "status": "landed"
-    },
-    {
-      "id": "F9",
-      "title": "GitHub contribute options",
-      "status": "landed"
-    },
-    {
-      "id": "F10",
-      "title": "Cloud CP deploys the writer terminal",
-      "status": "landed"
-    },
-    {
-      "id": "F11",
-      "title": "Prompt cache as a native prefix, orchestrated",
-      "status": "landed"
-    },
-    {
-      "id": "F12",
-      "title": "Token-only writer, no Claude Code",
-      "status": "landed"
-    },
-    {
-      "id": "F13",
-      "title": "Sidecar factory for an ongoing product",
-      "status": "landed"
-    },
-    {
-      "id": "F14",
-      "title": "Owner-picked writer ladder and path router",
-      "status": "landed"
-    },
-    {
-      "id": "F15",
-      "title": "Map hosted writer model to a real DashScope id",
-      "status": "dropped"
-    },
-    {
-      "id": "F16",
-      "title": "Hosted recipes print the live DashScope model id",
-      "status": "landed"
-    },
-    {
-      "id": "F17",
-      "title": "DashScope DeepSeek Flash on the live seat",
-      "status": "landed"
-    },
-    {
-      "id": "F18",
-      "title": "Close F15; absorb S01 as T49; drop S02",
-      "status": "landed"
+      "status": "landed",
+      "charged": "Models that stay in session forget, confuse, hallucinate. Owner asked for a protocol workers or the control plane could adopt.",
+      "why": "Git is memory. The session is a fuse. Successor reads AGENTS, BOARD, envelope. Never the transcript."
     }
   ]
 }
