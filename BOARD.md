@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Sitting 2. F17 landed. DashScope seat is deepseek-v4.1-flash. Path dashscope. Native credit not posted. F15 split. Sparks S01-S05 open.
+Sitting 2. F18 landed. F15 dropped (superseded by F16/F17). S01 absorbed T49. S02 dropped. S03-S05 open. DashScope seat deepseek-v4.1-flash. Path dashscope. Native credit not posted.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -39,9 +39,10 @@ No envelope opens a gate.
 | F12 | landed | factory/project.json, factory/runtimes.json | Token-only writer, no Claude Code |
 | F13 | landed | factory/project.json, factory/runtimes.json | Sidecar factory for an ongoing product |
 | F14 | landed | factory/writer-paths.json, factory/tools/route.mjs | Owner-picked writer ladder and path router |
-| F15 | split | factory/tools/seat.mjs, docs/log/f15.md | Map hosted writer model to a real DashScope id |
+| F15 | dropped | factory/tools/seat.mjs, docs/log/f15.md | Map hosted writer model to a real DashScope id |
 | F16 | landed | factory/tools/seat.mjs, docs/log/f16.md | Hosted recipes print the live DashScope model id |
 | F17 | landed | factory/project.json, factory/tools/seat.mjs, docs/log/f17.md | DashScope DeepSeek Flash on the live seat |
+| F18 | landed | factory/sparks.json, factory/tools/sitting.mjs, factory/traps.yaml, docs/log/f18.md | Close F15; absorb S01 as T49; drop S02 |
 
 ## Holds
 
@@ -98,3 +99,4 @@ No envelope opens a gate.
 - 2026-09-17 F15 split. Writer escaped JS ${writerModel}; recipes printed a placeholder. F16 issued on qwen3.7-plus. D-25.
 - 2026-09-17 F16 landed. seat.mjs interpolates live writerModel (qwen3-coder-plus). F15 stays split. D-26.
 - 2026-09-17 F17 landed. Same DASHSCOPE_API_KEY invokes deepseek-v4.1-flash. Hosted map: deepseek-flash → deepseek-v4.1-flash. Path stays dashscope until native credit posts. T48. D-27. F15 stays split.
+- 2026-09-17 F18 landed. F15 dropped (superseded by F16/F17). S01 absorbed as T49. S02 dropped (T25). Sitting-class check on the landing gate. D-28.

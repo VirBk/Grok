@@ -8,8 +8,9 @@
       "claim": "A control-plane sitting is one class of work; a second class is a split.",
       "object": "factory/sessions.json",
       "whyNotLaw": "No check yet that a multi-repo transcript fails a sitting.",
-      "status": "open",
-      "openedOn": 1
+      "status": "absorbed",
+      "openedOn": 1,
+      "absorbedAs": "T49"
     },
     {
       "id": "S02",
@@ -17,8 +18,9 @@
       "claim": "A wall-clock is not a control-plane fuse.",
       "object": "factory/sessions.json",
       "whyNotLaw": "Named decay signs already cover rot; hours would be an invented clock.",
-      "status": "open",
-      "openedOn": 1
+      "status": "dropped",
+      "openedOn": 1,
+      "because": "T25 already names decay signs. A wall-clock would be a second clock."
     },
     {
       "id": "S03",

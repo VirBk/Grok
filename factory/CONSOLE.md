@@ -84,8 +84,9 @@ Place `DASHSCOPE_API_KEY` for Qwen and for DeepSeek failover. Place `DEEPSEEK_AP
 ## Landed this sitting
 
 F3 — first cheap writer envelope. Singapore URL. Windows stanza.
-F16 — hosted recipes print live writerModel. F15 split (escaped placeholder). Catalog `qwen3-coder` is Ollama-only; hosted pick is `qwen3-coder-plus`.
+F16 — hosted recipes print live writerModel. F15 later dropped (escaped placeholder; superseded). Catalog `qwen3-coder` is Ollama-only; hosted pick is `qwen3-coder-plus`.
 F17 — live seat is `deepseek-v4.1-flash` on the same DashScope key. Path stays `dashscope` until native credit posts. Catalog `deepseek-flash` is native-only.
+F18 — F15 dropped (superseded). S01 absorbed as T49. S02 dropped. Sitting stays 2.
 
 ## Successor
 

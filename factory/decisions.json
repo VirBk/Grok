@@ -181,6 +181,13 @@
       "status": "adopted",
       "summary": "Owner word: native DeepSeek key is present; usage lag is not key-absent. Live writerModel is deepseek-v4.1-flash on DashScope PAYG Singapore. Path stays pinned dashscope until native credit posts. Same DASHSCOPE_API_KEY as Qwen. Catalog deepseek-flash is native-only; unversioned DashScope deepseek-v4-pro is the expensive alias. Grok stays control plane.",
       "reversible": true
+    },
+    {
+      "id": "D-28",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "F15 dropped, superseded by F16/F17. S01 absorbed as T49: helpMode other than none plus a factory envelope is a second class of work. S02 dropped: T25 already names decay signs. Sitting stays 2. Path still dashscope.",
+      "reversible": true
     }
   ]
 }

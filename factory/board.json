@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. F17 landed. DashScope seat is deepseek-v4.1-flash. Path dashscope. Native credit not posted. F15 split. Sparks S01-S05 open.",
+  "now": "Sitting 2. F18 landed. F15 dropped (superseded by F16/F17). S01 absorbed T49. S02 dropped. S03-S05 open. DashScope seat deepseek-v4.1-flash. Path dashscope. Native credit not posted.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -126,7 +126,7 @@
     {
       "id": "F15",
       "title": "Map hosted writer model to a real DashScope id",
-      "state": "split",
+      "state": "dropped",
       "hold": "factory/tools/seat.mjs, docs/log/f15.md"
     },
     {
@@ -140,6 +140,12 @@
       "title": "DashScope DeepSeek Flash on the live seat",
       "state": "landed",
       "hold": "factory/project.json, factory/tools/seat.mjs, docs/log/f17.md"
+    },
+    {
+      "id": "F18",
+      "title": "Close F15; absorb S01 as T49; drop S02",
+      "state": "landed",
+      "hold": "factory/sparks.json, factory/tools/sitting.mjs, factory/traps.yaml, docs/log/f18.md"
     }
   ],
   "keystones": [
@@ -318,6 +324,10 @@
     {
       "at": "2026-09-17",
       "event": "F17 landed. Same DASHSCOPE_API_KEY invokes deepseek-v4.1-flash. Hosted map: deepseek-flash \u2192 deepseek-v4.1-flash. Path stays dashscope until native credit posts. T48. D-27. F15 stays split."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "F18 landed. F15 dropped (superseded by F16/F17). S01 absorbed as T49. S02 dropped (T25). Sitting-class check on the landing gate. D-28."
     }
   ]
 }

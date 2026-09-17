@@ -240,3 +240,9 @@
   kind: portable
   title: Native catalog id sent as a DashScope model
   rule: DashScope API ids are deepseek-v4.1-flash and deepseek-v4-pro-0813. deepseek-flash and deepseek-v4-pro are native names. Unversioned DashScope deepseek-v4-pro is the $2.40/$4.80 alias. Hosted recipes print the mapped id.
+
+- id: T49
+  kind: portable
+  title: Two classes of work in one control-plane sitting
+  rule: A sitting is one class of work. helpMode other than none plus a factory envelope (F*.md) is a split. Check is node factory/tools/sitting.mjs check.
+

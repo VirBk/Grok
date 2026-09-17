@@ -152,6 +152,14 @@ if (cmd === "check") {
   const rt = runtimes();
   const errors = pickErrors(picks, rt).concat(helpErrors(picks));
   if (errors.length) fail("project picks failed", errors);
+  const sit = spawnSync(process.execPath, [join(root, "factory/tools/sitting.mjs"), "check"], {
+    cwd: root,
+    encoding: "utf8",
+  });
+  if (sit.status !== 0) {
+    process.stderr.write(sit.stderr || sit.stdout || "sitting check failed\n");
+    process.exit(sit.status === null ? 1 : sit.status);
+  }
   console.log("project picks ok");
   process.exit(0);
 }

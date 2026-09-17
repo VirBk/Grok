@@ -37,6 +37,14 @@
     {
       "name": "Hosted DashScope model map",
       "run": "node factory/tools/seat.mjs --self-test"
+    },
+    {
+      "name": "Sitting is one class of work",
+      "run": "node factory/tools/sitting.mjs --self-test"
+    },
+    {
+      "name": "Live sitting class",
+      "run": "node factory/tools/sitting.mjs check"
     }
   ]
 }
