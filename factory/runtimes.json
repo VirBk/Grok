@@ -1,6 +1,6 @@
 {
-  "product": "Dual-runtime factory. Strong control plane, dumb hands, cheap writer seats. Claude Code is optional.",
-  "mistake": "Do not remap the control-plane session to DeepSeek or Qwen. Do not give hands a model.",
+  "product": "Dual-runtime factory. Strong control plane, dumb hands, cheap writer seats. Cloud CP deploys a terminal; it does not become the writer. Claude Code and Cursor desktop are optional.",
+  "mistake": "Do not remap the control-plane session to DeepSeek, Qwen, or Cursor Cloud Agent. Do not give hands a model. Do not add a GitHub Action while the writer secret is missing.",
   "default": {
     "controlPlane": "grok-cloud",
     "hands": "hands.mjs",
@@ -67,6 +67,11 @@
         "id": "claude-code",
         "recommended": false,
         "note": "Claude Code harness with ANTHROPIC_BASE_URL remapped. Writer seat only."
+      },
+      {
+        "id": "cursor-desktop",
+        "recommended": false,
+        "note": "Local Cursor Chat/Agent may BYOK DeepSeek/Qwen. Cursor Cloud Agents, background, automations, and CLI cannot. Do not install Cursor to emulate the factory."
       }
     ],
     "writerModel": [
@@ -94,8 +99,18 @@
       },
       {
         "id": "cloud-clone",
+        "recommended": false,
+        "note": "Generic VPS/Fly clone print. Prefer git-bus or codespace."
+      },
+      {
+        "id": "git-bus",
         "recommended": true,
-        "note": "Throwaway clone. Codespace, VPS, or Fly. Not the owner's disk."
+        "note": "Cloud CP writes the envelope blob. The PC that already autobuilds fetches and isolates. No new machine."
+      },
+      {
+        "id": "codespace",
+        "recommended": true,
+        "note": "Throwaway GitHub Codespace. Writer token is a Codespaces secret, not git, not an Action. Printed gh create; not a red workflow."
       }
     ],
     "land": [
@@ -174,9 +189,9 @@
       "picks": {
         "controlPlane": "grok-cloud",
         "hands": "hands.mjs",
-        "writerHarness": "deepseek-openai",
+        "writerHarness": "aider",
         "writerModel": "deepseek-flash",
-        "isolate": "cloud-clone",
+        "isolate": "codespace",
         "land": "github-rebase-after-approved",
         "envelopeStore": "git-blob",
         "access": "owner-only",
@@ -242,6 +257,21 @@
         "access": "collaborator-write",
         "commitCredit": "co-authored-by-owner"
       }
+    },
+    {
+      "id": "cloud-git-bus",
+      "recommended": true,
+      "picks": {
+        "controlPlane": "grok-cloud",
+        "hands": "hands.mjs",
+        "writerHarness": "qwen-code",
+        "writerModel": "qwen3-coder",
+        "isolate": "git-bus",
+        "land": "ff-only",
+        "envelopeStore": "git-blob",
+        "access": "owner-only",
+        "commitCredit": "owner-account"
+      }
     }
   ],
   "routing": {
@@ -249,7 +279,8 @@
     "keystoneWriter": "deepseek-v4-pro or Claude",
     "controlPlane": "Grok cloud or Claude desktop",
     "hands": "hands.mjs; Claude Code only if the PM picked it",
-    "reviewer": "never weaker than the writer, never the writer"
+    "reviewer": "never weaker than the writer, never the writer",
+    "isolate": "git-bus if the autobuild PC is on; codespace if it is not"
   },
   "ratesUsdPerM": {
     "note": "Indicative September 2026. Derive from the vendor page before you spend.",
@@ -286,6 +317,10 @@
     "cloud-grok",
     "local-hands",
     "public-fork",
-    "team-shared"
+    "team-shared",
+    "cloud-git-bus",
+    "cursor-desktop",
+    "codespace",
+    "git-bus"
   ]
 }

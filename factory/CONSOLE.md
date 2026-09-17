@@ -6,8 +6,8 @@ Live surface the owner walks. Spec, not a writer envelope. Control plane wrote i
 
 1. Floor — local machine or cloud.
 2. Remote — GitHub owner/repo. Empty owner is filled by the session as VirBk. Children never write VirBk/Grok.
-3. Seats — control plane is Grok (this session, wired) or Claude desktop. Writer is local Qwen, DeepSeek Flash, DeepSeek V4 Pro, or an own model. Keys never enter git. Never a `VITE_` variable.
-4. Name — local folder `~/factory/<slug>`. Cloud clone `/tmp/grok-<slug>`, not the owner's disk.
+3. Seats — control plane is Grok (this session, wired) or Claude desktop. Writer is local Qwen, DeepSeek Flash, DeepSeek V4 Pro, or an own model. Keys never enter git. Never a `VITE_` variable. Do not remap this session onto a writer token. Cursor Cloud Agents cannot take that token.
+4. Name — local folder `~/factory/<slug>`. Cloud codespace `grok-<lane>`, not the owner's disk. git-bus reuses the PC that already autobuilds.
 5. Charge — objective, goals, spec, expected result. Becomes the first envelope.
 6. Bench — install plan for that floor. Prepare writes `factory.project.json`, `SPEC.md`, `install.sh`, `.env.example`. The preview cannot apt-install on the laptop; the owner runs the script on the machine that hosts hands.
 7. Contribute — who may land, and which email GitHub attributes. Live picks `access` and `commitCredit` in `factory/project.json`. Catalog in `factory/runtimes.json`. Parent default is owner-only + owner-account. `apply-topology public-fork` or `team-shared` for a child. A collaborator is write access. A contributor is a commit that landed on default branch with an email on a GitHub account.
@@ -15,6 +15,12 @@ Live surface the owner walks. Spec, not a writer envelope. Control plane wrote i
 ## Floor
 
 Local and cloud are lenses. The path mark sits on the floor this project uses. The other lens stays queued.
+
+Cloud control plane stays Grok. It deploys a terminal; it is not the writer.
+
+- Autobuild PC on — topology `cloud-git-bus`. Envelope blob is the deploy. That machine runs `node factory/tools/hands.mjs watch` then isolate/recipe. Same Qwen/DeepSeek harness as local.
+- Autobuild PC off — topology `cloud-grok`. Isolate is a Codespace. Writer is aider pointed at DeepSeek or Qwen. Token is a Codespaces secret, placed once. `hands.mjs isolate` prints `gh codespace create`. Not a GitHub Action.
+- Cursor — optional local Chat/Agent BYOK only. Cloud Cursor is not a writer seat.
 
 The chassis is the product dashboard as it is built. Landed tiles take a click. Framing and planned tiles stay visible, locked, not clickable.
 

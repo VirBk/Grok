@@ -9,6 +9,9 @@
 //   node factory/tools/seat.mjs recipe deepseek-openai
 //   node factory/tools/seat.mjs recipe claude-code
 //   node factory/tools/seat.mjs recipe local-hands
+//   node factory/tools/seat.mjs recipe cloud-grok
+//   node factory/tools/seat.mjs recipe cloud-git-bus
+//   node factory/tools/seat.mjs recipe cursor-desktop
 //   node factory/tools/seat.mjs worktree --lane F4 --base <sha>
 //
 // Does not call a model. Does not read API keys. The recipe is the launch.
@@ -98,17 +101,36 @@ export CLAUDE_CODE_SUBAGENT_MODEL="deepseek-flash"
 # 5. writer pushes the branch only
 # 6. Grok reviews in a fresh session, lands, restamps
 `,
-  "cloud-grok": `# Cloud path. Grok issues the envelope and reviews the return.
-# Writer runs on a clone, not the owner's disk.
+  "cloud-grok": `# Cloud path when the autobuild PC is off.
+# Grok issues and reviews. Writer is aider on a Codespace with DeepSeek/Qwen.
 
-# 1. git ls-remote origin refs/heads/main
-# 2. clone that SHA into a throwaway worktree (cloud machine)
-# 3. node factory/tools/hands.mjs recipe
-# 4. writer pushes the branch only
-# 5. Grok reviews, lands, restamps
+# 1. Owner places DEEPSEEK_API_KEY (or DASHSCOPE_API_KEY) as a Codespaces secret once.
+# 2. git ls-remote origin refs/heads/main
+# 3. node factory/tools/hands.mjs isolate --lane <ID> --base <sha>
+#    prints: gh codespace create ... && gh codespace ssh ... recipe
+# 4. Writer in that terminal. Push the branch only.
+# 5. Grok reviews, lands, restamps.
 #
+# Do not remap this Grok session onto DeepSeek or Qwen.
 # Do not add a GitHub Action until the secret exists.
-# A permanently red workflow is a hard fail.
+`,
+  "cloud-git-bus": `# Cloud CP, local autobuild host still on.
+# Grok writes the envelope blob. This PC fetches and runs the same harness as local-hands.
+
+# On the machine that already autobuilds:
+#   node factory/tools/hands.mjs watch
+#   node factory/tools/hands.mjs isolate --lane <ID> --base <sha>
+#   node factory/tools/hands.mjs recipe
+# Writer pushes the branch only. Grok reviews and lands.
+`,
+  "git-bus": `# See cloud-git-bus. isolate git-bus is the pick; this recipe is the PC side.
+`,
+  "codespace": `# See cloud-grok. isolate codespace is the pick.
+`,
+  "cursor-desktop": `# Optional local harness. Not a cloud writer.
+# Cursor Chat/Agent may override OpenAI base URL to api.deepseek.com (no /v1) or Qwen.
+# Cursor Cloud Agents, background agents, automations, and CLI cannot take that token.
+# Do not install Cursor to emulate the factory. Control plane stays Grok.
 `,
 };
 

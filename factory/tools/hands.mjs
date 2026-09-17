@@ -10,9 +10,10 @@
 //   node factory/tools/hands.mjs gate --sha <sha>
 //   node factory/tools/hands.mjs land --lane F3 --sha <sha>
 //   node factory/tools/hands.mjs launch -- <command> [args...]
+//   node factory/tools/hands.mjs watch
 //   node factory/tools/hands.mjs --self-test
 
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { spawnSync, spawn } from "node:child_process";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -167,15 +168,27 @@ if (cmd === "isolate") {
   const picks = project();
   const errors = pickErrors(picks, runtimes());
   if (errors.length) fail("project picks failed", errors);
+  const remote = git(["remote", "get-url", "origin"]);
+  const url = (remote.stdout || "").trim() || "origin";
   if (picks.isolate === "cloud-clone") {
-    const remote = git(["remote", "get-url", "origin"]);
-    const url = (remote.stdout || "").trim() || "origin";
     const dest = "/tmp/grok-" + lane.toLowerCase();
-    console.log("# cloud clone. Not the owner's disk.");
+    console.log("# cloud clone. Not the owner's disk. Prefer git-bus or codespace.");
     console.log("git clone --depth 1 " + url + " " + dest);
     console.log("git -C " + dest + " fetch --depth 1 origin " + base);
     console.log("git -C " + dest + " checkout " + base);
     process.exit(0);
+  }
+  if (picks.isolate === "codespace") {
+    console.log("# codespace. Not the owner's disk. Writer token is a Codespaces secret, not git.");
+    console.log("# Place DEEPSEEK_API_KEY or DASHSCOPE_API_KEY once. Do not add an Action while it would stay red.");
+    console.log("gh codespace create -r " + url.replace(/\.git$/, "").replace(/^.*github\.com[:/]/, "") + " -b main --display-name grok-" + lane.toLowerCase());
+    console.log("gh codespace ssh -- 'git fetch origin && git checkout " + base + " && node factory/tools/hands.mjs recipe'");
+    process.exit(0);
+  }
+  if (picks.isolate === "git-bus") {
+    const fetched = git(["fetch", "origin"]);
+    process.stderr.write(fetched.stderr || "");
+    console.log("# git-bus. Envelope was the deploy. This is the machine that already autobuilds.");
   }
   const r = spawnSync(
     process.execPath,
@@ -238,6 +251,24 @@ if (cmd === "land") {
   process.exit(0);
 }
 
+
+if (cmd === "watch") {
+  const dir = join(root, "factory/envelopes");
+  const lanes = existsSync(dir)
+    ? readdirSync(dir).filter((f) => f.endsWith(".md") && f !== "README.md").map((f) => f.slice(0, -3))
+    : [];
+  if (!lanes.length) {
+    console.log("idle");
+    process.exit(0);
+  }
+  const base = (git(["rev-parse", "origin/main"]).stdout || git(["rev-parse", "HEAD"]).stdout || "").trim();
+  for (const lane of lanes) {
+    console.log("node factory/tools/hands.mjs isolate --lane " + lane + " --base " + base);
+    console.log("node factory/tools/hands.mjs recipe");
+  }
+  process.exit(0);
+}
+
 if (cmd === "--self-test") {
   const rt = runtimes();
   const failed = [];
@@ -260,6 +291,6 @@ if (cmd === "--self-test") {
 }
 
 console.error(
-  "usage: node factory/tools/hands.mjs check|pick|apply-topology|recipe|isolate|envelope|gate|land|launch|--self-test",
+  "usage: node factory/tools/hands.mjs check|pick|apply-topology|recipe|isolate|envelope|gate|land|launch|watch|--self-test",
 );
 process.exit(1);

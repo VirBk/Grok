@@ -78,11 +78,21 @@ Do not write `handoff.md`. The tired session quarantines. The fresh session writ
 
 Otto and Virbos are alumni. A paste in `factory/drops/` is for that product's control plane after its running seats finish. It is not a kit overlay. It is not a second remote in this sitting.
 
-## 8. Exhaustive, not long
+## 8. Cloud isolate
+
+This session is not a terminal. It does not become DeepSeek, Qwen, or Cursor Cloud Agent.
+
+Autobuild PC on: topology `cloud-git-bus`. The envelope blob is the deploy. That machine runs `node factory/tools/hands.mjs watch`, then isolate and recipe. Hands launch.
+
+Autobuild PC off: topology `cloud-grok`. Isolate is a Codespace. Print `gh codespace create`. Writer token is a Codespaces secret, placed once (owner-ask: writer API keys). Do not add a GitHub Action until that secret exists.
+
+Cursor local Chat/Agent may BYOK. Cursor cloud, background, automations, and CLI cannot.
+
+## 9. Exhaustive, not long
 
 Open the named document. Open the containers. Quote. Launch or leave. Spark or drop. Stop. Do not start a study. Do not fill a seat because a slot is empty. Do not drop a name you have not searched in source. Do not write a handoff.md.
 
-## 9. Check
+## 10. Check
 
 - `node factory/tools/scopeSearch.mjs --self-test`
 - `node factory/tools/ownerAsk.mjs --self-test`

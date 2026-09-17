@@ -12,6 +12,7 @@ Live values: `factory/project.json`. Allowed ids: `factory/runtimes.json` `catal
 node factory/tools/hands.mjs pick
 node factory/tools/hands.mjs apply-topology local-hands
 node factory/tools/hands.mjs apply-topology cloud-grok
+node factory/tools/hands.mjs apply-topology cloud-git-bus
 node factory/tools/hands.mjs apply-topology public-fork
 node factory/tools/hands.mjs apply-topology team-shared
 node factory/tools/hands.mjs check
@@ -21,9 +22,9 @@ node factory/tools/hands.mjs check
 
 Change one field after applying a topology. `check` fails an unknown id. Mixes are allowed; unknown ids are not.
 
-Recommended default: Grok cloud + `hands.mjs` + Qwen Code on a live-main worktree + `ff-only`. Local Qwen needs no writer key. DeepSeek Flash is the sweep writer when a key exists.
+Recommended default on a PC: `local-hands`. Cloud CP with that PC still on: `cloud-git-bus`. Cloud CP with no PC: `cloud-grok` (codespace + aider + DeepSeek). Local Qwen needs no writer key. DeepSeek Flash is the sweep writer when a key exists as a Codespaces secret or seat env.
 
-Optional: `desktop-two-process` if the manager already runs Claude Code. Do not install it to emulate the factory.
+Optional: `desktop-two-process` if the manager already runs Claude Code. `cursor-desktop` is the same class. Do not install either to emulate the factory. Cursor Cloud Agents cannot take a DeepSeek or Qwen token.
 
 ## Commands
 
@@ -33,9 +34,11 @@ node factory/tools/hands.mjs envelope --lane F3
 node factory/tools/hands.mjs recipe
 node factory/tools/hands.mjs gate --sha <sha>
 node factory/tools/hands.mjs land --lane F3 --sha <sha>
+node factory/tools/hands.mjs watch
 ```
 
-`isolate` with `worktree` cuts a sibling directory. With `cloud-clone` it prints a clone recipe and does not touch the owner's disk.
+`isolate` with `worktree` or `git-bus` cuts a sibling directory (`git-bus` fetches first). With `codespace` it prints `gh codespace create` and does not touch the owner's disk. With `cloud-clone` it prints a generic VPS clone.
+`watch` lists issued envelopes and prints isolate/recipe, or `idle`.
 
 `land` with `ff-only` fast-forwards. With `github-rebase-after-approved` it prints the merge and exits; a GitHub Action is not added until a writer secret exists.
 

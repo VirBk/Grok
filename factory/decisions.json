@@ -104,6 +104,13 @@
       "status": "adopted",
       "summary": "GitHub contribute is a factory pick, not a sidebar. access (owner-only | fork-and-pull | collaborator-write) and commitCredit (owner-account | github-noreply | co-authored-by-owner) live in factory/project.json with the other PM options. Parent live picks are owner-only + owner-account. A collaborator is write access. A contributor is a commit that landed on default branch with an email on a GitHub account. Children mix from the catalog; a child still never writes VirBk/Grok.",
       "reversible": true
+    },
+    {
+      "id": "D-17",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "Cloud control plane stays Grok. It deploys a terminal; it does not become DeepSeek, Qwen, or Cursor Cloud Agent. Recommended: git-bus reuses the local autobuild host; codespace is the throwaway terminal when that host is off. Writer token is a Codespaces secret or the seat env, never git. Cursor local Chat/Agent may BYOK; Cursor cloud/background/CLI cannot. No GitHub Action until the writer secret exists.",
+      "reversible": true
     }
   ]
 }

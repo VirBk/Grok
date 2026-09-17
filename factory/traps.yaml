@@ -215,3 +215,8 @@
   kind: portable
   title: Collaborator treated as contributor
   rule: Write access is not a landed commit. Insights Contributors is default-branch authors. Pick access. Parent live pick is owner-only.
+
+- id: T44
+  kind: portable
+  title: Cursor Cloud Agent treated as a DeepSeek or Qwen seat
+  rule: Cursor cloud, background, automations, and CLI do not take BYOK. Local Chat/Agent may. Cloud writer is aider or qwen-code on git-bus or a codespace. Do not remap the control plane. Do not add an Action while the secret is missing.

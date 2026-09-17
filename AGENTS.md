@@ -8,7 +8,7 @@ This file is capped at 12 KB. If a change would grow it, move the detail to a na
 
 GROK Factory is the parent build operating system. Child projects copy `AGENTS.md` and `factory/`. They return portable intakes — the charge, the rule, the check. Grok is the only writer of the kit.
 
-It is dual-runtime. A strong control plane — Grok in the cloud, or Claude Code on the desktop — issues one-page envelopes, reviews returns, and lands. Hands are a dumb runner (`factory/tools/hands.mjs`), never a model. Cheap writer seats — DeepSeek or Qwen; harness the project manager picks in `factory/project.json` — execute the envelope in a worktree.
+It is dual-runtime. A strong control plane — Grok in the cloud, or Claude Code on the desktop — issues one-page envelopes, reviews returns, and lands. Hands are a dumb runner (`factory/tools/hands.mjs`), never a model. Cheap writer seats — DeepSeek or Qwen; harness the project manager picks in `factory/project.json` — execute the envelope in the isolate the PM picked (worktree, git-bus, or codespace). Cloud CP deploys that terminal; it does not become the writer.
 
 Acceptance: the owner walks spec → envelope stamped with a runtime → cheap writer return → strong review → land → spend pasted in the lane log. A child that paid for a lesson files an intake; absorbing it is a Grok envelope.
 
@@ -54,7 +54,7 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 - Merge, release, deployment, destructive action, and protected-data access are the owner’s acts.
 - Every route declares its permission or its authenticated-only status; a route with neither is refused.
 - No envelope opens a gate. Gates live on the board. The owner closes them with a word.
-- Do not point the control-plane session at DeepSeek or Qwen. Spawn a writer seat.
+- Do not point the control-plane session at DeepSeek or Qwen. Spawn a writer seat. Cursor Cloud Agents cannot take that token. Cloud isolate is `git-bus` or `codespace` (`factory/HANDS.md`).
 - Hands never call a model and never read API keys. Claude Code is optional.
 - Envelopes live as git blobs in `factory/envelopes/`. Issues are not the board.
 - A writer never fast-forwards main and never reviews its own branch.
@@ -119,6 +119,7 @@ The repository is memory. The session is a fuse. Every model — Grok, Claude, G
 | Runtimes | `factory/runtimes.json` |
 | PM picks | `factory/project.json` |
 | Contribute | `access`, `commitCredit` in `factory/project.json` |
+| Cloud isolate | `git-bus` or `codespace` — `factory/HANDS.md` |
 | Hands | `factory/tools/hands.mjs` |
 | Envelope blobs | `factory/envelopes/` |
 | Writer recipes | `factory/tools/seat.mjs` |

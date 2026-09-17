@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. F9 contribute options landed. access and commitCredit are PM picks in project.json. Parent is owner-only + owner-account. Sparks S01-S05 open, look not law. S01 S02 due this sitting. F3 still queued on a writer key.",
+  "now": "Sitting 2. F10 cloud autobuild adopted. CP stays Grok. git-bus reuses the local host; codespace is the throwaway terminal. Cursor Cloud Agents cannot take a writer token. F3 still queued on a writer key. Sparks S01-S05 open.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -92,6 +92,12 @@
       "title": "GitHub contribute options",
       "state": "landed",
       "hold": "factory/project.json, factory/runtimes.json"
+    },
+    {
+      "id": "F10",
+      "title": "Cloud CP deploys the writer terminal",
+      "state": "landed",
+      "hold": "factory/project.json, factory/tools/hands.mjs"
     }
   ],
   "keystones": [
@@ -218,6 +224,10 @@
     {
       "at": "2026-09-17",
       "event": "F9 landed. access and commitCredit are catalog picks. Topologies public-fork and team-shared. Trap T42 T43. Decision D-16. Parent remains owner-only."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "F10 landed. Cloud isolate is git-bus or codespace. Topology cloud-git-bus. cloud-grok uses codespace+aider. Trap T44. Decision D-17. No GitHub Action. F3 still queued on a key."
     }
   ]
 }

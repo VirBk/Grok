@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Sitting 2. F9 contribute options landed. access and commitCredit are PM picks in project.json. Parent is owner-only + owner-account. Sparks S01-S05 open, look not law. S01 S02 due this sitting. F3 still queued on a writer key.
+Sitting 2. F10 cloud autobuild adopted. CP stays Grok. git-bus reuses the local host; codespace is the throwaway terminal. Cursor Cloud Agents cannot take a writer token. F3 still queued on a writer key. Sparks S01-S05 open.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -34,6 +34,7 @@ No envelope opens a gate.
 | F7 | landed | factory/CONSOLE.md | Owner console and token mix |
 | F8 | landed | factory/drops/, factory/lineage.json | Alumni drops for Otto and Virbos |
 | F9 | landed | factory/project.json, factory/runtimes.json | GitHub contribute options |
+| F10 | landed | factory/project.json, factory/tools/hands.mjs | Cloud CP deploys the writer terminal |
 
 ## Holds
 
@@ -77,3 +78,4 @@ No envelope opens a gate.
 - 2026-09-17 Spark/waiver quarantine landed. factory/sparks.json look-not-law. factory/.waiver gitignored. sitting close. Intakes I16 I17. Traps T39 T40. S01 S02 open.
 - 2026-09-17 F8 landed. Alumni drops for Otto and Virbos. Intake I18. Trap T41. Decision D-15. Overlay is a later envelope, not this sitting.
 - 2026-09-17 F9 landed. access and commitCredit are catalog picks. Topologies public-fork and team-shared. Trap T42 T43. Decision D-16. Parent remains owner-only.
+- 2026-09-17 F10 landed. Cloud isolate is git-bus or codespace. Topology cloud-git-bus. cloud-grok uses codespace+aider. Trap T44. Decision D-17. No GitHub Action. F3 still queued on a key.
