@@ -167,6 +167,13 @@
       "status": "adopted",
       "summary": "F15 does not land. qwen3-coder-plus escaped template interpolation twice. Split to F16 on qwen3.7-plus. Hosted recipe acceptance is the printed live writerModel id, not a ${} placeholder.",
       "reversible": true
+    },
+    {
+      "id": "D-26",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "F16 landed. Hosted qwen-code and pc-dashscope recipes print the live factory/project.json writerModel. Local Ollama keeps the qwen3-coder tag. Catalog mapping is now executable at launch, not only a note.",
+      "reversible": true
     }
   ]
 }

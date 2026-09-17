@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. F15 split. F16 issued on qwen3.7-plus. Hosted recipes must print the live DashScope id. Path dashscope. Sparks S01-S05 open.",
+  "now": "Sitting 2. F16 landed. Hosted recipes print live writerModel. Path dashscope. Native key absent. Sparks S01-S05 open.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -132,7 +132,7 @@
     {
       "id": "F16",
       "title": "Hosted recipes print the live DashScope model id",
-      "state": "issued",
+      "state": "landed",
       "hold": "factory/tools/seat.mjs, docs/log/f16.md"
     }
   ],
@@ -304,6 +304,10 @@
     {
       "at": "2026-09-17",
       "event": "F15 split. Writer escaped JS ${writerModel}; recipes printed a placeholder. F16 issued on qwen3.7-plus. D-25."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "F16 landed. seat.mjs interpolates live writerModel (qwen3-coder-plus). F15 stays split. D-26."
     }
   ]
 }
