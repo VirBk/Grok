@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. F11 prompt cache adopted. Native prefix, orchestrated layout. local-kv on the PC, provider-prefix on hosted writers. F3 still queued on a writer key. Sparks S01-S05 open.",
+  "now": "Sitting 2. F12 token-only path adopted. Claude Code absent is the default. PC: pc-token or pc-dashscope. Cloud: cloud-grok or cloud-dashscope. F3 still queued on the key. Sparks S01-S05 open.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -102,6 +102,12 @@
     {
       "id": "F11",
       "title": "Prompt cache as a native prefix, orchestrated",
+      "state": "landed",
+      "hold": "factory/project.json, factory/runtimes.json"
+    },
+    {
+      "id": "F12",
+      "title": "Token-only writer, no Claude Code",
       "state": "landed",
       "hold": "factory/project.json, factory/runtimes.json"
     }
@@ -238,6 +244,10 @@
     {
       "at": "2026-09-17",
       "event": "F11 landed. promptCache pick. Trap T45. Decision D-18. No answer store. Prefix law in the envelope stamp."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "F12 landed. Topologies pc-token, pc-dashscope, cloud-dashscope. Trap T46. Decision D-19. Token is the writer, never the control plane. F3 still queued on the key."
     }
   ]
 }

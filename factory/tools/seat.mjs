@@ -12,6 +12,9 @@
 //   node factory/tools/seat.mjs recipe cloud-grok
 //   node factory/tools/seat.mjs recipe cloud-git-bus
 //   node factory/tools/seat.mjs recipe cursor-desktop
+//   node factory/tools/seat.mjs recipe pc-token
+//   node factory/tools/seat.mjs recipe pc-dashscope
+//   node factory/tools/seat.mjs recipe cloud-dashscope
 //   node factory/tools/seat.mjs worktree --lane F4 --base <sha>
 //
 // Does not call a model. Does not read API keys. The recipe is the launch.
@@ -133,6 +136,37 @@ export CLAUDE_CODE_SUBAGENT_MODEL="deepseek-flash"
 # Cursor Chat/Agent may override OpenAI base URL to api.deepseek.com (no /v1) or Qwen.
 # Cursor Cloud Agents, background agents, automations, and CLI cannot take that token.
 # Do not install Cursor to emulate the factory. Control plane stays Grok.
+`,
+  "pc-token": `# No Claude Code. Grok judges. This PC runs hands. Token is DeepSeek.
+
+# 1. git, node, python3. pipx install aider-chat
+# 2. export DEEPSEEK_API_KEY=...   # never git, never VITE_
+# 3. node factory/tools/hands.mjs apply-topology pc-token
+# 4. git ls-remote origin refs/heads/main
+# 5. node factory/tools/hands.mjs isolate --lane <ID> --base <sha>
+# 6. node factory/tools/hands.mjs recipe
+#    OPENAI_API_BASE=https://api.deepseek.com/v1
+#    aider --model deepseek/deepseek-chat
+# 7. Writer pushes the branch only. Grok reviews and lands.
+# Prefix first. Paste cache hits.
+`,
+  "pc-dashscope": `# No Claude Code. Grok judges. This PC runs hands. Token is DashScope.
+
+# 1. git, node. Install qwen-code.
+# 2. export DASHSCOPE_API_KEY=...
+# 3. node factory/tools/hands.mjs apply-topology pc-dashscope
+# 4. isolate, then:
+#    OPENAI_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+#    qwen --auth-type openai --model qwen3-coder
+# 5. Writer pushes the branch only. Grok reviews and lands.
+`,
+  "cloud-dashscope": `# No Claude Code. Autobuild PC is off. Token is DashScope.
+
+# 1. Place DASHSCOPE_API_KEY as a Codespaces secret once.
+# 2. node factory/tools/hands.mjs apply-topology cloud-dashscope
+# 3. isolate prints gh codespace create. Recipe is qwen-code hosted.
+# 4. Writer pushes the branch only. Grok reviews and lands.
+# Do not add a GitHub Action until the secret exists.
 `,
 };
 

@@ -59,6 +59,11 @@
       "id": "F11",
       "title": "Prompt cache as a native prefix, orchestrated",
       "status": "landed"
+    },
+    {
+      "id": "F12",
+      "title": "Token-only writer, no Claude Code",
+      "status": "landed"
     }
   ]
 }

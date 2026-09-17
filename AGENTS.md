@@ -55,7 +55,7 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 - Every route declares its permission or its authenticated-only status; a route with neither is refused.
 - No envelope opens a gate. Gates live on the board. The owner closes them with a word.
 - Do not point the control-plane session at DeepSeek or Qwen. Spawn a writer seat. Cursor Cloud Agents cannot take that token. Cloud isolate is `git-bus` or `codespace` (`factory/HANDS.md`).
-- Hands never call a model and never read API keys. Claude Code is optional.
+- Hands never call a model and never read API keys. Claude Code absent is the default. A DeepSeek or DashScope token is the writer (`pc-token`, `pc-dashscope`, `cloud-grok`, `cloud-dashscope`). Do not install Claude Code to spend it.
 - Envelopes live as git blobs in `factory/envelopes/`. Issues are not the board.
 - A writer never fast-forwards main and never reviews its own branch.
 - A reviewer is never a weaker model than the writer.
@@ -121,6 +121,7 @@ The repository is memory. The session is a fuse. Every model — Grok, Claude, G
 | Contribute | `access`, `commitCredit` in `factory/project.json` |
 | Cloud isolate | `git-bus` or `codespace` — `factory/HANDS.md` |
 | Prompt cache | `promptCache` in `factory/project.json`. Native prefix. Do not store answers. |
+| Token only | `pc-token` / `pc-dashscope` / `cloud-grok` / `cloud-dashscope`. No Claude Code. |
 | Hands | `factory/tools/hands.mjs` |
 | Envelope blobs | `factory/envelopes/` |
 | Writer recipes | `factory/tools/seat.mjs` |

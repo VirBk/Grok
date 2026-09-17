@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Sitting 2. F11 prompt cache adopted. Native prefix, orchestrated layout. local-kv on the PC, provider-prefix on hosted writers. F3 still queued on a writer key. Sparks S01-S05 open.
+Sitting 2. F12 token-only path adopted. Claude Code absent is the default. PC: pc-token or pc-dashscope. Cloud: cloud-grok or cloud-dashscope. F3 still queued on the key. Sparks S01-S05 open.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -36,6 +36,7 @@ No envelope opens a gate.
 | F9 | landed | factory/project.json, factory/runtimes.json | GitHub contribute options |
 | F10 | landed | factory/project.json, factory/tools/hands.mjs | Cloud CP deploys the writer terminal |
 | F11 | landed | factory/project.json, factory/runtimes.json | Prompt cache as a native prefix, orchestrated |
+| F12 | landed | factory/project.json, factory/runtimes.json | Token-only writer, no Claude Code |
 
 ## Holds
 
@@ -81,3 +82,4 @@ No envelope opens a gate.
 - 2026-09-17 F9 landed. access and commitCredit are catalog picks. Topologies public-fork and team-shared. Trap T42 T43. Decision D-16. Parent remains owner-only.
 - 2026-09-17 F10 landed. Cloud isolate is git-bus or codespace. Topology cloud-git-bus. cloud-grok uses codespace+aider. Trap T44. Decision D-17. No GitHub Action. F3 still queued on a key.
 - 2026-09-17 F11 landed. promptCache pick. Trap T45. Decision D-18. No answer store. Prefix law in the envelope stamp.
+- 2026-09-17 F12 landed. Topologies pc-token, pc-dashscope, cloud-dashscope. Trap T46. Decision D-19. Token is the writer, never the control plane. F3 still queued on the key.

@@ -28,7 +28,7 @@ Look hardest at
   If this lane names a law, circular, IRR, RFC, or PDF: the control plane fetched it before issue. If this lane is a queue name: scopeSearch opened every container, including empty ones. Every sentence of the ruling is implementable in Holds. A tool-policy refusal is not a reason this envelope waits.
 
 Runtime
-  Stamp from factory/project.json (topology id, or local-hands | cloud-git-bus | cloud-grok | desktop-two-process | desktop-qwen | public-fork | team-shared).
+  Stamp from factory/project.json (topology id, or local-hands | pc-token | pc-dashscope | cloud-git-bus | cloud-grok | cloud-dashscope | desktop-two-process | desktop-qwen | public-fork | team-shared).
   Writer seat only. Do not remap the control-plane session. Print-mode in the worktree.
   Hands: node factory/tools/hands.mjs. Never a model.
   Prefix: AGENTS, BOARD, this envelope, tools — byte-stable, first. Variable work last. Paste prompt_cache_hit_tokens or cached_tokens. Do not store answers.

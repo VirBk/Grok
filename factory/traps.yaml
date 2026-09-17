@@ -225,3 +225,8 @@
   kind: portable
   title: Clock or UUID in the cached prefix
   rule: Prompt cache is a prefix match. Static bytes first (AGENTS, BOARD, envelope, tools). Variable work last. A timestamp, random id, or shuffled tool list busts the hit. Paste prompt_cache_hit_tokens or cached_tokens with the command. Do not store answers.
+
+- id: T46
+  kind: portable
+  title: Claude Code installed to spend a writer token
+  rule: Claude Code absent is the default. A DeepSeek or DashScope token goes in aider or qwen-code. Grok stays judgment. Do not install Claude Code or Cursor to spend the token. Do not remap this session onto it. Token in env or a Codespaces secret, never git.

@@ -1,5 +1,5 @@
 {
-  "product": "Dual-runtime factory. Strong control plane, dumb hands, cheap writer seats. Cloud CP deploys a terminal; it does not become the writer. Claude Code and Cursor desktop are optional.",
+  "product": "Dual-runtime factory. Strong control plane, dumb hands, cheap writer seats. Claude Code is absent by default. A DeepSeek or DashScope token is the writer, never the control plane.",
   "mistake": "Do not remap the control-plane session to DeepSeek, Qwen, or Cursor Cloud Agent. Do not give hands a model. Do not add a GitHub Action while the writer secret is missing.",
   "default": {
     "controlPlane": "grok-cloud",
@@ -42,12 +42,12 @@
       {
         "id": "qwen-code",
         "recommended": true,
-        "note": "Qwen Code. Local Ollama or DashScope."
+        "note": "Qwen Code. Local Ollama or DashScope token. No Claude Code."
       },
       {
         "id": "aider",
         "recommended": true,
-        "note": "Git-native CLI. OpenAI-compat."
+        "note": "Git-native CLI. OpenAI-compat. No Claude Code. DEEPSEEK_API_KEY or DASHSCOPE_API_KEY in env."
       },
       {
         "id": "opencode",
@@ -62,7 +62,7 @@
       {
         "id": "deepseek-openai",
         "recommended": true,
-        "note": "Any OpenAI-compat client pointed at DeepSeek."
+        "note": "Any OpenAI-compat client pointed at DeepSeek. No Claude Code. Token in env."
       },
       {
         "id": "claude-code",
@@ -79,7 +79,7 @@
       {
         "id": "qwen3-coder",
         "recommended": true,
-        "note": "Local. Zero dollars."
+        "note": "Local Ollama (local-kv) or DashScope token (provider-prefix). Not Claude Code."
       },
       {
         "id": "deepseek-flash",
@@ -302,6 +302,54 @@
         "commitCredit": "owner-account",
         "promptCache": "local-kv"
       }
+    },
+    {
+      "id": "pc-token",
+      "recommended": true,
+      "picks": {
+        "controlPlane": "grok-cloud",
+        "hands": "hands.mjs",
+        "writerHarness": "aider",
+        "writerModel": "deepseek-flash",
+        "isolate": "worktree",
+        "land": "ff-only",
+        "envelopeStore": "git-blob",
+        "access": "owner-only",
+        "commitCredit": "owner-account",
+        "promptCache": "provider-prefix"
+      }
+    },
+    {
+      "id": "pc-dashscope",
+      "recommended": true,
+      "picks": {
+        "controlPlane": "grok-cloud",
+        "hands": "hands.mjs",
+        "writerHarness": "qwen-code",
+        "writerModel": "qwen3-coder",
+        "isolate": "worktree",
+        "land": "ff-only",
+        "envelopeStore": "git-blob",
+        "access": "owner-only",
+        "commitCredit": "owner-account",
+        "promptCache": "provider-prefix"
+      }
+    },
+    {
+      "id": "cloud-dashscope",
+      "recommended": true,
+      "picks": {
+        "controlPlane": "grok-cloud",
+        "hands": "hands.mjs",
+        "writerHarness": "qwen-code",
+        "writerModel": "qwen3-coder",
+        "isolate": "codespace",
+        "land": "github-rebase-after-approved",
+        "envelopeStore": "git-blob",
+        "access": "owner-only",
+        "commitCredit": "owner-account",
+        "promptCache": "provider-prefix"
+      }
     }
   ],
   "routing": {
@@ -311,7 +359,8 @@
     "hands": "hands.mjs; Claude Code only if the PM picked it",
     "reviewer": "never weaker than the writer, never the writer",
     "isolate": "git-bus if the autobuild PC is on; codespace if it is not",
-    "promptCache": "Native to the model API or local runtime. Factory orchestrates prefix stability. Do not build an answer cache."
+    "promptCache": "Native to the model API or local runtime. Factory orchestrates prefix stability. Do not build an answer cache.",
+    "tokenOnly": "Claude Code absent. Grok judges. Writer is aider+DeepSeek or qwen-code+DashScope. PC: pc-token / pc-dashscope. Cloud: cloud-grok / cloud-dashscope."
   },
   "ratesUsdPerM": {
     "note": "Indicative September 2026. Derive from the vendor page before you spend. inCached is a cache hit, not a miss.",
@@ -354,6 +403,9 @@
     "cloud-git-bus",
     "cursor-desktop",
     "codespace",
-    "git-bus"
+    "git-bus",
+    "pc-token",
+    "pc-dashscope",
+    "cloud-dashscope"
   ]
 }

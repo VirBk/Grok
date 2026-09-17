@@ -118,6 +118,13 @@
       "status": "adopted",
       "summary": "Prompt cache is native to the provider or local runtime. The factory does not store answers. It orchestrates a byte-stable prefix (AGENTS, BOARD, envelope, tools) with variable work last, a session cache key where the API has one, and pasted hit tokens in the lane log. Pick promptCache in project.json: local-kv on the autobuild PC, provider-prefix on DeepSeek/Grok/Qwen APIs, explicit-breakpoint only when the harness can mark cache_control.",
       "reversible": true
+    },
+    {
+      "id": "D-19",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "Claude Code absent is the default. Owner with only a DeepSeek or DashScope token: Grok stays control plane. Writer is aider (DeepSeek) or qwen-code (DashScope). PC topologies pc-token and pc-dashscope. Cloud topologies cloud-grok and cloud-dashscope. Token in seat env or a Codespaces secret, never git, never VITE_. Do not install Claude Code or Cursor to spend the token. Do not remap Grok onto the token. F3 still waits on the key itself.",
+      "reversible": true
     }
   ]
 }

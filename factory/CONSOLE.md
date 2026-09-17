@@ -24,6 +24,27 @@ Cloud control plane stays Grok. It deploys a terminal; it is not the writer.
 
 The chassis is the product dashboard as it is built. Landed tiles take a click. Framing and planned tiles stay visible, locked, not clickable.
 
+## Token only (no Claude Code)
+
+Claude Code absent is the default, not a defect. The token is the writer. Grok (this chat) is still the control plane. Do not remap this session onto the token.
+
+PC, DeepSeek token:
+
+```
+node factory/tools/hands.mjs apply-topology pc-token
+export DEEPSEEK_API_KEY=...
+node factory/tools/hands.mjs isolate --lane <ID> --base <sha>
+node factory/tools/hands.mjs recipe
+```
+
+PC, DashScope token: `apply-topology pc-dashscope`, then `DASHSCOPE_API_KEY`.
+
+Cloud, DeepSeek: `apply-topology cloud-grok`. Place the key as a Codespaces secret once. `isolate` prints `gh codespace create`.
+
+Cloud, DashScope: `apply-topology cloud-dashscope`. Same secret rule.
+
+Do not install Claude Code or Cursor to spend the token. Do not add a GitHub Action while the secret is missing. F3 still waits on the key itself.
+
 ## Token mix
 
 Save on the write. Do not save on judgment.

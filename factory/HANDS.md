@@ -11,7 +11,10 @@ Live values: `factory/project.json`. Allowed ids: `factory/runtimes.json` `catal
 ```
 node factory/tools/hands.mjs pick
 node factory/tools/hands.mjs apply-topology local-hands
+node factory/tools/hands.mjs apply-topology pc-token
+node factory/tools/hands.mjs apply-topology pc-dashscope
 node factory/tools/hands.mjs apply-topology cloud-grok
+node factory/tools/hands.mjs apply-topology cloud-dashscope
 node factory/tools/hands.mjs apply-topology cloud-git-bus
 node factory/tools/hands.mjs apply-topology public-fork
 node factory/tools/hands.mjs apply-topology team-shared
@@ -22,9 +25,9 @@ node factory/tools/hands.mjs check
 
 Change one field after applying a topology. `check` fails an unknown id. Mixes are allowed; unknown ids are not.
 
-Recommended default on a PC: `local-hands`. Cloud CP with that PC still on: `cloud-git-bus`. Cloud CP with no PC: `cloud-grok` (codespace + aider + DeepSeek). Local Qwen needs no writer key. DeepSeek Flash is the sweep writer when a key exists as a Codespaces secret or seat env.
+Recommended default on a PC with local Qwen: `local-hands`. Token only, no Claude Code: `pc-token` (DeepSeek) or `pc-dashscope`. Cloud token: `cloud-grok` or `cloud-dashscope`. Cloud CP with the autobuild PC still on: `cloud-git-bus`.
 
-Optional: `desktop-two-process` if the manager already runs Claude Code. `cursor-desktop` is the same class. Do not install either to emulate the factory. Cursor Cloud Agents cannot take a DeepSeek or Qwen token.
+Optional: `desktop-two-process` if the manager already runs Claude Code. `cursor-desktop` is the same class. Do not install either to spend a writer token. Cursor Cloud Agents cannot take that token.
 
 ## Commands
 

@@ -4,7 +4,7 @@ The parent operating system for the next product. Distilled from [Otto](https://
 
 **Start at [`AGENTS.md`](AGENTS.md).** Then `BOARD.md`, then your envelope.
 
-Grok stays the control plane. Hands are a dumb runner. DeepSeek or Qwen run the writer loop. Cloud CP deploys a terminal (`git-bus` on the autobuild PC, or a Codespace); it does not become the writer. The project manager picks the harness in [`factory/project.json`](factory/project.json). Claude Code and Cursor desktop are optional. Same envelope, laptop or cloud.
+Grok stays the control plane. Hands are a dumb runner. DeepSeek or Qwen run the writer loop. Cloud CP deploys a terminal (`git-bus` on the autobuild PC, or a Codespace); it does not become the writer. The project manager picks the harness in [`factory/project.json`](factory/project.json). Claude Code absent is the default. A DeepSeek or DashScope token is the writer. Same envelope, laptop or cloud.
 
 ## What this is for
 

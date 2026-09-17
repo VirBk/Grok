@@ -80,7 +80,7 @@ Otto and Virbos are alumni. A paste in `factory/drops/` is for that product's co
 
 ## 8. Cloud isolate
 
-This session is not a terminal. It does not become DeepSeek, Qwen, or Cursor Cloud Agent.
+This session is not a terminal. It does not become DeepSeek, Qwen, or Cursor Cloud Agent. Claude Code absent is the default. The owner's token is the writer (`pc-token`, `pc-dashscope`, `cloud-grok`, `cloud-dashscope`).
 
 Autobuild PC on: topology `cloud-git-bus`. The envelope blob is the deploy. That machine runs `node factory/tools/hands.mjs watch`, then isolate and recipe. Hands launch.
 

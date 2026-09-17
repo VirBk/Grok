@@ -8,7 +8,7 @@ The kit is the thing you copy. The product is not. Grok stays the parent.
 2. Copy `contracts/` (schemas, not a child's board) and empty `docs/log/`.
 3. Start a new `factory/board.json`. Do not copy BOARD contents, ledger novels, or any `SESSION_LOG`. Start a new `factory/sparks.json` (sitting 1, empty items). Do not copy a parent's open sparks.
 4. Keep `factory/lineage.json` as the parent register. Do not append this child's board to it.
-5. Copy `factory/project.json`. Pick a topology (`local-hands`, `cloud-git-bus`, `cloud-grok`, `public-fork`, `team-shared`) or edit one field. Contribute picks are `access` and `commitCredit`. Prompt cache is `promptCache` (native prefix, not an answer store). Cloud CP uses `git-bus` or `codespace`. `node factory/tools/hands.mjs check` must pass. Claude Code and Cursor desktop are optional. A child never writes VirBk/Grok.
+5. Copy `factory/project.json`. Pick a topology (`local-hands`, `pc-token`, `pc-dashscope`, `cloud-grok`, `cloud-dashscope`, `cloud-git-bus`, `public-fork`, `team-shared`) or edit one field. Contribute picks are `access` and `commitCredit`. Prompt cache is `promptCache` (native prefix, not an answer store). Cloud CP uses `git-bus` or `codespace`. `node factory/tools/hands.mjs check` must pass. Claude Code absent is the default. Token-only is `pc-token` or `cloud-grok`. A child never writes VirBk/Grok.
 6. Fill AGENTS §1 with one product paragraph whose acceptance is an owner walk of a closed loop.
 7. Add the product’s never-move rules to AGENTS §5. Keep: a child never writes VirBk/Grok.
 8. Name keystones and single-writer holds on the board. Closed lists.
