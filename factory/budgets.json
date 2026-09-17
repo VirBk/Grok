@@ -1,17 +1,62 @@
 {
   "files": [
-    { "path": "AGENTS.md", "capKb": 12 },
-    { "path": "BOARD.md", "capKb": 40 },
-    { "path": "README.md", "capKb": 12 },
-    { "path": "factory/CONTROL_PLANE.md", "capKb": 12 },
-    { "path": "factory/decisions.json", "capKb": 80 },
-    { "path": "factory/board.json", "capKb": 40 },
-    { "path": "factory/traps.yaml", "capKb": 48 },
-    { "path": "factory/lineage.json", "capKb": 24 },
-    { "path": "factory/sessions.json", "capKb": 16 },
-    { "path": "factory/sparks.json", "capKb": 8 }
+    {
+      "path": "AGENTS.md",
+      "capKb": 12
+    },
+    {
+      "path": "BOARD.md",
+      "capKb": 40
+    },
+    {
+      "path": "README.md",
+      "capKb": 12
+    },
+    {
+      "path": "factory/CONTROL_PLANE.md",
+      "capKb": 12
+    },
+    {
+      "path": "factory/decisions.json",
+      "capKb": 80
+    },
+    {
+      "path": "factory/board.json",
+      "capKb": 40
+    },
+    {
+      "path": "factory/traps.yaml",
+      "capKb": 48
+    },
+    {
+      "path": "factory/lineage.json",
+      "capKb": 24
+    },
+    {
+      "path": "factory/sessions.json",
+      "capKb": 16
+    },
+    {
+      "path": "factory/sparks.json",
+      "capKb": 8
+    },
+    {
+      "path": "factory/drops/README.md",
+      "capKb": 4
+    },
+    {
+      "path": "factory/drops/otto.md",
+      "capKb": 12
+    },
+    {
+      "path": "factory/drops/virbos.md",
+      "capKb": 12
+    }
   ],
   "globs": [
-    { "pattern": "docs/log/*.md", "capKb": 8 }
+    {
+      "pattern": "docs/log/*.md",
+      "capKb": 8
+    }
   ]
 }

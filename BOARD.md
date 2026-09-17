@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Sitting 2. Sparks S01-S05 open, look not law. S01 S02 due this sitting. Cap full. F3 still queued on a writer key.
+Sitting 2. F8 alumni drops landed. Otto and Virbos take factory/drops after running seats finish. Sparks S01-S05 open, look not law. S01 S02 due this sitting. F3 still queued on a writer key.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -32,6 +32,7 @@ No envelope opens a gate.
 | F5 | landed | factory/sessions.json | Session fuse protocol |
 | F6 | landed | factory/project.json, factory/tools/hands.mjs | Hands split; PM-pickable topologies |
 | F7 | landed | factory/CONSOLE.md | Owner console and token mix |
+| F8 | landed | factory/drops/, factory/lineage.json | Alumni drops for Otto and Virbos |
 
 ## Holds
 
@@ -48,6 +49,7 @@ No envelope opens a gate.
 - factory/CONTROL_PLANE.md — control plane
 - factory/owner-ask.json — control plane
 - factory/sparks.json — control plane
+- factory/drops/ — control plane
 
 ## Keystones
 
@@ -57,6 +59,7 @@ No envelope opens a gate.
 ## Shelf
 
 - GitHub Action writer runner — trigger: Owner places a writer secret. Do not add the workflow while it would stay red.
+- Kit overlay onto Otto or Virbos — trigger: Quiet week, no running seats, owner word. Pin a kit SHA. Never a GitHub fork.
 
 ## Ledger
 
@@ -71,3 +74,4 @@ No envelope opens a gate.
 - 2026-09-17 Virbos derivation miss absorbed. CONTROL_PLANE.md required for any control plane. scopeSearch on the landing gate. Intakes I09 I10 I11. Traps T32 T33 T34.
 - 2026-09-17 Otto owner-wait absorbed. Closed ask list, hands launch, ruling-fits-hold, named checks. Intakes I12 I13 I14 I15. Traps T35 T36 T37 T38.
 - 2026-09-17 Spark/waiver quarantine landed. factory/sparks.json look-not-law. factory/.waiver gitignored. sitting close. Intakes I16 I17. Traps T39 T40. S01 S02 open.
+- 2026-09-17 F8 landed. Alumni drops for Otto and Virbos. Intake I18. Trap T41. Decision D-15. Overlay is a later envelope, not this sitting.

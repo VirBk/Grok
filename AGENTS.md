@@ -12,7 +12,7 @@ It is dual-runtime. A strong control plane — Grok in the cloud, or Claude Code
 
 Acceptance: the owner walks spec → envelope stamped with a runtime → cheap writer return → strong review → land → spend pasted in the lane log. A child that paid for a lesson files an intake; absorbing it is a Grok envelope.
 
-A sweep must not spend a keystone model. Idle seats stay idle. A child's board is not a gradient.
+A sweep must not spend a keystone model. Idle seats stay idle. A child's board is not a gradient. Otto and Virbos are alumni: they take a drop, not the kit.
 
 ## 2. How work starts
 
@@ -63,6 +63,7 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 - A cloud writer receives a worktree of the envelope holds, not the owner's disk.
 - A child never writes VirBk/Grok. Returns arrive as intakes. Absorbing is a Grok envelope.
 - An intake without a check is refused. A trap without a check is a diary.
+- An absorbed reference is not a live child. It takes a drop from `factory/drops/` after its running seats finish, not the kit.
 
 ## 6. Data rules that never move
 
@@ -120,6 +121,7 @@ The repository is memory. The session is a fuse. Every model — Grok, Claude, G
 | Envelope blobs | `factory/envelopes/` |
 | Writer recipes | `factory/tools/seat.mjs` |
 | Parent register | `factory/lineage.json` |
+| Alumni drops | `factory/drops/` |
 | Intake template | `factory/templates/INTAKE.md` |
 | Intake gate | `factory/tools/intake.mjs` |
 | Lane records | `docs/log/<lane>.md` |

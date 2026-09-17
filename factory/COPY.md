@@ -24,6 +24,7 @@ Writer seats: `node factory/tools/hands.mjs recipe`. Do not remap the control-pl
 ## Do not
 
 - Copy Otto or Virbos product code, boards, or session logs.
+- Retrofit Otto or Virbos as live children. They are alumni. They take `factory/drops/<name>.md` after running seats finish. The next child is an empty remote.
 - Start a documentation lane to “bring the docs over.”
 - Type counts into README.
 - Open a second remote.

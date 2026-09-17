@@ -76,6 +76,8 @@ Waivers expire. Sitting increments. A tracked `.waiver` fails the gate. A spark 
 
 Do not write `handoff.md`. The tired session quarantines. The fresh session writes law.
 
+Otto and Virbos are alumni. A paste in `factory/drops/` is for that product's control plane after its running seats finish. It is not a kit overlay. It is not a second remote in this sitting.
+
 ## 8. Exhaustive, not long
 
 Open the named document. Open the containers. Quote. Launch or leave. Spark or drop. Stop. Do not start a study. Do not fill a seat because a slot is empty. Do not drop a name you have not searched in source. Do not write a handoff.md.

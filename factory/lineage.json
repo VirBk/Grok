@@ -1,29 +1,38 @@
 {
   "parent": "VirBk/Grok",
-  "role": "Only writer of the kit. Children copy. Portable intakes absorb.",
-  "flywheel": ["copy", "run", "return", "promote", "regularize"],
+  "role": "Only writer of the kit. Children copy. Alumni take a drop. Portable intakes absorb.",
+  "flywheel": [
+    "copy",
+    "run",
+    "return",
+    "promote",
+    "regularize"
+  ],
   "refuse": [
     "BOARD.md or board.json from a child",
     "SESSION_LOG.md or any ledger novel",
     "Copied counts",
     "Real people, pay, or client data",
     "A rule with no check",
-    "A direct write to VirBk/Grok from a child remote"
+    "A direct write to VirBk/Grok from a child remote",
+    "A factory overlay onto Otto or Virbos without a kit pin and owner word"
   ],
   "children": [
     {
       "id": "otto",
       "name": "Otto",
       "repo": "VirBk/Otto",
-      "status": "absorbed",
-      "take": "Envelope, landing gate, keystones, idle-is-success, real-data gates, closed owner-ask, ruling-fits-hold."
+      "status": "alumni",
+      "take": "Envelope, landing gate, keystones, idle-is-success, real-data gates, closed owner-ask, ruling-fits-hold. Alumni drop after O37.",
+      "drop": "factory/drops/otto.md"
     },
     {
       "id": "virbos",
       "name": "Virbos",
       "repo": "VirBk/virbos",
-      "status": "absorbed",
-      "take": "Decision register, authority levels, walkthrough as acceptance, derivation containers."
+      "status": "alumni",
+      "take": "Decision register, authority levels, walkthrough as acceptance, derivation containers. Alumni drop after PK-3b and LEAVE-TYPE-KEY.",
+      "drop": "factory/drops/virbos.md"
     },
     {
       "id": "next",
@@ -235,6 +244,18 @@
       "charged": "A temporary approval restamped onto AGENTS or waited as if it were standing policy.",
       "rule": "A waiver is the envelope or gitignored factory/.waiver. Sitting close expires it. Never BOARD, never traps.",
       "check": "node factory/tools/spark.mjs --self-test fails if factory/.waiver is tracked or present in the archive.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I18",
+      "child": "both",
+      "at": "2026-09-17",
+      "kind": "practice",
+      "title": "Absorbed references are not live children",
+      "charged": "Relabeling Otto and Virbos as kit children would stop open keystone lanes and merge boards into the parent.",
+      "rule": "Alumni take a dated drop after running seats finish. They file intakes. They do not copy the kit over a live product. Overlay is a later envelope with a pin.",
+      "check": "factory/drops/ names otto and virbos. lineage status is alumni. COPY.md refuses retrofit. A child remote is still the empty next.",
       "portable": "portable",
       "status": "absorbed"
     }

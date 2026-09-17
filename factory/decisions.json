@@ -81,14 +81,21 @@
       "id": "D-12",
       "at": "2026-09-17",
       "status": "adopted",
-      "summary": "Control-plane derivation is factory/CONTROL_PLANE.md. Any control plane — Grok in the cloud or Claude Code on the desktop — opens every container before ZERO, fetches a named issuance, and stamps collection as a second fact. A markdown-only grep of the queue line is not a finding.",
+      "summary": "Control-plane derivation is factory/CONTROL_PLANE.md. Any control plane \u2014 Grok in the cloud or Claude Code on the desktop \u2014 opens every container before ZERO, fetches a named issuance, and stamps collection as a second fact. A markdown-only grep of the queue line is not a finding.",
       "reversible": true
     },
     {
       "id": "D-14",
       "at": "2026-09-17",
       "status": "adopted",
-      "summary": "Three grades of memory. Law is AGENTS, traps, owner-ask, CONTROL_PLANE, absorbed lineage. Sparks are factory/sparks.json — look, not law; absorb or drop next sitting. Waivers are envelope holds or gitignored factory/.waiver and die at sitting close. The tired session quarantines; the fresh session writes law. No handoff.md.",
+      "summary": "Three grades of memory. Law is AGENTS, traps, owner-ask, CONTROL_PLANE, absorbed lineage. Sparks are factory/sparks.json \u2014 look, not law; absorb or drop next sitting. Waivers are envelope holds or gitignored factory/.waiver and die at sitting close. The tired session quarantines; the fresh session writes law. No handoff.md.",
+      "reversible": true
+    },
+    {
+      "id": "D-15",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "Otto and Virbos remain read-only alumni. They receive factory/drops after running seats finish. They are not live children. Overlay of factory/ onto a live product is a later envelope with a kit pin, never a GitHub fork.",
       "reversible": true
     }
   ]

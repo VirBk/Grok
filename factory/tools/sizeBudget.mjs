@@ -21,13 +21,13 @@ function check(path, capKb) {
 for (const file of budgets.files) check(file.path, file.capKb);
 
 for (const glob of budgets.globs ?? []) {
-  if (glob.pattern === "docs/log/*.md") {
-    const dir = join(root, "docs/log");
-    if (!existsSync(dir)) continue;
-    for (const name of readdirSync(dir)) {
-      if (!name.endsWith(".md")) continue;
-      check(relative(root, join(dir, name)), glob.capKb);
-    }
+  const m = /^(.*)\/\*\.md$/.exec(glob.pattern);
+  if (!m) continue;
+  const dir = join(root, m[1]);
+  if (!existsSync(dir)) continue;
+  for (const name of readdirSync(dir)) {
+    if (!name.endsWith(".md")) continue;
+    check(relative(root, join(dir, name)), glob.capKb);
   }
 }
 
