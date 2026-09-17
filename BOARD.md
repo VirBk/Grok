@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Sitting 2. F3 issued. Topology pc-dashscope. Path dashscope (native key absent). Writer qwen3-coder on PAYG Singapore. Sparks S01-S05 open.
+Sitting 2. F3 landed. Dual-runtime loop closed once. Path dashscope (native key absent). Sparks S01-S05 open.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -27,7 +27,7 @@ No envelope opens a gate.
 | F0 | landed | factory/, AGENTS.md | Stand up the factory kit |
 | F1 | landed | none | Owner specs land |
 | F2 | landed | AGENTS.md §1 and §5 | Name the product paragraph and never-move rules |
-| F3 | issued | factory/tools/seat.mjs, docs/log/f3.md | First cheap writer envelope |
+| F3 | landed | factory/tools/seat.mjs, docs/log/f3.md | First cheap writer envelope |
 | F4 | landed | factory/lineage.json | Parent factory lineage loop |
 | F5 | landed | factory/sessions.json | Session fuse protocol |
 | F6 | landed | factory/project.json, factory/tools/hands.mjs | Hands split; PM-pickable topologies |
@@ -90,3 +90,4 @@ No envelope opens a gate.
 - 2026-09-17 F13 landed. helpMode pick. Topologies help-fork and help-collab. Isolate help-clone. Trap T47. Decision D-20. Virbos stays alumni. Overlay still shelf.
 - 2026-09-17 F14 landed. PAYG Singapore. Owner ladder. Path auto native/DashScope. T clock + probe. D-21. F3 still queued on the keys.
 - 2026-09-17 F3 issued. pc-dashscope. Path pinned dashscope until DEEPSEEK_API_KEY is in the seat. D-22. Writer is qwen-code, not this session.
+- 2026-09-17 F3 landed. Writer qwen3-coder-plus on PAYG Singapore. Seat recipes use dashscope-intl. D-23. Catalog id qwen3-coder is not a DashScope API name.

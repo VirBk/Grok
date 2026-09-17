@@ -146,6 +146,13 @@
       "status": "adopted",
       "summary": "F3 issued on pc-dashscope. Owner has DASHSCOPE_API_KEY in the PC seat env and no DEEPSEEK_API_KEY. Path is pinned dashscope until the native key exists. Writer is qwen-code + qwen3-coder on PAYG Singapore. Grok stays control plane. Do not remap this session onto the token.",
       "reversible": true
+    },
+    {
+      "id": "D-23",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "F3 landed. First cheap writer return accepted: seat recipes launch at dashscope-intl, not Beijing. Catalog writerModel qwen3-coder is not a DashScope API id; hosted launch uses qwen3-coder-plus (fallback qwen3-coder-next, qwen3.7-flash) until the catalog maps. Native DeepSeek still off. Grok stayed control plane.",
+      "reversible": true
     }
   ]
 }

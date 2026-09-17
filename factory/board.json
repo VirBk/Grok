@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. F3 issued. Topology pc-dashscope. Path dashscope (native key absent). Writer qwen3-coder on PAYG Singapore. Sparks S01-S05 open.",
+  "now": "Sitting 2. F3 landed. Dual-runtime loop closed once. Path dashscope (native key absent). Sparks S01-S05 open.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -54,7 +54,7 @@
     {
       "id": "F3",
       "title": "First cheap writer envelope",
-      "state": "issued",
+      "state": "landed",
       "hold": "factory/tools/seat.mjs, docs/log/f3.md"
     },
     {
@@ -280,6 +280,10 @@
     {
       "at": "2026-09-17",
       "event": "F3 issued. pc-dashscope. Path pinned dashscope until DEEPSEEK_API_KEY is in the seat. D-22. Writer is qwen-code, not this session."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "F3 landed. Writer qwen3-coder-plus on PAYG Singapore. Seat recipes use dashscope-intl. D-23. Catalog id qwen3-coder is not a DashScope API name."
     }
   ]
 }

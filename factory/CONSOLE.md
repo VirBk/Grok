@@ -81,9 +81,9 @@ node factory/tools/route.mjs probe
 
 Place `DASHSCOPE_API_KEY` for Qwen and for DeepSeek failover. Place `DEEPSEEK_API_KEY` to take native off-peak. Never git, never `VITE_`.
 
-## Issued
+## Landed this sitting
 
-F3 — first cheap writer envelope. Topology pc-dashscope. Path dashscope (no native key). Holds: factory/tools/seat.mjs, docs/log/f3.md. Writer is qwen-code on this PC, not the control-plane session.
+F3 — first cheap writer envelope. Topology pc-dashscope. Path dashscope. Hosted launch is dashscope-intl. Catalog `qwen3-coder` is not a DashScope API id; use `qwen3-coder-plus`.
 
 ## Successor
 
