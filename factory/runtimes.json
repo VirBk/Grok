@@ -10,7 +10,8 @@
     "land": "ff-only",
     "envelopeStore": "git-blob",
     "access": "owner-only",
-    "commitCredit": "owner-account"
+    "commitCredit": "owner-account",
+    "promptCache": "local-kv"
   },
   "catalog": {
     "controlPlane": [
@@ -165,6 +166,28 @@
         "recommended": true,
         "note": "Seat may author. Message includes Co-authored-by: Name <email on the owner account>. Factory email grok@factory is a miss."
       }
+    ],
+    "promptCache": [
+      {
+        "id": "provider-prefix",
+        "recommended": true,
+        "note": "Native API prefix cache (DeepSeek disk, Grok automatic, Qwen implicit). Stable prefix first. Paste prompt_cache_hit_tokens or cached_tokens."
+      },
+      {
+        "id": "explicit-breakpoint",
+        "recommended": false,
+        "note": "Claude or Qwen cache_control markers. Use when the harness can set them. Same prefix law."
+      },
+      {
+        "id": "local-kv",
+        "recommended": true,
+        "note": "Ollama / vLLM / llama.cpp prefix KV cache on the autobuild PC. Free. Same prefix law. No bill line."
+      },
+      {
+        "id": "off",
+        "recommended": false,
+        "note": "Do not rely on cache. Still keep the prefix stable so a later pick can turn it on."
+      }
     ]
   },
   "topologies": [
@@ -180,7 +203,8 @@
         "land": "ff-only",
         "envelopeStore": "git-blob",
         "access": "owner-only",
-        "commitCredit": "owner-account"
+        "commitCredit": "owner-account",
+        "promptCache": "local-kv"
       }
     },
     {
@@ -195,7 +219,8 @@
         "land": "github-rebase-after-approved",
         "envelopeStore": "git-blob",
         "access": "owner-only",
-        "commitCredit": "owner-account"
+        "commitCredit": "owner-account",
+        "promptCache": "provider-prefix"
       }
     },
     {
@@ -210,7 +235,8 @@
         "land": "ff-only",
         "envelopeStore": "git-blob",
         "access": "owner-only",
-        "commitCredit": "owner-account"
+        "commitCredit": "owner-account",
+        "promptCache": "provider-prefix"
       }
     },
     {
@@ -225,7 +251,8 @@
         "land": "ff-only",
         "envelopeStore": "git-blob",
         "access": "owner-only",
-        "commitCredit": "owner-account"
+        "commitCredit": "owner-account",
+        "promptCache": "local-kv"
       }
     },
     {
@@ -240,7 +267,8 @@
         "land": "github-rebase-after-approved",
         "envelopeStore": "git-blob",
         "access": "fork-and-pull",
-        "commitCredit": "owner-account"
+        "commitCredit": "owner-account",
+        "promptCache": "local-kv"
       }
     },
     {
@@ -255,7 +283,8 @@
         "land": "ff-only",
         "envelopeStore": "git-blob",
         "access": "collaborator-write",
-        "commitCredit": "co-authored-by-owner"
+        "commitCredit": "co-authored-by-owner",
+        "promptCache": "local-kv"
       }
     },
     {
@@ -270,7 +299,8 @@
         "land": "ff-only",
         "envelopeStore": "git-blob",
         "access": "owner-only",
-        "commitCredit": "owner-account"
+        "commitCredit": "owner-account",
+        "promptCache": "local-kv"
       }
     }
   ],
@@ -280,10 +310,11 @@
     "controlPlane": "Grok cloud or Claude desktop",
     "hands": "hands.mjs; Claude Code only if the PM picked it",
     "reviewer": "never weaker than the writer, never the writer",
-    "isolate": "git-bus if the autobuild PC is on; codespace if it is not"
+    "isolate": "git-bus if the autobuild PC is on; codespace if it is not",
+    "promptCache": "Native to the model API or local runtime. Factory orchestrates prefix stability. Do not build an answer cache."
   },
   "ratesUsdPerM": {
-    "note": "Indicative September 2026. Derive from the vendor page before you spend.",
+    "note": "Indicative September 2026. Derive from the vendor page before you spend. inCached is a cache hit, not a miss.",
     "claude-opus": {
       "in": 5,
       "out": 25
@@ -294,11 +325,13 @@
     },
     "deepseek-flash": {
       "in": 0.14,
-      "out": 0.28
+      "out": 0.28,
+      "inCached": 0.006
     },
     "deepseek-pro": {
       "in": 0.435,
-      "out": 0.87
+      "out": 0.87,
+      "inCached": 0.044
     },
     "qwen-local": {
       "in": 0,

@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. F10 cloud autobuild adopted. CP stays Grok. git-bus reuses the local host; codespace is the throwaway terminal. Cursor Cloud Agents cannot take a writer token. F3 still queued on a writer key. Sparks S01-S05 open.",
+  "now": "Sitting 2. F11 prompt cache adopted. Native prefix, orchestrated layout. local-kv on the PC, provider-prefix on hosted writers. F3 still queued on a writer key. Sparks S01-S05 open.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -98,6 +98,12 @@
       "title": "Cloud CP deploys the writer terminal",
       "state": "landed",
       "hold": "factory/project.json, factory/tools/hands.mjs"
+    },
+    {
+      "id": "F11",
+      "title": "Prompt cache as a native prefix, orchestrated",
+      "state": "landed",
+      "hold": "factory/project.json, factory/runtimes.json"
     }
   ],
   "keystones": [
@@ -228,6 +234,10 @@
     {
       "at": "2026-09-17",
       "event": "F10 landed. Cloud isolate is git-bus or codespace. Topology cloud-git-bus. cloud-grok uses codespace+aider. Trap T44. Decision D-17. No GitHub Action. F3 still queued on a key."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "F11 landed. promptCache pick. Trap T45. Decision D-18. No answer store. Prefix law in the envelope stamp."
     }
   ]
 }

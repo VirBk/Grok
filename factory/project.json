@@ -7,5 +7,6 @@
   "land": "ff-only",
   "envelopeStore": "git-blob",
   "access": "owner-only",
-  "commitCredit": "owner-account"
+  "commitCredit": "owner-account",
+  "promptCache": "local-kv"
 }

@@ -54,6 +54,11 @@
       "id": "F10",
       "title": "Cloud CP deploys the writer terminal",
       "status": "landed"
+    },
+    {
+      "id": "F11",
+      "title": "Prompt cache as a native prefix, orchestrated",
+      "status": "landed"
     }
   ]
 }

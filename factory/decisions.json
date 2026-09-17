@@ -111,6 +111,13 @@
       "status": "adopted",
       "summary": "Cloud control plane stays Grok. It deploys a terminal; it does not become DeepSeek, Qwen, or Cursor Cloud Agent. Recommended: git-bus reuses the local autobuild host; codespace is the throwaway terminal when that host is off. Writer token is a Codespaces secret or the seat env, never git. Cursor local Chat/Agent may BYOK; Cursor cloud/background/CLI cannot. No GitHub Action until the writer secret exists.",
       "reversible": true
+    },
+    {
+      "id": "D-18",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "Prompt cache is native to the provider or local runtime. The factory does not store answers. It orchestrates a byte-stable prefix (AGENTS, BOARD, envelope, tools) with variable work last, a session cache key where the API has one, and pasted hit tokens in the lane log. Pick promptCache in project.json: local-kv on the autobuild PC, provider-prefix on DeepSeek/Grok/Qwen APIs, explicit-breakpoint only when the harness can mark cache_control.",
+      "reversible": true
     }
   ]
 }

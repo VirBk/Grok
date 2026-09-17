@@ -29,6 +29,7 @@ const PICK_KEYS = [
   "envelopeStore",
   "access",
   "commitCredit",
+  "promptCache",
 ];
 
 function loadJson(path) {
@@ -108,7 +109,7 @@ function printRecipe(picks) {
   }
   process.stdout.write(r.stdout || "");
   process.stdout.write("\n# model " + picks.writerModel + "\n");
-  process.stdout.write("# isolate " + picks.isolate + "  land " + picks.land + "  access " + picks.access + "  credit " + picks.commitCredit + "\n");
+  process.stdout.write("# isolate " + picks.isolate + "  land " + picks.land + "  access " + picks.access + "  credit " + picks.commitCredit + "  cache " + picks.promptCache + "\n");
 }
 
 const cmd = process.argv[2] || "pick";

@@ -120,6 +120,7 @@ The repository is memory. The session is a fuse. Every model — Grok, Claude, G
 | PM picks | `factory/project.json` |
 | Contribute | `access`, `commitCredit` in `factory/project.json` |
 | Cloud isolate | `git-bus` or `codespace` — `factory/HANDS.md` |
+| Prompt cache | `promptCache` in `factory/project.json`. Native prefix. Do not store answers. |
 | Hands | `factory/tools/hands.mjs` |
 | Envelope blobs | `factory/envelopes/` |
 | Writer recipes | `factory/tools/seat.mjs` |

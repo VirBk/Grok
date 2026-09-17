@@ -13,7 +13,8 @@
     "land",
     "envelopeStore",
     "access",
-    "commitCredit"
+    "commitCredit",
+    "promptCache"
   ],
   "properties": {
     "controlPlane": {
@@ -51,7 +52,11 @@
     "commitCredit": {
       "type": "string",
       "minLength": 1
+    },
+    "promptCache": {
+      "type": "string",
+      "minLength": 1
     }
   },
-  "description": "The project manager's live picks. Allowed ids live in factory/runtimes.json catalog. hands.mjs check is the gate. access is who may produce a landed commit. commitCredit is which email GitHub attributes on the graph."
+  "description": "The project manager's live picks. Allowed ids live in factory/runtimes.json catalog. hands.mjs check is the gate. promptCache is how a seat reuses a stable prefix: native provider/runtime cache, not a home-grown answer store."
 }

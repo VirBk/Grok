@@ -32,7 +32,9 @@ Required: issue envelope (control plane, packet not dump), isolate/gate/land (ha
 
 Lean: about 85% sweep, 15% keystone, review every loop, hands at zero tokens. Apply lean writer does not remap the control plane.
 
-Forbidden cuts: remap this control plane onto DeepSeek or Qwen; skip review; writer reviews itself; skip the landing gate; staff local and cloud on the same lane.
+Prompt cache is native. DeepSeek, Grok, and Qwen already cache a matching prefix. Local Ollama/vLLM reuse a KV prefix. The factory does not store answers. It keeps AGENTS, BOARD, envelope, and tools byte-stable at the front, variable work last, and pastes hit tokens. Pick `promptCache` in `factory/project.json` (`local-kv` on the autobuild PC, `provider-prefix` on hosted writers).
+
+Forbidden cuts: remap this control plane onto DeepSeek or Qwen; skip review; writer reviews itself; skip the landing gate; staff local and cloud on the same lane; put a clock in the cached prefix.
 
 ## Queued
 

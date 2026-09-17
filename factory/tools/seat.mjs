@@ -100,6 +100,7 @@ export CLAUDE_CODE_SUBAGENT_MODEL="deepseek-flash"
 # 4. node factory/tools/hands.mjs recipe
 # 5. writer pushes the branch only
 # 6. Grok reviews in a fresh session, lands, restamps
+# Prefix: AGENTS, BOARD, envelope, tools first and byte-stable. Paste cache hits.
 `,
   "cloud-grok": `# Cloud path when the autobuild PC is off.
 # Grok issues and reviews. Writer is aider on a Codespace with DeepSeek/Qwen.
@@ -113,6 +114,7 @@ export CLAUDE_CODE_SUBAGENT_MODEL="deepseek-flash"
 #
 # Do not remap this Grok session onto DeepSeek or Qwen.
 # Do not add a GitHub Action until the secret exists.
+# Prefix: AGENTS, BOARD, envelope, tools first. Set x-grok-conv-id only on Grok API. Paste cache hits.
 `,
   "cloud-git-bus": `# Cloud CP, local autobuild host still on.
 # Grok writes the envelope blob. This PC fetches and runs the same harness as local-hands.
