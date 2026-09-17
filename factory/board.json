@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. Size archive is CP at 80% between landings, not a product envelope (D-32 T53 I22). Script fails, does not split. Otto D-30 and Virbos D-31. Overlay still shelf. S03-S05 open. Path dashscope.",
+  "now": "Sitting 2. Size archive is CP at 80% between landings, not a product envelope (D-32 T53 I22). Script fails, does not split. Otto D-30 and Virbos D-31. Overlay still shelf. S03-S06 open. Path dashscope.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -344,6 +344,10 @@
     {
       "at": "2026-09-17",
       "event": "Size archive is CP hygiene at 80% between landings. Script fails; it does not split. First alumni cut is Now-only. D-32 T53 I22."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "S06 opened. Session confirmation is not a hold. Reading files or alumni does not bind the next sentence. Look, not law."
     }
   ]
 }
