@@ -24,8 +24,11 @@
 import { spawnSync } from "node:child_process";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { readFileSync } from "fs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "../..");
+const projectConfig = JSON.parse(readFileSync(join(root, "factory", "project.json"), "utf8"));
+const writerModel = projectConfig.writerModel;
 
 const RECIPES = {
   "qwen-code": `# Writer seat — Qwen Code.
@@ -42,9 +45,11 @@ export OPENAI_API_KEY="\${OPENAI_API_KEY:-local}"
 # Linux/Mac:
 #   export OPENAI_BASE_URL="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
 #   export OPENAI_API_KEY="\${DASHSCOPE_API_KEY}"
+#   qwen --auth-type openai --model \${writerModel}
 # Windows:
 #   $env:OPENAI_BASE_URL="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
-#   $env:DASHSCOPE_API_KEY="..."
+#   $env:OPENAI_API_KEY="\${DASHSCOPE_API_KEY}"
+#   qwen --auth-type openai --model \${writerModel}
 #
 # Print-mode. Envelope on stdin. Poll long jobs in the foreground.
 `,
@@ -164,11 +169,11 @@ export CLAUDE_CODE_SUBAGENT_MODEL="deepseek-flash"
 # 4. isolate, then:
 # Linux/Mac:
 #    OPENAI_BASE_URL=https://dashscope-intl.aliyuncs.com/compatible-mode/v1
-#    qwen --auth-type openai --model qwen3-coder
+#    qwen --auth-type openai --model \${writerModel}
 # Windows:
 #    $env:OPENAI_BASE_URL="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
-#    $env:DASHSCOPE_API_KEY="..."
-#    qwen --auth-type openai --model qwen3-coder
+#    $env:OPENAI_API_KEY=$env:DASHSCOPE_API_KEY
+#    qwen --auth-type openai --model \${writerModel}
 # 5. Writer pushes the branch only. Grok reviews and lands.
 `,
   "cloud-dashscope": `# No Claude Code. Autobuild PC is off. Token is DashScope.
@@ -177,6 +182,7 @@ export CLAUDE_CODE_SUBAGENT_MODEL="deepseek-flash"
 # 2. node factory/tools/hands.mjs apply-topology cloud-dashscope
 # 3. isolate prints gh codespace create. Recipe is qwen-code hosted.
 #    OPENAI_BASE_URL=https://dashscope-intl.aliyuncs.com/compatible-mode/v1
+#    qwen --auth-type openai --model \${writerModel}
 # 4. Writer pushes the branch only. Grok reviews and lands.
 # Do not add a GitHub Action until the secret exists.
 `,
