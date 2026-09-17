@@ -5,6 +5,8 @@ paste for that product's control plane.
 
 A drop is a check that product's existing gate can run. A drop that only
 mints prose, or that grows an over-cap live file, is refused (T24, T52).
+The size script fails; it does not split. Archive at 80% is between
+landings, never a writer envelope (T53).
 
 Adopt after the WHEN in the file. Do not copy `factory/` onto them. Do not
 fork them off this remote. Helping them is a new empty remote on topology

@@ -209,6 +209,13 @@
       "status": "adopted",
       "summary": "Virbos drop is a check Virbos's gate already runs: size budgets on tools/check.yml plus archive under cap. Morning F8 file superseded (more law, no check, would grow over-cap files). T52 I21. Overlay still shelf. Do not cap BUSINESS_RULES. SESSION_LOG stays frozen and excluded.",
       "reversible": true
+    },
+    {
+      "id": "D-32",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "Size archive is CP hygiene at 80%, between landings, not a product envelope. The gate fails at cap; it does not split. First alumni sitting cuts to Now-only so product landings stay green. T53 I22.",
+      "reversible": true
     }
   ]
 }

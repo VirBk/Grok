@@ -85,6 +85,20 @@ green.
   until the live file is under 80 KB.
 - AGENTS: do not grow. No pointer. Handoff is still AGENTS + BOARD.
 
+### After adoption
+
+The script fails. It does not split. A split during a keystone is
+the delivery tax.
+
+- First sitting cuts BOARD to newest Now only. One records commit,
+  no review. Next product landing is green. A half-cut that leaves
+  the file over cap is T09.
+- After that, restamp Now only. Do not copy archived novels back.
+- At 80% of cap, the control plane archives in its own records
+  commit, between landings. Not a writer envelope. Not the same
+  commit as a product landing. A keystone does not wait on a split.
+- Documentation is never a lane.
+
 ### 3. Files, not prose
 
 - D-153 is a sitting waiver. Gitignored `ops/.waiver`. Dies at sitting

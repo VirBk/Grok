@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. Virbos drop is size check on Virbos's gate plus archive. Morning fat drop superseded. D-31 T52 I21. Paste after PK-3b and LEAVE-TYPE-KEY landed. Otto same (D-30). Overlay still shelf. S03-S05 open. Path dashscope.",
+  "now": "Sitting 2. Size archive is CP at 80% between landings, not a product envelope (D-32 T53 I22). Script fails, does not split. Otto D-30 and Virbos D-31. Overlay still shelf. S03-S05 open. Path dashscope.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -340,6 +340,10 @@
     {
       "at": "2026-09-17",
       "event": "Virbos drop rewritten. Morning file was more law, no check. Useful drop is size step on tools/check.yml plus archive under cap. D-31 T52 I21-both."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "Size archive is CP hygiene at 80% between landings. Script fails; it does not split. First alumni cut is Now-only. D-32 T53 I22."
     }
   ]
 }

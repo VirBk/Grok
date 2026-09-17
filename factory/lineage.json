@@ -294,6 +294,18 @@
       "check": "factory/drops/otto.md names the size step on landingChecks.yml. factory/drops/virbos.md names it on tools/check.yml. T52. D-30 D-31. A drop that only mints prose is a diary.",
       "portable": "portable",
       "status": "absorbed"
+    },
+    {
+      "id": "I22",
+      "child": "both",
+      "at": "2026-09-17",
+      "kind": "trap",
+      "title": "Size archive issued on the product path",
+      "charged": "A ceiling split in the middle of a keystone landing waits delivery on a docs cut.",
+      "rule": "The size script fails; it does not split. Archive at 80% is a CP records commit between landings. First cut is Now-only. Do not issue a writer.",
+      "check": "factory/drops/otto.md and virbos.md name 80% between landings and Now-only as the first cut. T53. D-32. A writer envelope whose hold is a board archive is a diary.",
+      "portable": "portable",
+      "status": "absorbed"
     }
   ]
 }
