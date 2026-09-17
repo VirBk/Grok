@@ -21,14 +21,17 @@
 //
 // Does not call a model. Does not read API keys. The recipe is the launch.
 
+import { readFileSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "../..");
 
+const writerModel = JSON.parse(readFileSync(join(root, "factory", "project.json"), "utf8")).writerModel;
+
 const RECIPES = {
-  "qwen-code": `# Writer seat — Qwen Code.
+  "qwen-code": (m) => `# Writer seat — Qwen Code.
 # Control plane stays Grok (or Claude desktop). Do not remap the CP session.
 
 export OPENAI_BASE_URL="\${OPENAI_BASE_URL:-http://127.0.0.1:11434/v1}"
@@ -42,9 +45,11 @@ export OPENAI_API_KEY="\${OPENAI_API_KEY:-local}"
 # Linux/Mac:
 #   export OPENAI_BASE_URL="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
 #   export OPENAI_API_KEY="\${DASHSCOPE_API_KEY}"
+#   qwen --auth-type openai --model ${m}
 # Windows:
 #   $env:OPENAI_BASE_URL="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
-#   $env:DASHSCOPE_API_KEY="..."
+#   $env:OPENAI_API_KEY=$env:DASHSCOPE_API_KEY
+#   qwen --auth-type openai --model ${m}
 #
 # Print-mode. Envelope on stdin. Poll long jobs in the foreground.
 `,
@@ -156,7 +161,7 @@ export CLAUDE_CODE_SUBAGENT_MODEL="deepseek-flash"
 # 7. Writer pushes the branch only. Grok reviews and lands.
 # Prefix first. Paste cache hits.
 `,
-  "pc-dashscope": `# No Claude Code. Grok judges. This PC runs hands. Token is DashScope.
+  "pc-dashscope": (m) => `# No Claude Code. Grok judges. This PC runs hands. Token is DashScope.
 
 # 1. git, node. Install qwen-code.
 # 2. export DASHSCOPE_API_KEY=... (never git, never VITE_)
@@ -164,11 +169,11 @@ export CLAUDE_CODE_SUBAGENT_MODEL="deepseek-flash"
 # 4. isolate, then:
 # Linux/Mac:
 #    OPENAI_BASE_URL=https://dashscope-intl.aliyuncs.com/compatible-mode/v1
-#    qwen --auth-type openai --model qwen3-coder
+#    qwen --auth-type openai --model ${m}
 # Windows:
 #    $env:OPENAI_BASE_URL="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
-#    $env:DASHSCOPE_API_KEY="..."
-#    qwen --auth-type openai --model qwen3-coder
+#    $env:OPENAI_API_KEY=$env:DASHSCOPE_API_KEY
+#    qwen --auth-type openai --model ${m}
 # 5. Writer pushes the branch only. Grok reviews and lands.
 `,
   "cloud-dashscope": `# No Claude Code. Autobuild PC is off. Token is DashScope.
@@ -218,11 +223,12 @@ if (cmd === "list") {
 
 if (cmd === "recipe") {
   const id = process.argv[3];
-  const body = id ? RECIPES[id] : null;
-  if (!body) {
+  const entry = id ? RECIPES[id] : null;
+  if (!entry) {
     console.error("unknown recipe. try: " + Object.keys(RECIPES).join(", "));
     process.exit(1);
   }
+  const body = typeof entry === "function" ? entry(writerModel) : entry;
   process.stdout.write(body);
   process.exit(0);
 }
