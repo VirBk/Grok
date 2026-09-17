@@ -92,10 +92,22 @@ Cursor local Chat/Agent may BYOK. Cursor cloud, background, automations, and CLI
 
 Open the named document. Open the containers. Quote. Launch or leave. Spark or drop. Stop. Do not start a study. Do not fill a seat because a slot is empty. Do not drop a name you have not searched in source. Do not write a handoff.md.
 
-## 10. Check
+## 10. The repository is the record
+
+Private session notes, Claude memory, and `handoff.md` files are not.
+Before a fact or an owner ask, find it on the newest board section, the
+register, or git. Read the check's output before writing the report.
+Older board sections keep asks that newer ones closed; the newest entry
+decides.
+
+A closed keystone list is read at issue. Every writer envelope names the
+keystone or names its absence. Recent envelopes that skipped the ask are
+not precedent.
+
+## 11. Check
 
 - `node factory/tools/scopeSearch.mjs --self-test`
 - `node factory/tools/ownerAsk.mjs --self-test`
 - `node factory/tools/spark.mjs --self-test`
 
-A `blocked-on-issuance` stamp without a fetch URL is a diary. A wait whose reason is `Start-Process` is a diary. A eureka that exists only in the transcript is a diary.
+A `blocked-on-issuance` stamp without a fetch URL is a diary. A wait whose reason is `Start-Process` is a diary. A eureka that exists only in the transcript is a diary. A fact taken from session notes is a diary. A keystone envelope that does not name the keystone is a diary.

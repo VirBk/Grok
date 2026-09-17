@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. F18 landed. F15 dropped (superseded by F16/F17). S01 absorbed T49. S02 dropped. S03-S05 open. DashScope seat deepseek-v4.1-flash. Path dashscope. Native credit not posted.",
+  "now": "Sitting 2. Otto drop after O38 written. Morning WHEN stale. Paste factory/drops/otto.md after O38 lands. I19 I20. T50 T51. D-29. S03-S05 open. Path dashscope.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -328,6 +328,10 @@
     {
       "at": "2026-09-17",
       "event": "F18 landed. F15 dropped (superseded by F16/F17). S01 absorbed as T49. S02 dropped (T25). Sitting-class check on the landing gate. D-28."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "Otto drop after O38. Morning F8 WHEN stale (O38 issued). Intakes I19 I20. Traps T50 T51. D-29. Paste after O38 lands. Overlay still shelf."
     }
   ]
 }

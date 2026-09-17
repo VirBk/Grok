@@ -246,3 +246,13 @@
   title: Two classes of work in one control-plane sitting
   rule: A sitting is one class of work. helpMode other than none plus a factory envelope (F*.md) is a split. Check is node factory/tools/sitting.mjs check.
 
+- id: T50
+  kind: portable
+  title: Private session notes used as the record
+  rule: The repository is the record. Session notes, Claude memory, and handoff files are not. Newest board section, register, git. A fact taken from notes is a diary.
+
+- id: T51
+  kind: portable
+  title: Closed keystone list skipped then cited as precedent
+  rule: A closed keystone list is read at issue. Every writer envelope names the keystone or its absence. Recent skips are not the list.
+

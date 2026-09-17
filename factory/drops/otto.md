@@ -1,4 +1,4 @@
-# OWNER DROP — 2026-09-17 — from VirBk/Grok
+# OWNER DROP — 2026-09-17 evening — from VirBk/Grok
 
 Paste this whole file into the Otto control plane. It is an owner drop.
 What it decides becomes register rows. The file itself stays outside main
@@ -6,15 +6,32 @@ What it decides becomes register rows. The file itself stays outside main
 
 Alumni, not a child. Not a kit overlay. Not a GitHub fork.
 
+This file **supersedes** the morning drop (F8). That WHEN was after O37.
+O38 was issued the same evening (`o38-report-opt-out`, D-156). Do not paste
+the morning file. Paste this one, after O38 lands.
+
 ## WHEN
 
-Adopt after **O37 has landed** and **no writer or reviewer is holding files**.
-If **O38** is already issued, wait until it lands too.
+Adopt after **O38 has landed** and **no writer or reviewer is holding files**.
 
-Do not restamp `BOARD.md` while a landing has frozen main. Do not start this
-from an unlanded tip.
+Proof at the objects, all three:
 
-Idle seats staying idle is not a blocker.
+1. The newest `BOARD.md` Now section says O38 LANDED at a sha reachable
+   from `origin/main`.
+2. `git ls-remote origin refs/heads/o38-report-opt-out` is empty, or that
+   sha is an ancestor of `origin/main`.
+3. No worktree named `OTTO-o38` holds `src/reporting/**` dirty.
+
+If O38 is split rather than landed, wait until the remainder lands too.
+Do not restamp `BOARD.md` while a landing has frozen main. Do not start
+this from an unlanded tip.
+
+Idle seats staying idle is not a blocker. A running O38 seat **is**.
+
+Checked 2026-09-17 evening against GitHub: Otto `origin/main` is
+`3c52a90` (evening TRAPS). Newest Now says **O38 IS ISSUED**. Branch
+list has no `o38-report-opt-out`. Do not paste until the three proofs
+hold on a later fetch.
 
 ## Holds (this drop only)
 
@@ -26,9 +43,9 @@ Not `tools/landingGate.js`, not `src/`, not `rules/`, not `web/`.
 
 **1. Alumni, not child.** VirBk/Otto stays its own private product remote.
 It is an absorbed alumni of the Grok factory. It does not copy `factory/`
-over this tree. It does not write VirBk/Grok. It does not become a fork of
-Grok. A portable lesson returns as an intake pasted to the Grok control
-plane. Absorbing is a Grok envelope.
+over this tree. It does not write VirBk/Grok or VirBk/virbk. It does not
+become a fork of Grok. A portable lesson returns as an intake pasted to
+the Grok control plane. Absorbing is a Grok envelope.
 
 **2. Sparks are look, not law.** A eureka that is not yet a trap is a spark.
 Write it to `ops/sparks.json` (sitting, items with claim / object /
@@ -41,24 +58,48 @@ A successor reads `AGENTS.md`, `BOARD.md`, the envelope, `docs/TRAPS.md` once.
 Existing handoff files are logs, not law.
 
 **3. A sitting waiver dies with the sitting.** D-153 (default yes while the
-owner is away) is a waiver for that sitting. It is not `AGENTS.md`. It is
-not `docs/TRAPS.md`. Put a session-only approval in the envelope or a
-gitignored `ops/.waiver`. Next sitting it is gone unless the owner restates
-it.
+owner is away) is a waiver for that sitting. The owner has returned. D-153
+is not `AGENTS.md`, not `docs/TRAPS.md`, not standing policy. Put a
+session-only approval in the envelope or a gitignored `ops/.waiver`. Next
+sitting it is gone unless the owner restates it.
 
-**4. Keep what already paid — standing, not new.** Envelope is the only
-authorization. A ruling must fit the named holds; split what cannot (do not
-issue a lane whose other half is owed). A refused `Start-Process` is not an
-owner ask: run the `.cmd` binary underneath, then print the one-line and
-split; do not wait. A green gate is evidence about the steps it ran, not
-about a suite it does not contain; name which check covered what, and name
-the integration run or name that it did not run. A seat return that looks
-like a drive is a lead until the control plane runs one command at the
-objects. Freeze main between branch push and fast-forward.
+**4. The repository is the record.** Private session notes, Claude memory
+under `%USERPROFILE%\.claude\projects\`, and handoff files are not. Before
+stating a fact or putting an ask to the owner, find it on main: the newest
+board section, the register, `ops/status/status.json`, git. Read your own
+check's output before writing the report. Older board sections keep asks
+that newer ones closed; the newest entry decides. Already a TRAPS line at
+`3c52a90`. Mint the register row. Do not re-append the trap.
 
-**5. When Otto pays again, file an intake to Grok.** Do not open a pull
-request on VirBk/Grok. Validate the shape, then paste to the Grok control
-plane:
+**5. A search that finds nothing is evidence only of what it searched.**
+Report an absence with the exact search, or say it is unverified. A ZERO
+names every container, including empty ones. Product source is a
+container. The rest of the board is a container. Already a TRAPS line at
+`3c52a90`. Mint the register row. Do not re-append the trap.
+
+**6. Keystone and challenge are read from D-72 and D-132 at issue, not
+from recent lanes.** Every writer envelope names the keystone (ingest,
+mapping, rules, review queue, digest, credential wiring) or names its
+absence. Put the challenge ask to the owner at issue. Already a TRAPS
+line at `3c52a90` (O35–O37 skipped the words; O36 touched mapping; the
+skip was then cited against O38). Mint the register row. Do not
+re-append the trap.
+
+**7. Keep what already paid — standing, not new.** Envelope is the only
+authorization. A ruling must fit the named holds; split what cannot (do
+not issue a lane whose other half is owed — D-151's reports half became
+O38 because O36 could not hold `src/reporting/**`). A refused
+`Start-Process` is not an owner ask: run the `.cmd` binary underneath,
+then print the one-line and split; do not wait. A green gate is evidence
+about the steps it ran, not about a suite it does not contain; name which
+check covered what, and name the integration run or name that it did not
+run. A seat return that looks like a drive is a lead until the control
+plane runs one command at the objects. Freeze main between branch push
+and fast-forward.
+
+**8. When Otto pays again, file an intake to Grok.** Do not open a pull
+request on VirBk/Grok or VirBk/virbk. Validate the shape, then paste to
+the Grok control plane:
 
 ```
 INTAKE: <ID> — <TITLE>
@@ -79,18 +120,29 @@ Check
 Refuse if this is the Otto BOARD, a SESSION_LOG, a copied count, real
 people, or a rule with no check. Meet eligibility, opt-out, and client
 rules stay here (`rules/`, the register). Mark those `reject` or do not
-file. Machine-only Windows/harness rows stay `machine`.
+file. Machine-only Windows/harness rows stay `machine` (launcher template
+drift, chained-sleep block).
 
 ## Register rows to mint
 
-Next free `D-` ids (D-155 onward if still free). Dated 2026-09-17. Owner
-reverses any row with a word.
+Next free `D-` ids (D-157 onward if O38 did not mint them). Dated the
+day O38 lands. Owner reverses any row with a word.
 
 - Alumni, not child. Intake to Grok; never write VirBk/Grok.
 - Sparks look-not-law. No handoff.md as briefing.
 - Sitting waiver expires. D-153 is not standing policy.
+- The repository is the record. Session notes are not. Cite the TRAPS
+  line already on main at `3c52a90`.
+- Keystone named at issue. Challenge ask at issue. Recent lanes are not
+  the list. Cite the TRAPS line already on main at `3c52a90`.
 
 ## Traps to add (`docs/TRAPS.md`, Agent seats)
+
+Already on main at `3c52a90` — do not re-append: private session notes
+are not the record; a search that finds nothing is the search; keystone
+and challenge are D-72 and D-132 at issue.
+
+Still missing — add these three:
 
 - An absorbed alumni is not a live factory child. Do not copy `factory/`
   over Otto. Do not fork Otto off Grok.
@@ -109,13 +161,20 @@ reverses any row with a word.
 - Put Meet eligibility, opt-out, digest, or CRM rules on Grok.
 - Merge this board into Grok.
 - Fill a seat to "bring the factory over."
+- Run one sitting as control plane of Grok and Otto together.
+- Paste the morning drop. This file replaces it.
+- Issue another reporting lane from this drop.
 
 ## What changes if you adopt
 
 - New `ops/sparks.json`. Successors look; they do not obey.
-- Three register rows and three trap lines. `AGENTS.md` gains at most a
-  pointer (handoff is still AGENTS + BOARD; sparks are look-not-law).
+- Five register rows. Three new trap lines. Three evening trap lines
+  already on main stay; they get register rows, not a second append.
+  `AGENTS.md` gains at most a pointer (handoff is still AGENTS + BOARD;
+  sparks are look-not-law).
 - D-153 cannot be restamped onto AGENTS as standing policy.
+- Session notes stop being treated as the board.
+- Writer envelopes name the keystone or its absence at issue.
 - A later portable lesson has a paste path to Grok. No PR, no second remote.
 - Control-plane handoff files stop being treated as briefings.
 
@@ -128,3 +187,9 @@ reverses any row with a word.
 
 Shelf, not this drop: JSON board; kit pin and `factory/` overlay. Trigger:
 quiet week, no running seats, owner word. Never a GitHub fork.
+
+Machine, not this drop (already TRAPS at `3c52a90`; do not file as
+portable intakes): `seat-template.cmd` still lacks the 429-stop and
+attempt-copy recent launchers carry; derive from the newest same-role
+launcher until the template matches. The Bash tool refuses a foreground
+`sleep` chained before a command; run the check on its own.

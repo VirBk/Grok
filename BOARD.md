@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Sitting 2. F18 landed. F15 dropped (superseded by F16/F17). S01 absorbed T49. S02 dropped. S03-S05 open. DashScope seat deepseek-v4.1-flash. Path dashscope. Native credit not posted.
+Sitting 2. Otto drop after O38 written. Morning WHEN stale. Paste factory/drops/otto.md after O38 lands. I19 I20. T50 T51. D-29. S03-S05 open. Path dashscope.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -100,3 +100,4 @@ No envelope opens a gate.
 - 2026-09-17 F16 landed. seat.mjs interpolates live writerModel (qwen3-coder-plus). F15 stays split. D-26.
 - 2026-09-17 F17 landed. Same DASHSCOPE_API_KEY invokes deepseek-v4.1-flash. Hosted map: deepseek-flash → deepseek-v4.1-flash. Path stays dashscope until native credit posts. T48. D-27. F15 stays split.
 - 2026-09-17 F18 landed. F15 dropped (superseded by F16/F17). S01 absorbed as T49. S02 dropped (T25). Sitting-class check on the landing gate. D-28.
+- 2026-09-17 Otto drop after O38. Morning F8 WHEN stale (O38 issued). Intakes I19 I20. Traps T50 T51. D-29. Paste after O38 lands. Overlay still shelf.

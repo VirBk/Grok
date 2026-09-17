@@ -188,6 +188,13 @@
       "status": "adopted",
       "summary": "F15 dropped, superseded by F16/F17. S01 absorbed as T49: helpMode other than none plus a factory envelope is a second class of work. S02 dropped: T25 already names decay signs. Sitting stays 2. Path still dashscope.",
       "reversible": true
+    },
+    {
+      "id": "D-29",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "Otto drop after O38 supersedes the F8 morning drop. WHEN is O38 landed and no seat holding files. Intakes I19 I20. Traps T50 T51. Session notes are not the record. Keystone named at issue. Overlay still shelf.",
+      "reversible": true
     }
   ]
 }

@@ -23,7 +23,7 @@
       "name": "Otto",
       "repo": "VirBk/Otto",
       "status": "alumni",
-      "take": "Envelope, landing gate, keystones, idle-is-success, real-data gates, closed owner-ask, ruling-fits-hold. Alumni drop after O37.",
+      "take": "Envelope, landing gate, keystones, idle-is-success, real-data gates, closed owner-ask, ruling-fits-hold. Alumni drop after O38. Session notes are not the record (T50). Keystone named at issue (T51).",
       "drop": "factory/drops/otto.md"
     },
     {
@@ -256,6 +256,30 @@
       "charged": "Relabeling Otto and Virbos as kit children would stop open keystone lanes and merge boards into the parent.",
       "rule": "Alumni take a dated drop after running seats finish. They file intakes. They do not copy the kit over a live product. Overlay is a later envelope with a pin.",
       "check": "factory/drops/ names otto and virbos. lineage status is alumni. COPY.md refuses retrofit. A child remote is still the empty next.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I19",
+      "child": "otto",
+      "at": "2026-09-17",
+      "kind": "trap",
+      "title": "Private session notes used as the record",
+      "charged": "The Otto control plane asked the owner to delete a branch already gone because Claude memory was stale.",
+      "rule": "The repository is the record. Session notes, Claude memory, and handoff files are not.",
+      "check": "CONTROL_PLANE.md names the repository as the record and session notes as not. T50. A fact taken from notes is a diary.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I20",
+      "child": "otto",
+      "at": "2026-09-17",
+      "kind": "trap",
+      "title": "Closed keystone list skipped then cited as precedent",
+      "charged": "Three Otto envelopes named neither keystone nor challenge; one touched mapping; the skip was then cited as the rule.",
+      "rule": "A closed keystone list is read at issue. Every writer envelope names the keystone or its absence. Recent skips are not precedent.",
+      "check": "CONTROL_PLANE.md requires the keystone named at issue. T51. An envelope that omits it is a diary.",
       "portable": "portable",
       "status": "absorbed"
     }
