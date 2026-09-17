@@ -31,7 +31,7 @@
       "name": "Virbos",
       "repo": "VirBk/virbos",
       "status": "alumni",
-      "take": "Decision register, authority levels, walkthrough as acceptance, derivation containers. Alumni drop after PK-3b and LEAVE-TYPE-KEY.",
+      "take": "Decision register, authority levels, walkthrough as acceptance, derivation containers. Alumni drop after PK-3b and LEAVE-TYPE-KEY is a size check on Virbos's own gate plus archive (D-31). A drop that grows over-cap files is pain (T52).",
       "drop": "factory/drops/virbos.md"
     },
     {
@@ -285,13 +285,13 @@
     },
     {
       "id": "I21",
-      "child": "otto",
+      "child": "both",
       "at": "2026-09-17",
       "kind": "trap",
       "title": "Alumni drop without a check",
-      "charged": "The evening Otto drop would have grown BOARD, TRAPS, and the register past cap with no landing failure.",
+      "charged": "The evening Otto drop and the morning Virbos drop would have grown over-cap live files with no landing failure.",
       "rule": "A drop is a check that product's existing gate runs, or archive first. Do not append to an over-cap live file.",
-      "check": "factory/drops/otto.md names the size step on Otto's landingChecks.yml. T52. D-30. A drop that only mints prose is a diary.",
+      "check": "factory/drops/otto.md names the size step on landingChecks.yml. factory/drops/virbos.md names it on tools/check.yml. T52. D-30 D-31. A drop that only mints prose is a diary.",
       "portable": "portable",
       "status": "absorbed"
     }

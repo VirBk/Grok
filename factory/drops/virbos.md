@@ -1,142 +1,163 @@
-# OWNER DROP — 2026-09-17 — from VirBk/Grok
+# OWNER DROP — 2026-09-17 night — useful only
 
-Paste this whole file into the Virbos control plane. It is an owner drop.
-What it decides becomes register rows. The file itself is not a docs lane.
+Supersedes the morning F8 file. That file was more law into files
+already over cap, with no check. A trap without a check is a diary
+(T24). Do not paste it.
 
-Alumni, not a child. Not a kit overlay. Not a GitHub fork.
+Alumni. Not a child. Not a kit overlay. Shared strength is a check
+Virbos’s gate already knows how to run. Not another sermon.
 
 ## WHEN
 
-Adopt after **PK-3b** has landed (writer return, keystone review, challenge
-leads, e2e as the board named) **and** **LEAVE-TYPE-KEY** has landed
-(correction round, delta re-review, e2e).
+Adopt after **PK-3b** and **LEAVE-TYPE-KEY** have landed and no writer
+is holding the records files.
 
-Do not adopt while those holds are live (schema, migration, pay-math,
-pay-packs, hr-requests, `BUSINESS_RULES.md`, leave). Do not restamp
-`BOARD.md` while a landing has frozen main. Do not start this from an
-unlanded tip.
+Proof, all three:
 
-Idle seats staying idle is not a blocker.
+1. Newest `BOARD.md` Now says PK-3b LANDED at a sha reachable from `origin/main`.
+2. Newest `BOARD.md` Now says LEAVE-TYPE-KEY LANDED at a sha reachable from `origin/main`.
+3. No writer holds `BOARD.md`, `DECISION_REGISTER.md`, `docs/TRAPS.md`, `AGENTS.md`, or `tools/check.yml` dirty.
 
-## Holds (this drop only)
+Idle seats staying idle is not a blocker. A running product seat on
+those files is. The owner's "issue no other lane" was that session's
+waiver. It is not WHEN forever. This sitting is records, not a
+product lane.
 
-`docs/TRAPS.md`, `DECISION_REGISTER.md`, a new `docs/sparks.json` (or
-gitignored `docs/.waiver`). Optional one-line pointer in `AGENTS.md` §8.
-Not `tools/landingGate.js`, not `src/`, not `frontend/`, not
-`BUSINESS_RULES.md`, not `schema.prisma`.
+Live on `aaf2b7b8`: PK-3b LANDED at `ac1c5fc`. LEAVE-TYPE-KEY LANDED
+at `689eb1a`. Now says NOTHING IS RUNNING. The contract lane and
+PK-3b follow-ons are booked, not issued. Do not issue them from this
+drop.
 
-## Decide
+## Feed (this is the drop)
 
-**1. Alumni, not child.** VirBk/virbos stays its own private product remote.
-It is an absorbed alumni of the Grok factory. It does not copy `factory/`
-over this tree. It does not write VirBk/Grok. It does not become a fork of
-Grok. A portable lesson returns as an intake pasted to the Grok control
-plane. Absorbing is a Grok envelope.
+One records sitting on Virbos. Records get no review. Same commit
+does both: archive the live files under cap, then add the step so the
+next landing can pass. Do not add the step first and leave the files
+fat — that is a permanent red, which is T09.
 
-**2. Sparks are look, not law.** The board was split because it had become
-a novel. A eureka that is not yet a trap goes to `docs/sparks.json`
-(sitting, items with claim / object / whyNotLaw / open), not into `## Now`.
-A successor **looks**. It does not obey. Absorbing a spark is an envelope
-with a check. Dropping names because. Do not write `handoff.md`. A successor
-reads `AGENTS.md`, `BOARD.md`, the envelope, `docs/TRAPS.md` once.
+### 1. Size step on Virbos’s gate
 
-**3. A sitting waiver dies with the sitting.** Owner words bounded to one
-session or to the owner's absence are that session's, never policy (already
-ruled 2026-09-17). Put them in the envelope or a gitignored `docs/.waiver`.
-Never AGENTS, never TRAPS, never BOARD.
+Virbos already parses `tools/check.yml`. That file is **not** a
+GitHub workflow. The parser is the comment at the top of the file:
+two spaces before `- `, four before a key; `run` split on
+whitespace; no quoting, no shell, no `#` in `run`; exactly one of
+`run` or `copy`; sweeps first, before `npm ci`. Add one step. Do not
+replace `tools/landingGate.js`. Do not copy `factory/`. Do not invent
+Otto’s `jobs.check.steps` indent — that shape is refused here.
 
-**4. Keep what this product already paid — standing, not new.** A ZERO names
-every container, including empty ones. Product source is a container. The
-board's later sections are a container. A markdown-only grep of the queue
-line is not a finding. A named law, circular, IRR, RFC, or PDF is a fetch:
-quote it or stamp the miss; asking the owner is for documents that do not
-exist. An agency still collecting is a **second fact**; transcribe the
-issuance; do not collapse practice into "no legal basis." (The RA 11228 /
-UHC IRR stamp on PK-3b is the pattern. Keep both facts.)
+`tools/sizeBudget.js` (new, next to the gate):
 
-**5. Virbos-specific law stays Virbos.** The owner fast-forwards main. A
-challenge pass runs on the control plane's recommendation, default on a
-keystone, without asking each time (owner, 2026-09-17); leads, never a
-verdict. Three product writers plus one e2e seat, six-seat ceiling. Frozen
-`SESSION_LOG.md` stays frozen; nothing new appends. Bank details are a
-record, never movement. `BUSINESS_RULES.md` and the statutory pack stay
-here. Do not take Grok's "owner word each time" for challenges. Do not take
-Grok's "control plane lands main."
-
-**6. When Virbos pays again, file an intake to Grok.** Do not open a pull
-request on VirBk/Grok. Validate the shape, then paste to the Grok control
-plane:
-
-```
-INTAKE: <ID> — <TITLE>
-Child: VirBk/virbos
-Kind: trap | lesson | practice
-Portable: portable | machine | reject
-
-Charged
-  <one sentence: what it cost>
-
-Rule
-  <one sentence the next seat can follow>
-
-Check
-  <the command, gate step, or envelope hold that would catch a repeat>
+```js
+#!/usr/bin/env node
+const { existsSync, statSync } = require("node:fs");
+const { join } = require("node:path");
+const root = join(__dirname, "..");
+const caps = [
+  ["AGENTS.md", 12],
+  ["BOARD.md", 40],
+  ["docs/TRAPS.md", 48],
+  ["DECISION_REGISTER.md", 80],
+];
+const fail = [];
+for (const [p, cap] of caps) {
+  const f = join(root, p);
+  if (!existsSync(f)) continue;
+  const kb = statSync(f).size / 1024;
+  if (kb > cap) fail.push(p + " " + kb.toFixed(1) + " KB > " + cap + " KB");
+}
+if (fail.length) {
+  console.error("size budget failed:");
+  for (const line of fail) console.error("  " + line);
+  process.exit(1);
+}
+console.log("size budget ok");
 ```
 
-Refuse if this is the Virbos BOARD, SESSION_LOG, a copied count, real
-people, or a rule with no check. Statutory, compensation, tenant, and
-authorization rules stay here. Mark those `reject` or do not file.
-Machine-only Windows/harness rows stay `machine`.
+Register path is the repo-root file. Not `docs/DECISION_REGISTER.md`.
 
-## Register rows to mint
+In `tools/check.yml`, after the two sweep steps, before `root install`:
 
-Next free dated rows in `DECISION_REGISTER.md`. Dated 2026-09-17. Owner
-reverses any row with a word.
+```
+  - name: size budgets
+    run: node tools/sizeBudget.js
+```
 
-- Alumni, not child. Intake to Grok; never write VirBk/Grok.
-- Sparks look-not-law. Eurekas do not land in `## Now`.
-- Named issuance is a fetch. Collection-in-practice is a second fact.
-- Sitting waiver expires. Session-bounded owner words are not policy.
+That placement is load-bearing: sweeps refuse `node_modules`; this
+script needs none. Do not put it after `npm ci`. Do not add
+`sweepCounts.js` (would stay red). Do not add integration or e2e.
 
-## Traps to add (`docs/TRAPS.md`, Agent tooling)
+Archive at 80% of cap. Do not append to a live file that is over.
+A landing that grows a live file past cap is red. That is the point.
 
-- An absorbed alumni is not a live factory child. Do not copy `factory/`
-  over Virbos. Do not fork Virbos off Grok.
-- A eureka in `## Now` or the transcript is a spark, not law. Look at
-  `docs/sparks.json`. Absorb with a check or drop with because.
-- A named issuance with no fetch URL is a diary. Stamp the URL or the miss.
-- A ZERO that did not name product source and the rest of the board is not
-  a finding.
+Do **not** cap `BUSINESS_RULES.md` (statutory pack). Do **not** cap
+or unfreeze `SESSION_LOG.md` (frozen). Do not cap `BUILD_PLAN.md`.
 
-## Do not
+Live on `aaf2b7b8` (GitHub size / 1024): BOARD 262.0 KB, register
+141.3 KB, TRAPS 21.7 KB, AGENTS 11.3 KB. The records sitting has to
+cut BOARD and the register before the step is green.
 
-- Copy `factory/` into Virbos, or replace `AGENTS.md` with Grok's.
-- Replace `tools/landingGate.js` or `tools/check.yml`.
-- Remap Virbos writers or the control plane onto DeepSeek or Qwen.
-- Generate `BOARD.md` from JSON this sitting. The board was just split.
-  Shelf: after the next quiet, as its own records envelope.
-- Put statutory, compensation, tenant, or authorization rules on Grok.
-- Merge this board into Grok.
-- Take Grok's challenge-ask or Grok's control-plane fast-forward.
-- Fill a seat to "bring the factory over."
-- Run one sitting as control plane of Grok and Virbos together.
+### 2. Archive (same sitting)
 
-## What changes if you adopt
+- BOARD: newest Now only. Rest to a new dated file under
+  `docs/archive/` that does **not** overwrite
+  `docs/archive/BOARD_2026-09-17.md` (the 1.18 MB split) or
+  `docs/archive/BOARD_2026-09.md`. They already split on 2026-09-17
+  and grew the live file back to 262 KB. The step is why it stays
+  small. Do not stack another Now section.
+- TRAPS: do not append. Live file is under 48 KB. Keep it there.
+- Register: do not mint essay rows. One line if a row is owed. Or
+  skip until the live file is under 80 KB.
+- AGENTS: do not grow. No pointer. Under 12 KB already. Handoff is
+  still AGENTS + BOARD.
 
-- New `docs/sparks.json`. `## Now` stops absorbing eurekas. That is what
-  the board split was for.
-- Four register rows and four trap lines. `AGENTS.md` gains at most a
-  pointer.
-- Next named circular/IRR/PDF is fetched before anyone waits on the owner.
-- A later portable lesson has a paste path to Grok. No PR, no second remote.
+### 3. Files, not prose
+
+- A sitting waiver is gitignored `docs/.waiver`. Dies at sitting
+  close. Not AGENTS, not TRAPS, not BOARD.
+- A eureka that is not yet a trap: `docs/sparks.json`. Look, not law.
+  Absorb with a check or drop with because. Do not write
+  `handoff.md` as a briefing.
+
+### 4. When Virbos pays again
+
+Paste an intake to the Grok control plane. No PR on VirBk/Grok or
+VirBk/virbk. Charge, rule, check. Refuse BOARD, SESSION_LOG, copied
+counts, real people, a rule with no check. Statutory, compensation,
+tenant, and authorization rules stay here (`reject`). Windows or
+harness rows stay `machine`.
+
+## Already on main — do not re-append
+
+Alumni, not child; sparks look-not-law; named issuance is a fetch;
+collection is a second fact; sitting waiver expires. Those are
+standing. They do not get four new register rows or four new trap
+sermons. The morning file is replaced.
+
+## Do not feed
+
+- `factory/` overlay, or replace `AGENTS.md` with Grok’s
+- Replace `tools/landingGate.js` or rewrite `tools/check.yml`
+- Grow TRAPS, register, AGENTS, or BOARD
+- Four essay register rows, four new trap sermons
+- Cap `BUSINESS_RULES.md` or unfreeze `SESSION_LOG.md`
+- Remap writers or the control plane onto DeepSeek or Qwen
+- Dual sitting as control plane of Grok and Virbos
+- Statutory, compensation, tenant, or authorization rules on Grok
+- The morning drop. This file replaces it
+- The contract lane, or PK-3bW / PK-3bS / PK-3b-READMARK /
+  NOTIF-AUDIT-SUBJECT, from this drop
+- Grok’s “owner word each time” for challenges
+- Grok’s “control plane lands main”
 
 ## What does not change
 
-- Product, keystones (pay math, RLS / tenant transactions, authorization,
-  migrations, Philippine statutory pack), Sonnet/Opus table, owner
-  fast-forward, challenge-without-ask, writer ceiling, landing gate,
-  frozen SESSION_LOG, `BUSINESS_RULES.md`, walkthrough as acceptance,
-  one private remote, gates.
+Product, keystones (pay math, RLS / tenant transactions,
+authorization, migrations, Philippine statutory pack), Sonnet/Opus
+table, owner fast-forward, challenge-without-ask (default on a
+keystone, leads never a verdict), three product writers plus one e2e
+seat, six-seat ceiling, frozen SESSION_LOG, `BUSINESS_RULES.md`,
+walkthrough as acceptance, one private remote, the existing
+`tools/check.yml` steps, sweeps first.
 
-Shelf, not this drop: JSON board; kit pin and `factory/` overlay. Trigger:
-quiet week, no running seats, owner word. Never a GitHub fork.
+Overlay of `factory/` stays shelf: quiet week, no running seats,
+owner word, kit pin. Never a GitHub fork.

@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Sitting 2. Otto drop is size check on Otto's gate plus archive. Evening fat drop superseded (D-29). D-30 T52 I21. Paste after O38 lands. Overlay still shelf. S03-S05 open. Path dashscope.
+Sitting 2. Virbos drop is size check on Virbos's gate plus archive. Morning fat drop superseded. D-31 T52 I21. Paste after PK-3b and LEAVE-TYPE-KEY landed. Otto same (D-30). Overlay still shelf. S03-S05 open. Path dashscope.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -102,3 +102,4 @@ No envelope opens a gate.
 - 2026-09-17 F18 landed. F15 dropped (superseded by F16/F17). S01 absorbed as T49. S02 dropped (T25). Sitting-class check on the landing gate. D-28.
 - 2026-09-17 Otto drop after O38. Morning F8 WHEN stale (O38 issued). Intakes I19 I20. Traps T50 T51. D-29. Paste after O38 lands. Overlay still shelf.
 - 2026-09-17 Otto drop rewritten. Evening file was more law, no check. Useful drop is size step on Otto landingChecks.yml plus archive under cap. D-29 superseded. D-30 T52 I21.
+- 2026-09-17 Virbos drop rewritten. Morning file was more law, no check. Useful drop is size step on tools/check.yml plus archive under cap. D-31 T52 I21-both.

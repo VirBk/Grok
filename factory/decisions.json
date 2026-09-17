@@ -202,6 +202,13 @@
       "status": "adopted",
       "summary": "Otto drop is a check Otto's gate already runs: size budgets on landingChecks.yml plus archive under cap. Evening D-29 drop superseded (more law, no check, would grow over-cap files). T52 I21. Overlay still shelf.",
       "reversible": true
+    },
+    {
+      "id": "D-31",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "Virbos drop is a check Virbos's gate already runs: size budgets on tools/check.yml plus archive under cap. Morning F8 file superseded (more law, no check, would grow over-cap files). T52 I21. Overlay still shelf. Do not cap BUSINESS_RULES. SESSION_LOG stays frozen and excluded.",
+      "reversible": true
     }
   ]
 }
