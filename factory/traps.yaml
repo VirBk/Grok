@@ -256,3 +256,8 @@
   title: Closed keystone list skipped then cited as precedent
   rule: A closed keystone list is read at issue. Every writer envelope names the keystone or its absence. Recent skips are not the list.
 
+- id: T52
+  kind: portable
+  title: Alumni drop that grows over-cap live files
+  rule: Feed a check the alumni gate already parses. Archive at 80% first. Do not append sermons to a rotting live file.
+

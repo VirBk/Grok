@@ -23,7 +23,7 @@
       "name": "Otto",
       "repo": "VirBk/Otto",
       "status": "alumni",
-      "take": "Envelope, landing gate, keystones, idle-is-success, real-data gates, closed owner-ask, ruling-fits-hold. Alumni drop after O38. Session notes are not the record (T50). Keystone named at issue (T51).",
+      "take": "Envelope, landing gate, keystones, idle-is-success, real-data gates, closed owner-ask, ruling-fits-hold. Alumni drop after O38 is a size check on Otto's own gate plus archive (D-30). A drop that grows over-cap files is pain (T52).",
       "drop": "factory/drops/otto.md"
     },
     {
@@ -280,6 +280,18 @@
       "charged": "Three Otto envelopes named neither keystone nor challenge; one touched mapping; the skip was then cited as the rule.",
       "rule": "A closed keystone list is read at issue. Every writer envelope names the keystone or its absence. Recent skips are not precedent.",
       "check": "CONTROL_PLANE.md requires the keystone named at issue. T51. An envelope that omits it is a diary.",
+      "portable": "portable",
+      "status": "absorbed"
+    },
+    {
+      "id": "I21",
+      "child": "otto",
+      "at": "2026-09-17",
+      "kind": "trap",
+      "title": "Alumni drop without a check",
+      "charged": "The evening Otto drop would have grown BOARD, TRAPS, and the register past cap with no landing failure.",
+      "rule": "A drop is a check that product's existing gate runs, or archive first. Do not append to an over-cap live file.",
+      "check": "factory/drops/otto.md names the size step on Otto's landingChecks.yml. T52. D-30. A drop that only mints prose is a diary.",
       "portable": "portable",
       "status": "absorbed"
     }

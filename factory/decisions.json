@@ -192,8 +192,15 @@
     {
       "id": "D-29",
       "at": "2026-09-17",
-      "status": "adopted",
+      "status": "superseded",
       "summary": "Otto drop after O38 supersedes the F8 morning drop. WHEN is O38 landed and no seat holding files. Intakes I19 I20. Traps T50 T51. Session notes are not the record. Keystone named at issue. Overlay still shelf.",
+      "reversible": true
+    },
+    {
+      "id": "D-30",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "Otto drop is a check Otto's gate already runs: size budgets on landingChecks.yml plus archive under cap. Evening D-29 drop superseded (more law, no check, would grow over-cap files). T52 I21. Overlay still shelf.",
       "reversible": true
     }
   ]

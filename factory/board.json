@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. Otto drop after O38 written. Morning WHEN stale. Paste factory/drops/otto.md after O38 lands. I19 I20. T50 T51. D-29. S03-S05 open. Path dashscope.",
+  "now": "Sitting 2. Otto drop is size check on Otto's gate plus archive. Evening fat drop superseded (D-29). D-30 T52 I21. Paste after O38 lands. Overlay still shelf. S03-S05 open. Path dashscope.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -332,6 +332,10 @@
     {
       "at": "2026-09-17",
       "event": "Otto drop after O38. Morning F8 WHEN stale (O38 issued). Intakes I19 I20. Traps T50 T51. D-29. Paste after O38 lands. Overlay still shelf."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "Otto drop rewritten. Evening file was more law, no check. Useful drop is size step on Otto landingChecks.yml plus archive under cap. D-29 superseded. D-30 T52 I21."
     }
   ]
 }
