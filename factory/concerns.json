@@ -1,0 +1,35 @@
+{
+  "rule": "Closed owner concerns. Not a transcript. Each row is the question, the adopted answer, and the live ids. Plan is factory/packages.json. Conversation is not stored.",
+  "concerns": [
+    {
+      "id": "C-01",
+      "ask": "How to run the control plane without Claude Code, on a local machine and in the cloud.",
+      "answer": "Grok stays the control plane. The token is the writer. Claude Code absent is the default. Local: PC seat. Cloud: git-bus if the autobuild PC is on, else a Codespace. Do not remap this session onto the token.",
+      "holds": ["D-19", "D-17", "D-33", "F12", "F10"]
+    },
+    {
+      "id": "C-02",
+      "ask": "Keep it flexible for whatever the human project manager picks.",
+      "answer": "Live picks in factory/project.json. Allowed ids in factory/runtimes.json. Contribute, isolate, writer, cache, and helpMode are catalog rows. Parent defaults stay owner-only.",
+      "holds": ["D-16", "F9"]
+    },
+    {
+      "id": "C-03",
+      "ask": "Owner needs a local/cloud view of progress and a visual of the app dashboard as it is built, clickable only where landed.",
+      "answer": "Owner console: Setup plus Floor. Local and cloud are lenses. Chassis tiles take a click iff built. Spec in factory/CONSOLE.md. Running app is the Grok App Builder project named GROK Factory.",
+      "holds": ["D-10", "F7"]
+    },
+    {
+      "id": "C-04",
+      "ask": "Save tokens without weakening the end product.",
+      "answer": "Cut the write. Do not cut judgment. Lean mix: sweep on ordinary lanes, keystone only when named, review every loop, never the author. Optional scripts have no weights and are not a required third actor.",
+      "holds": ["D-11", "D-33", "T31"]
+    },
+    {
+      "id": "C-05",
+      "ask": "Retire the session. Nothing that matters may live only in the chat. Record the conversation, the concerns, the answers, and the plan.",
+      "answer": "Git is memory. Conversation is not stored (no SESSION_LOG, no handoff.md). Outcomes live as decisions and CONSOLE.md. Closed concerns live here. Plan is factory/packages.json. A new concern is a new id. Never reuse D-09. Read live main before any write to the parent.",
+      "holds": ["D-08", "D-14", "D-34", "D-35"]
+    }
+  ]
+}

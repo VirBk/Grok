@@ -133,6 +133,7 @@ The repository is memory. The session is a fuse. Every model — Grok, Claude, G
 | Intake gate | `factory/tools/intake.mjs` |
 | Lane records | `docs/log/<lane>.md` |
 | Owner console | `factory/CONSOLE.md` |
+| Closed concerns | `factory/concerns.json` |
 | Derivation | `factory/CONTROL_PLANE.md` |
 | Owner-ask list | `factory/owner-ask.json` |
 | Sparks (look, not law) | `factory/sparks.json` |

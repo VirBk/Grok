@@ -32,6 +32,14 @@
     {"id": "D-31", "at": "2026-09-17", "status": "adopted", "summary": "Virbos drop is a check Virbos's gate already runs: size budgets on tools/check.yml plus archive under cap. Morning F8 file superseded (more law, no check, would grow over-cap files). T52 I21. Overlay still shelf. Do not cap BUSINESS_RULES. SESSION_LOG stays frozen and excluded.", "reversible": true},
     {"id": "D-32", "at": "2026-09-17", "status": "adopted", "summary": "Size archive is CP hygiene at 80%, between landings, not a product envelope. The gate fails at cap; it does not split. First alumni sitting cuts to Now-only so product landings stay green. T53 I22.", "reversible": true},
     {"id": "D-33", "at": "2026-09-17", "status": "adopted", "summary": "Owner reversed D-09. Original CP loop is dual-runtime only (D-04): control plane issues, launches the writer, reviews, lands. Otto launched seats from the CP session. A required third hands actor (F6, hands.mjs) is a regression. hands.mjs may remain as optional scripts; it is not the orchestration. D-11 lean mix still holds minus that actor.", "reversible": true},
-    {"id": "D-34", "at": "2026-09-17", "status": "adopted", "charged": "Owner asked whether this conversation, the concerns, and the plan were in the repo. A stale Grok session then replaced live decisions.json and packages.json from a lagging checkout, colliding D-09 (already reversed as D-33) and dropping F6-F18 from the plan file.", "summary": "Read live main before any write to the parent. Never replace decisions.json or packages.json from a sitting that has not fetched. Conversation is not stored. A new concern is a new id. Never reuse D-09.", "reversible": true}
+    {"id": "D-34", "at": "2026-09-17", "status": "adopted", "charged": "Owner asked whether this conversation, the concerns, and the plan were in the repo. A stale Grok session then replaced live decisions.json and packages.json from a lagging checkout, colliding D-09 (already reversed as D-33) and dropping F6-F18 from the plan file.", "summary": "Read live main before any write to the parent. Never replace decisions.json or packages.json from a sitting that has not fetched. Conversation is not stored. A new concern is a new id. Never reuse D-09.", "reversible": true},
+    {
+      "id": "D-35",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "charged": "Owner asked whether the conversation, the concerns raised and answered, and the plan were in the repo. F7 stored outcomes. It did not store the questions.",
+      "summary": "Closed owner concerns live in factory/concerns.json. Plan is factory/packages.json. Conversation is not stored. A new concern is a new id. Never reuse D-09. Read live main before any write to the parent.",
+      "reversible": true
+    }
   ]
 }

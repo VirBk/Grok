@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Sitting 2. Owner reversed D-09: original CP loop has no hands actor (D-33). F6 third seat is regression. D-04 stands. Overlay still shelf. S03-S06 open. Path dashscope.
+Sitting 2. Closed concerns in factory/concerns.json. Plan is factory/packages.json. Conversation is not stored. Owner reversed D-09 (D-33). Overlay still shelf. Path dashscope.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -62,6 +62,7 @@ No envelope opens a gate.
 - factory/drops/ — control plane
 - factory/writer-paths.json — control plane
 - factory/tools/route.mjs — control plane
+- factory/concerns.json — control plane
 
 ## Keystones
 
@@ -106,3 +107,4 @@ No envelope opens a gate.
 - 2026-09-17 Size archive is CP hygiene at 80% between landings. Script fails; it does not split. First alumni cut is Now-only. D-32 T53 I22.
 - 2026-09-17 S06 opened. Session confirmation is not a hold. Reading files or alumni does not bind the next sentence. Look, not law.
 - 2026-09-17 Owner reversed D-09. Original CP loop has no hands actor. F6 third seat is regression. D-33. D-04 stands.
+- 2026-09-17 D-35. Closed owner concerns recorded in factory/concerns.json. Plan remains packages.json. Conversation not stored. F7 outcomes stood; the questions did not.

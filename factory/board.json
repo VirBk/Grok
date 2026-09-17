@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. Owner reversed D-09: original CP loop has no hands actor (D-33). F6 third seat is regression. D-04 stands. Overlay still shelf. S03-S06 open. Path dashscope.",
+  "now": "Sitting 2. Closed concerns in factory/concerns.json. Plan is factory/packages.json. Conversation is not stored. Owner reversed D-09 (D-33). Overlay still shelf. Path dashscope.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -216,6 +216,10 @@
     {
       "name": "factory/tools/route.mjs",
       "holder": "control plane"
+    },
+    {
+      "name": "factory/concerns.json",
+      "holder": "control plane"
     }
   ],
   "shelf": [
@@ -352,6 +356,10 @@
     {
       "at": "2026-09-17",
       "event": "Owner reversed D-09. Original CP loop has no hands actor. F6 third seat is regression. D-33. D-04 stands."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "D-35. Closed owner concerns recorded in factory/concerns.json. Plan remains packages.json. Conversation not stored. F7 outcomes stood; the questions did not."
     }
   ]
 }
