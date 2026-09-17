@@ -30,12 +30,12 @@ An agency still collecting is a **second fact**. It does not erase the statute. 
 
 ## 3. The owner-ask list is closed
 
-Source: `factory/owner-ask.json`. Ask, in one line, only what it names. Everything else is a control-plane act, a hands act, or a split.
+Source: `factory/owner-ask.json`. Ask, in one line, only what it names. Everything else is a control-plane act or a split.
 
 A **tool-policy refusal is not an owner ask.** Order:
 
 1. Run the binary underneath the refused wrapper.
-2. `node factory/tools/hands.mjs launch -- <command>` — hands have no model and are not the control-plane session’s tool policy.
+2. Launch the writer from this session (`node factory/tools/seat.mjs recipe`). Do not add a third actor (D-33).
 3. Print the one-line command, split the session, leave.
 
 Do not wait. Do not rephrase a double-click as a decision. A recommendation already made is recorded and acted on; it is not re-asked.
@@ -80,11 +80,11 @@ Otto and Virbos are alumni. A paste in `factory/drops/` is for that product's co
 
 ## 8. Cloud isolate
 
-This session is not a terminal. It does not become DeepSeek, Qwen, or Cursor Cloud Agent. Claude Code absent is the default. The owner's token is the writer (`pc-token`, `pc-dashscope`, `cloud-grok`, `cloud-dashscope`).
+This session is not a terminal and does not become the writer. Claude Code absent is the default. The owner's token is the writer. The control plane launches that seat (D-33). `hands.mjs` is optional leftover, not the loop.
 
-Autobuild PC on: topology `cloud-git-bus`. The envelope blob is the deploy. That machine runs `node factory/tools/hands.mjs watch`, then isolate and recipe. Hands launch.
+Autobuild PC on: envelope blob is the deploy; this session isolates and prints the recipe.
 
-Autobuild PC off: topology `cloud-grok`. Isolate is a Codespace. Print `gh codespace create`. Writer token is a Codespaces secret, placed once (owner-ask: writer API keys). Do not add a GitHub Action until that secret exists.
+Autobuild PC off: isolate is a Codespace. Print `gh codespace create`. Writer token is a Codespaces secret, placed once (owner-ask: writer API keys). Do not add a GitHub Action until that secret exists.
 
 Cursor local Chat/Agent may BYOK. Cursor cloud, background, automations, and CLI cannot.
 

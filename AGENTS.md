@@ -8,7 +8,7 @@ This file is capped at 12 KB. If a change would grow it, move the detail to a na
 
 GROK Factory is the parent build operating system. Child projects copy `AGENTS.md` and `factory/`. They return portable intakes — the charge, the rule, the check. Grok is the only writer of the kit.
 
-It is dual-runtime. A strong control plane — Grok in the cloud, or Claude Code on the desktop — issues one-page envelopes, reviews returns, and lands. Hands are a dumb runner (`factory/tools/hands.mjs`), never a model. Cheap writer seats — DeepSeek or Qwen; harness the project manager picks in `factory/project.json` — execute the envelope in the isolate the PM picked (worktree, git-bus, or codespace). Cloud CP deploys that terminal; it does not become the writer.
+It is dual-runtime. A strong control plane — Grok in the cloud, or Claude Code on the desktop — issues one-page envelopes, launches the writer, reviews returns, and lands. A third hands actor is not the loop (D-33). Cheap writer seats — DeepSeek or Qwen; harness the project manager picks in `factory/project.json` — execute the envelope. The control plane does not become the writer.
 
 Acceptance: the owner walks spec → envelope stamped with a runtime → cheap writer return → strong review → land → spend pasted in the lane log. A child that paid for a lesson files an intake; absorbing it is a Grok envelope.
 
@@ -55,7 +55,7 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 - Every route declares its permission or its authenticated-only status; a route with neither is refused.
 - No envelope opens a gate. Gates live on the board. The owner closes them with a word.
 - Do not point the control-plane session at DeepSeek or Qwen. Spawn a writer seat. Cursor Cloud Agents cannot take that token. Cloud isolate is `git-bus` or `codespace` (`factory/HANDS.md`).
-- Hands never call a model and never read API keys. Claude Code absent is the default. A DeepSeek or DashScope token is the writer (`pc-token`, `pc-dashscope`, `cloud-grok`, `cloud-dashscope`). Do not install Claude Code to spend it.
+- Do not invent a third seat with a model. Claude Code absent is the default. A DeepSeek or DashScope token is the writer (`pc-token`, `pc-dashscope`, `cloud-grok`, `cloud-dashscope`). Do not install Claude Code to spend it.
 - Envelopes live as git blobs in `factory/envelopes/`. Issues are not the board.
 - A writer never fast-forwards main and never reviews its own branch.
 - A reviewer is never a weaker model than the writer.
@@ -78,7 +78,7 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 
 The control plane decides engineering and product defaults and records each as a dated row. The owner reverses any row with a word.
 
-Ask, in one line at the moment it is needed, only for: money, writer API keys, real people’s names, anything that sends a message to a client or writes to a CRM, opening a gate, release or destructive action. A tool-policy refusal is not on this list. Hands launch seats. Closed list: `factory/owner-ask.json`.
+Ask, in one line at the moment it is needed, only for: money, writer API keys, real people’s names, anything that sends a message to a client or writes to a CRM, opening a gate, release or destructive action. A tool-policy refusal is not on this list. The control plane launches seats. Closed list: `factory/owner-ask.json`.
 
 A deferral is a decision with a stated trigger. It is not re-raised until the trigger.
 
@@ -124,7 +124,7 @@ The repository is memory. The session is a fuse. Every model — Grok, Claude, G
 | Token only | `pc-token` / `pc-dashscope` / `cloud-grok` / `cloud-dashscope`. No Claude Code. |
 | Help a product | Sidecar: `help-fork` / `help-collab`. `factory/help.json`. Never overlay alumni. |
 | Writer path | Owner picks the model. `auto` = native DeepSeek off-peak if healthy, DashScope PAYG on peak or outage. `factory/writer-paths.json`, `factory/tools/route.mjs` |
-| Hands | `factory/tools/hands.mjs` |
+| Launch | Control plane. Recipe: `factory/tools/seat.mjs` |
 | Envelope blobs | `factory/envelopes/` |
 | Writer recipes | `factory/tools/seat.mjs` |
 | Parent register | `factory/lineage.json` |

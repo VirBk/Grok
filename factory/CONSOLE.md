@@ -27,7 +27,7 @@ The chassis is the product dashboard as it is built. Landed tiles take a click. 
 
 ## Token only (no Claude Code)
 
-Claude Code absent is the default, not a defect. The token is the writer. Grok (this chat) is still the control plane. Do not remap this session onto the token.
+Claude Code absent is the default, not a defect. The token is the writer. Grok (this chat) is still the control plane. Do not remap this session onto the token. Original loop has no hands actor (D-33). This session launches the writer.
 
 PC, DeepSeek token:
 

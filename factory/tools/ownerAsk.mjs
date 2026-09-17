@@ -50,12 +50,12 @@ if (!/tool[- ]policy/i.test(cp)) {
 if (!/not an owner ask/i.test(cp)) {
   errors.push("CONTROL_PLANE.md does not say a refusal is not an owner ask");
 }
-if (!/hands\.mjs launch/i.test(cp)) {
-  errors.push("CONTROL_PLANE.md does not name hands launch");
+if (!/launch the writer/i.test(cp)) {
+  errors.push("CONTROL_PLANE.md does not name launching the writer");
 }
 
 if (/start-process/i.test(agents)) {
-  errors.push("AGENTS.md names Start-Process; that is a hands act, not an ask");
+  errors.push("AGENTS.md names Start-Process; that is a control-plane act, not an ask");
 }
 
 const notAskJoined = (list.notAsk || []).join(" ").toLowerCase();

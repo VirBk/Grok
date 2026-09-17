@@ -59,7 +59,7 @@
     {
       "id": "D-09",
       "at": "2026-09-16",
-      "status": "adopted",
+      "status": "superseded",
       "summary": "Hands are a dumb runner. Claude Code is optional. Live picks live in factory/project.json; allowed ids in factory/runtimes.json. Default topology is local-hands (Grok + hands.mjs + Qwen Code + worktree + ff-only). Project managers mix from the catalog. Envelopes are git blobs. Hands never call a model.",
       "reversible": true
     },
@@ -215,6 +215,13 @@
       "at": "2026-09-17",
       "status": "adopted",
       "summary": "Size archive is CP hygiene at 80%, between landings, not a product envelope. The gate fails at cap; it does not split. First alumni sitting cuts to Now-only so product landings stay green. T53 I22.",
+      "reversible": true
+    },
+    {
+      "id": "D-33",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "Owner reversed D-09. Original CP loop is dual-runtime only (D-04): control plane issues, launches the writer, reviews, lands. Otto launched seats from the CP session. A required third hands actor (F6, hands.mjs) is a regression. hands.mjs may remain as optional scripts; it is not the orchestration. D-11 lean mix still holds minus that actor.",
       "reversible": true
     }
   ]

@@ -19,7 +19,7 @@ The kit is the thing you copy. The product is not. Grok stays the parent.
 13. When this child pays for a lesson, file an intake (`factory/templates/INTAKE.md`). Validate with `node factory/tools/intake.mjs`. Absorbing is a Grok envelope.
 14. A control plane that will issue or drop reads `factory/CONTROL_PLANE.md`. A ZERO that did not name its containers is not a finding. A tool-policy refusal is not an owner ask. A eureka is a spark, not a trap. A session-only waiver is not git.
 
-Writer seats: `node factory/tools/hands.mjs recipe`. Do not remap the control-plane session. Hands never call a model. Sessions are a fuse: `factory/sessions.json`. Do not brief a successor from a transcript. Detail: `factory/HANDS.md`.
+Writer seats: `node factory/tools/seat.mjs recipe`. The control plane launches. Do not remap the control-plane session. A third hands actor is not the loop (D-33). Sessions are a fuse: `factory/sessions.json`. Do not brief a successor from a transcript.
 
 ## Do not
 

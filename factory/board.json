@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. Size archive is CP at 80% between landings, not a product envelope (D-32 T53 I22). Script fails, does not split. Otto D-30 and Virbos D-31. Overlay still shelf. S03-S06 open. Path dashscope.",
+  "now": "Sitting 2. Owner reversed D-09: original CP loop has no hands actor (D-33). F6 third seat is regression. D-04 stands. Overlay still shelf. S03-S06 open. Path dashscope.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -348,6 +348,10 @@
     {
       "at": "2026-09-17",
       "event": "S06 opened. Session confirmation is not a hold. Reading files or alumni does not bind the next sentence. Look, not law."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "Owner reversed D-09. Original CP loop has no hands actor. F6 third seat is regression. D-33. D-04 stands."
     }
   ]
 }
