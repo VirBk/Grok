@@ -39,8 +39,12 @@ export OPENAI_API_KEY="\${OPENAI_API_KEY:-local}"
 #   qwen --auth-type openai --model qwen3-coder
 #
 # Hosted instead:
-#   export OPENAI_BASE_URL="https://dashscope.aliyuncs.com/compatible-mode/v1"
+# Linux/Mac:
+#   export OPENAI_BASE_URL="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
 #   export OPENAI_API_KEY="\${DASHSCOPE_API_KEY}"
+# Windows:
+#   $env:OPENAI_BASE_URL="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
+#   $env:DASHSCOPE_API_KEY="..."
 #
 # Print-mode. Envelope on stdin. Poll long jobs in the foreground.
 `,
@@ -155,10 +159,15 @@ export CLAUDE_CODE_SUBAGENT_MODEL="deepseek-flash"
   "pc-dashscope": `# No Claude Code. Grok judges. This PC runs hands. Token is DashScope.
 
 # 1. git, node. Install qwen-code.
-# 2. export DASHSCOPE_API_KEY=...
+# 2. export DASHSCOPE_API_KEY=... (never git, never VITE_)
 # 3. node factory/tools/hands.mjs apply-topology pc-dashscope
 # 4. isolate, then:
-#    OPENAI_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+# Linux/Mac:
+#    OPENAI_BASE_URL=https://dashscope-intl.aliyuncs.com/compatible-mode/v1
+#    qwen --auth-type openai --model qwen3-coder
+# Windows:
+#    $env:OPENAI_BASE_URL="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
+#    $env:DASHSCOPE_API_KEY="..."
 #    qwen --auth-type openai --model qwen3-coder
 # 5. Writer pushes the branch only. Grok reviews and lands.
 `,
@@ -167,6 +176,7 @@ export CLAUDE_CODE_SUBAGENT_MODEL="deepseek-flash"
 # 1. Place DASHSCOPE_API_KEY as a Codespaces secret once.
 # 2. node factory/tools/hands.mjs apply-topology cloud-dashscope
 # 3. isolate prints gh codespace create. Recipe is qwen-code hosted.
+#    OPENAI_BASE_URL=https://dashscope-intl.aliyuncs.com/compatible-mode/v1
 # 4. Writer pushes the branch only. Grok reviews and lands.
 # Do not add a GitHub Action until the secret exists.
 `,
