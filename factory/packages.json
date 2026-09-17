@@ -64,6 +64,11 @@
       "id": "F12",
       "title": "Token-only writer, no Claude Code",
       "status": "landed"
+    },
+    {
+      "id": "F13",
+      "title": "Sidecar factory for an ongoing product",
+      "status": "landed"
     }
   ]
 }

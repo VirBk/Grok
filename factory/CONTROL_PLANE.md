@@ -76,7 +76,7 @@ Waivers expire. Sitting increments. A tracked `.waiver` fails the gate. A spark 
 
 Do not write `handoff.md`. The tired session quarantines. The fresh session writes law.
 
-Otto and Virbos are alumni. A paste in `factory/drops/` is for that product's control plane after its running seats finish. It is not a kit overlay. It is not a second remote in this sitting.
+Otto and Virbos are alumni. A paste in `factory/drops/` is for that product's control plane after its running seats finish. It is not a kit overlay. Helping them is a sidecar child (`help-fork` / `help-collab`), never this sitting as their control plane.
 
 ## 8. Cloud isolate
 

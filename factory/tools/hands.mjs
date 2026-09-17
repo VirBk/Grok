@@ -30,6 +30,7 @@ const PICK_KEYS = [
   "access",
   "commitCredit",
   "promptCache",
+  "helpMode",
 ];
 
 function loadJson(path) {
@@ -83,6 +84,36 @@ function fail(label, errors) {
   process.exit(1);
 }
 
+function helpTarget(picks) {
+  if (!picks || picks.helpMode === "none") return "";
+  const path = join(root, "factory/help.json");
+  if (!existsSync(path)) return "";
+  try {
+    const h = loadJson(path);
+    return typeof h.target === "string" ? h.target.trim() : "";
+  } catch {
+    return "";
+  }
+}
+
+function helpErrors(picks) {
+  const errors = [];
+  if (!picks || picks.helpMode === "none" || picks.helpMode === "overlay-pin") return errors;
+  const path = join(root, "factory/help.json");
+  if (!existsSync(path)) {
+    errors.push("helpMode " + picks.helpMode + " needs factory/help.json (see factory/help.example.json)");
+    return errors;
+  }
+  const target = helpTarget(picks);
+  if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(target)) {
+    errors.push("factory/help.json target must be owner/repo");
+  }
+  if (/^virbk\/grok$/i.test(target)) {
+    errors.push("help target cannot be VirBk/Grok");
+  }
+  return errors;
+}
+
 function flag(name) {
   const i = process.argv.indexOf(name);
   return i >= 0 ? process.argv[i + 1] : "";
@@ -109,13 +140,15 @@ function printRecipe(picks) {
   }
   process.stdout.write(r.stdout || "");
   process.stdout.write("\n# model " + picks.writerModel + "\n");
-  process.stdout.write("# isolate " + picks.isolate + "  land " + picks.land + "  access " + picks.access + "  credit " + picks.commitCredit + "  cache " + picks.promptCache + "\n");
+  process.stdout.write("# isolate " + picks.isolate + "  land " + picks.land + "  access " + picks.access + "  credit " + picks.commitCredit + "  cache " + picks.promptCache + "  help " + picks.helpMode + "\n");
 }
 
 const cmd = process.argv[2] || "pick";
 
 if (cmd === "check") {
-  const errors = pickErrors(project(), runtimes());
+  const picks = project();
+  const rt = runtimes();
+  const errors = pickErrors(picks, rt).concat(helpErrors(picks));
   if (errors.length) fail("project picks failed", errors);
   console.log("project picks ok");
   process.exit(0);
@@ -186,6 +219,26 @@ if (cmd === "isolate") {
     console.log("gh codespace ssh -- 'git fetch origin && git checkout " + base + " && node factory/tools/hands.mjs recipe'");
     process.exit(0);
   }
+  if (picks.isolate === "help-clone") {
+    if (picks.helpMode === "none") fail("help isolate failed", ["help-clone needs helpMode fork-and-pr or collaborator-branch"]);
+    const herr = helpErrors(picks);
+    if (herr.length) fail("help isolate failed", herr);
+    const target = helpTarget(picks);
+    const dest = "../grok-" + lane.toLowerCase();
+    console.log("# help-clone. Factory stays here. Product is " + target + ". Not a second remote on this repo.");
+    console.log("# Envelope holds are product paths. Do not add factory/ to that tree. Do not land " + target + " main from here.");
+    if (picks.helpMode === "fork-and-pr") {
+      console.log("gh repo fork " + target + " --clone=false");
+      console.log("git clone https://github.com/" + target + " " + dest);
+    } else {
+      console.log("git clone https://github.com/" + target + " " + dest);
+    }
+    console.log("git -C " + dest + " fetch origin");
+    console.log("git -C " + dest + " checkout " + base);
+    console.log("# writer works in " + dest + ", pushes a branch, opens a PR to " + target);
+    console.log("# gh pr create --repo " + target + " --head <branch>");
+    process.exit(0);
+  }
   if (picks.isolate === "git-bus") {
     const fetched = git(["fetch", "origin"]);
     process.stderr.write(fetched.stderr || "");
@@ -240,6 +293,15 @@ if (cmd === "land") {
   const envPath = envelopePath(lane);
   if (!existsSync(envPath)) fail("envelope missing", [envPath]);
   if (picks.land === "github-rebase-after-approved") {
+    if (picks.helpMode !== "none") {
+      const herr = helpErrors(picks);
+      if (herr.length) fail("help land failed", herr);
+      const target = helpTarget(picks);
+      console.log("# printed only. Product PR to " + target + ". Factory files are not in that PR. Do not land " + target + " main from this factory.");
+      console.log("gh pr create --repo " + target + " --head <branch>");
+      console.log("gh pr merge --rebase --match-head-commit " + sha + " --repo " + target);
+      process.exit(0);
+    }
     console.log("# printed only. A red Action is a hard fail. Merge after VERDICT: APPROVED.");
     console.log("gh pr merge --rebase --match-head-commit " + sha);
     process.exit(0);

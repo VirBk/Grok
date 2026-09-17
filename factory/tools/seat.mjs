@@ -15,6 +15,8 @@
 //   node factory/tools/seat.mjs recipe pc-token
 //   node factory/tools/seat.mjs recipe pc-dashscope
 //   node factory/tools/seat.mjs recipe cloud-dashscope
+//   node factory/tools/seat.mjs recipe help-fork
+//   node factory/tools/seat.mjs recipe help-collab
 //   node factory/tools/seat.mjs worktree --lane F4 --base <sha>
 //
 // Does not call a model. Does not read API keys. The recipe is the launch.
@@ -167,6 +169,28 @@ export CLAUDE_CODE_SUBAGENT_MODEL="deepseek-flash"
 # 3. isolate prints gh codespace create. Recipe is qwen-code hosted.
 # 4. Writer pushes the branch only. Grok reviews and lands.
 # Do not add a GitHub Action until the secret exists.
+`,
+  "help-fork": `# Sidecar factory. This repo is not the product. Target is factory/help.json.
+# Example: help Virbos. Virbos stays alumni. Do not overlay factory/ onto it.
+
+# 1. Copy this kit into a new empty remote. Never VirBk/Grok.
+# 2. cp factory/help.example.json factory/help.json
+#    set target to owner/repo (example VirBk/virbos)
+# 3. node factory/tools/hands.mjs apply-topology help-fork
+# 4. git ls-remote https://github.com/<target> refs/heads/main
+# 5. node factory/tools/hands.mjs isolate --lane <ID> --base <target-sha>
+#    prints fork + sibling clone. Not a second remote here.
+# 6. Writer in that clone. Product files only. Push a branch. gh pr create --repo <target>
+# 7. This factory never lands the target's main. Grok of this child reviews the sidecar record.
+# Do not run this sitting as control plane of Grok and the target together.
+`,
+  "help-collab": `# Sidecar with invited write on the target. Target owner still lands main.
+
+# 1. Copy the kit into a new empty remote. factory/help.json names owner/repo.
+# 2. node factory/tools/hands.mjs apply-topology help-collab
+# 3. isolate prints a sibling clone. Writer topic-branch on the target.
+# 4. PR to the target. Product files only. Co-authored-by the target owner if that is the credit pick.
+# Do not overlay alumni. Do not land the target's main from here.
 `,
 };
 

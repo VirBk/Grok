@@ -10,7 +10,8 @@ Live surface the owner walks. Spec, not a writer envelope. Control plane wrote i
 4. Name — local folder `~/factory/<slug>`. Cloud codespace `grok-<lane>`, not the owner's disk. git-bus reuses the PC that already autobuilds.
 5. Charge — objective, goals, spec, expected result. Becomes the first envelope.
 6. Bench — install plan for that floor. Prepare writes `factory.project.json`, `SPEC.md`, `install.sh`, `.env.example`. The preview cannot apt-install on the laptop; the owner runs the script on the machine that hosts hands.
-7. Contribute — who may land, and which email GitHub attributes. Live picks `access` and `commitCredit` in `factory/project.json`. Catalog in `factory/runtimes.json`. Parent default is owner-only + owner-account. `apply-topology public-fork` or `team-shared` for a child. A collaborator is write access. A contributor is a commit that landed on default branch with an email on a GitHub account.
+7. Contribute — who may land, and which email GitHub attributes. Live picks `access` and `commitCredit`. Parent default is owner-only + owner-account. `public-fork` or `team-shared` when this repo is the product. A collaborator is write access. A contributor is a landed commit with an email on a GitHub account.
+8. Help — to add a complementary factory onto an ongoing product (example: Virbos), copy the kit into a **new empty remote**. `apply-topology help-fork` (no write on the target) or `help-collab` (invited write). Write `factory/help.json` from `factory/help.example.json`. Isolate clones the target as a sibling. PRs are product files only. This factory never lands the target's main, never overlays `factory/` onto alumni, never writes VirBk/Grok, never runs as control plane of Grok and the target in one sitting. Overlay stays shelf.
 
 ## Floor
 

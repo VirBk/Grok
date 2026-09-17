@@ -14,7 +14,8 @@
     "envelopeStore",
     "access",
     "commitCredit",
-    "promptCache"
+    "promptCache",
+    "helpMode"
   ],
   "properties": {
     "controlPlane": {
@@ -56,7 +57,11 @@
     "promptCache": {
       "type": "string",
       "minLength": 1
+    },
+    "helpMode": {
+      "type": "string",
+      "minLength": 1
     }
   },
-  "description": "The project manager's live picks. Allowed ids live in factory/runtimes.json catalog. hands.mjs check is the gate. promptCache is how a seat reuses a stable prefix: native provider/runtime cache, not a home-grown answer store."
+  "description": "The project manager's live picks. helpMode none means this repo is the product. fork-and-pr / collaborator-branch means this repo is a sidecar factory that helps another remote. Overlay is not a live pick."
 }

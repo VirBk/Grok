@@ -8,5 +8,6 @@
   "envelopeStore": "git-blob",
   "access": "owner-only",
   "commitCredit": "owner-account",
-  "promptCache": "local-kv"
+  "promptCache": "local-kv",
+  "helpMode": "none"
 }

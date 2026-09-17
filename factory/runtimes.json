@@ -11,7 +11,8 @@
     "envelopeStore": "git-blob",
     "access": "owner-only",
     "commitCredit": "owner-account",
-    "promptCache": "local-kv"
+    "promptCache": "local-kv",
+    "helpMode": "none"
   },
   "catalog": {
     "controlPlane": [
@@ -112,6 +113,11 @@
         "id": "codespace",
         "recommended": true,
         "note": "Throwaway GitHub Codespace. Writer token is a Codespaces secret, not git, not an Action. Printed gh create; not a red workflow."
+      },
+      {
+        "id": "help-clone",
+        "recommended": true,
+        "note": "Sibling clone of factory/help.json target. Not a second remote on this repo. Envelope holds are product paths."
       }
     ],
     "land": [
@@ -187,6 +193,28 @@
         "id": "off",
         "recommended": false,
         "note": "Do not rely on cache. Still keep the prefix stable so a later pick can turn it on."
+      }
+    ],
+    "helpMode": [
+      {
+        "id": "none",
+        "recommended": true,
+        "note": "This repo is the product. Parent default."
+      },
+      {
+        "id": "fork-and-pr",
+        "recommended": true,
+        "note": "Sidecar factory. Fork the target. PR product files only. Never land target main. Never put factory/ in that PR."
+      },
+      {
+        "id": "collaborator-branch",
+        "recommended": true,
+        "note": "Invited write on the target. Topic branches. Factory files stay in this repo. Target owner still lands main."
+      },
+      {
+        "id": "overlay-pin",
+        "recommended": false,
+        "note": "Copy the kit into the product. Alumni (Otto, Virbos) refuse this without a quiet week, kit SHA pin, and owner word. Not a GitHub fork of Grok."
       }
     ]
   },
@@ -350,6 +378,40 @@
         "commitCredit": "owner-account",
         "promptCache": "provider-prefix"
       }
+    },
+    {
+      "id": "help-fork",
+      "recommended": true,
+      "picks": {
+        "controlPlane": "grok-cloud",
+        "hands": "hands.mjs",
+        "writerHarness": "aider",
+        "writerModel": "deepseek-flash",
+        "isolate": "help-clone",
+        "land": "github-rebase-after-approved",
+        "envelopeStore": "git-blob",
+        "access": "fork-and-pull",
+        "commitCredit": "owner-account",
+        "promptCache": "provider-prefix",
+        "helpMode": "fork-and-pr"
+      }
+    },
+    {
+      "id": "help-collab",
+      "recommended": true,
+      "picks": {
+        "controlPlane": "grok-cloud",
+        "hands": "hands.mjs",
+        "writerHarness": "aider",
+        "writerModel": "deepseek-flash",
+        "isolate": "help-clone",
+        "land": "github-rebase-after-approved",
+        "envelopeStore": "git-blob",
+        "access": "collaborator-write",
+        "commitCredit": "co-authored-by-owner",
+        "promptCache": "provider-prefix",
+        "helpMode": "collaborator-branch"
+      }
     }
   ],
   "routing": {
@@ -360,7 +422,8 @@
     "reviewer": "never weaker than the writer, never the writer",
     "isolate": "git-bus if the autobuild PC is on; codespace if it is not",
     "promptCache": "Native to the model API or local runtime. Factory orchestrates prefix stability. Do not build an answer cache.",
-    "tokenOnly": "Claude Code absent. Grok judges. Writer is aider+DeepSeek or qwen-code+DashScope. PC: pc-token / pc-dashscope. Cloud: cloud-grok / cloud-dashscope."
+    "tokenOnly": "Claude Code absent. Grok judges. Writer is aider+DeepSeek or qwen-code+DashScope. PC: pc-token / pc-dashscope. Cloud: cloud-grok / cloud-dashscope.",
+    "help": "Sidecar factory helps an ongoing product. Copy the kit into an empty remote. Name the target in factory/help.json. Do not overlay alumni. Do not land the target's main. Do not run one sitting as CP of Grok and Virbos."
   },
   "ratesUsdPerM": {
     "note": "Indicative September 2026. Derive from the vendor page before you spend. inCached is a cache hit, not a miss.",
@@ -406,6 +469,8 @@
     "git-bus",
     "pc-token",
     "pc-dashscope",
-    "cloud-dashscope"
+    "cloud-dashscope",
+    "help-fork",
+    "help-collab"
   ]
 }

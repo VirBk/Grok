@@ -230,3 +230,8 @@
   kind: portable
   title: Claude Code installed to spend a writer token
   rule: Claude Code absent is the default. A DeepSeek or DashScope token goes in aider or qwen-code. Grok stays judgment. Do not install Claude Code or Cursor to spend the token. Do not remap this session onto it. Token in env or a Codespaces secret, never git.
+
+- id: T47
+  kind: portable
+  title: Overlay factory onto an alumni to help it
+  rule: To help Virbos or Otto, copy the kit into a new empty remote. Pick help-fork or help-collab. Name the target in factory/help.json. Isolate is a sibling clone. Product PRs contain no factory files. This factory never lands the target's main. Overlay-pin needs a quiet week, kit SHA, and owner word. Do not run one sitting as control plane of Grok and the target.

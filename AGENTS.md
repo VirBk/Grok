@@ -64,7 +64,7 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 - A child never writes VirBk/Grok. Returns arrive as intakes. Absorbing is a Grok envelope.
 - GitHub write access is not a contributor. A contributor is a commit that landed on the default branch with an email on a GitHub account. Parent `access` is `owner-only`.
 - An intake without a check is refused. A trap without a check is a diary.
-- An absorbed reference is not a live child. It takes a drop from `factory/drops/` after its running seats finish, not the kit.
+- An absorbed reference is not a live child. It takes a drop from `factory/drops/` after its running seats finish, not the kit. Helping it is a sidecar factory, not an overlay, and not this sitting as its control plane.
 
 ## 6. Data rules that never move
 
@@ -122,6 +122,7 @@ The repository is memory. The session is a fuse. Every model — Grok, Claude, G
 | Cloud isolate | `git-bus` or `codespace` — `factory/HANDS.md` |
 | Prompt cache | `promptCache` in `factory/project.json`. Native prefix. Do not store answers. |
 | Token only | `pc-token` / `pc-dashscope` / `cloud-grok` / `cloud-dashscope`. No Claude Code. |
+| Help a product | Sidecar: `help-fork` / `help-collab`. `factory/help.json`. Never overlay alumni. |
 | Hands | `factory/tools/hands.mjs` |
 | Envelope blobs | `factory/envelopes/` |
 | Writer recipes | `factory/tools/seat.mjs` |

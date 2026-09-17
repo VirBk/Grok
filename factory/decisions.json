@@ -125,6 +125,13 @@
       "status": "adopted",
       "summary": "Claude Code absent is the default. Owner with only a DeepSeek or DashScope token: Grok stays control plane. Writer is aider (DeepSeek) or qwen-code (DashScope). PC topologies pc-token and pc-dashscope. Cloud topologies cloud-grok and cloud-dashscope. Token in seat env or a Codespaces secret, never git, never VITE_. Do not install Claude Code or Cursor to spend the token. Do not remap Grok onto the token. F3 still waits on the key itself.",
       "reversible": true
+    },
+    {
+      "id": "D-20",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "To help an ongoing product (example: Virbos), copy the kit into a new empty remote and pick help-fork or help-collab. factory/help.json names the target. Isolate is a sibling clone. PRs contain product files only. This factory never lands the target's main, never overlays factory/ onto alumni, never writes VirBk/Grok, never runs as control plane of Grok and the target in one sitting. Overlay-pin stays shelf. Virbos stays alumni.",
+      "reversible": true
     }
   ]
 }

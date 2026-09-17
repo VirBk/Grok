@@ -1,0 +1,4 @@
+{
+  "target": "owner/repo",
+  "never": "factory files in a product PR; landing the target's main from this factory; overlay onto Otto or Virbos without a kit pin and owner word; one sitting as control plane of Grok and the target"
+}
