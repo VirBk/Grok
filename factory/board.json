@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. PAYG Singapore adopted. Owner picks the writer from the ladder. Path auto: native DeepSeek off-peak if healthy, DashScope on peak or outage. F3 still queued on keys in seat env. Sparks S01-S05 open.",
+  "now": "Sitting 2. F3 issued. Topology pc-dashscope. Path dashscope (native key absent). Writer qwen3-coder on PAYG Singapore. Sparks S01-S05 open.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -54,8 +54,8 @@
     {
       "id": "F3",
       "title": "First cheap writer envelope",
-      "state": "queued",
-      "hold": "DashScope PAYG key, and DEEPSEEK_API_KEY if native path is used"
+      "state": "issued",
+      "hold": "factory/tools/seat.mjs, docs/log/f3.md"
     },
     {
       "id": "F4",
@@ -276,6 +276,10 @@
     {
       "at": "2026-09-17",
       "event": "F14 landed. PAYG Singapore. Owner ladder. Path auto native/DashScope. T clock + probe. D-21. F3 still queued on the keys."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "F3 issued. pc-dashscope. Path pinned dashscope until DEEPSEEK_API_KEY is in the seat. D-22. Writer is qwen-code, not this session."
     }
   ]
 }

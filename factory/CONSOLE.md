@@ -44,7 +44,7 @@ Cloud, DeepSeek: `apply-topology cloud-grok`. Place the key as a Codespaces secr
 
 Cloud, DashScope: `apply-topology cloud-dashscope`. Same secret rule.
 
-Do not install Claude Code or Cursor to spend the token. Do not add a GitHub Action while the secret is missing. F3 still waits on the key itself.
+Do not install Claude Code or Cursor to spend the token. Do not add a GitHub Action while the secret is missing. F3 is issued on pc-dashscope.
 
 ## Token mix
 
@@ -81,9 +81,9 @@ node factory/tools/route.mjs probe
 
 Place `DASHSCOPE_API_KEY` for Qwen and for DeepSeek failover. Place `DEEPSEEK_API_KEY` to take native off-peak. Never git, never `VITE_`.
 
-## Queued
+## Issued
 
-F3 — first cheap writer envelope. Hold: a DeepSeek or Qwen key, or owner word that local Qwen is the writer.
+F3 — first cheap writer envelope. Topology pc-dashscope. Path dashscope (no native key). Holds: factory/tools/seat.mjs, docs/log/f3.md. Writer is qwen-code on this PC, not the control-plane session.
 
 ## Successor
 

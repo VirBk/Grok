@@ -8,8 +8,8 @@
   "envelopeStore": "git-blob",
   "access": "owner-only",
   "commitCredit": "owner-account",
-  "promptCache": "local-kv",
+  "promptCache": "provider-prefix",
   "helpMode": "none",
   "writerMeter": "dashscope-payg",
-  "writerPath": "auto"
+  "writerPath": "dashscope"
 }

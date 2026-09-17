@@ -139,6 +139,13 @@
       "status": "adopted",
       "summary": "Writer meter is Alibaba Model Studio PAYG (Singapore), not Token Plan. Owner picks the model from the Qwen and DeepSeek ladder, flagship down to the still-acceptable floor. Path auto uses native DeepSeek off-peak if healthy and DashScope PAYG on peak or native outage. Pin native or dashscope. Qwen is always DashScope. Keys stay in seat env.",
       "reversible": true
+    },
+    {
+      "id": "D-22",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "F3 issued on pc-dashscope. Owner has DASHSCOPE_API_KEY in the PC seat env and no DEEPSEEK_API_KEY. Path is pinned dashscope until the native key exists. Writer is qwen-code + qwen3-coder on PAYG Singapore. Grok stays control plane. Do not remap this session onto the token.",
+      "reversible": true
     }
   ]
 }
