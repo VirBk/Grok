@@ -10,6 +10,7 @@ Live surface the owner walks. Spec, not a writer envelope. Control plane wrote i
 4. Name — local folder `~/factory/<slug>`. Cloud clone `/tmp/grok-<slug>`, not the owner's disk.
 5. Charge — objective, goals, spec, expected result. Becomes the first envelope.
 6. Bench — install plan for that floor. Prepare writes `factory.project.json`, `SPEC.md`, `install.sh`, `.env.example`. The preview cannot apt-install on the laptop; the owner runs the script on the machine that hosts hands.
+7. Contribute — who may land, and which email GitHub attributes. Live picks `access` and `commitCredit` in `factory/project.json`. Catalog in `factory/runtimes.json`. Parent default is owner-only + owner-account. `apply-topology public-fork` or `team-shared` for a child. A collaborator is write access. A contributor is a commit that landed on default branch with an email on a GitHub account.
 
 ## Floor
 

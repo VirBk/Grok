@@ -97,6 +97,13 @@
       "status": "adopted",
       "summary": "Otto and Virbos remain read-only alumni. They receive factory/drops after running seats finish. They are not live children. Overlay of factory/ onto a live product is a later envelope with a kit pin, never a GitHub fork.",
       "reversible": true
+    },
+    {
+      "id": "D-16",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "GitHub contribute is a factory pick, not a sidebar. access (owner-only | fork-and-pull | collaborator-write) and commitCredit (owner-account | github-noreply | co-authored-by-owner) live in factory/project.json with the other PM options. Parent live picks are owner-only + owner-account. A collaborator is write access. A contributor is a commit that landed on default branch with an email on a GitHub account. Children mix from the catalog; a child still never writes VirBk/Grok.",
+      "reversible": true
     }
   ]
 }

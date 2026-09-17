@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Sitting 2. F8 alumni drops landed. Otto and Virbos take factory/drops after running seats finish. Sparks S01-S05 open, look not law. S01 S02 due this sitting. F3 still queued on a writer key.
+Sitting 2. F9 contribute options landed. access and commitCredit are PM picks in project.json. Parent is owner-only + owner-account. Sparks S01-S05 open, look not law. S01 S02 due this sitting. F3 still queued on a writer key.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -33,6 +33,7 @@ No envelope opens a gate.
 | F6 | landed | factory/project.json, factory/tools/hands.mjs | Hands split; PM-pickable topologies |
 | F7 | landed | factory/CONSOLE.md | Owner console and token mix |
 | F8 | landed | factory/drops/, factory/lineage.json | Alumni drops for Otto and Virbos |
+| F9 | landed | factory/project.json, factory/runtimes.json | GitHub contribute options |
 
 ## Holds
 
@@ -75,3 +76,4 @@ No envelope opens a gate.
 - 2026-09-17 Otto owner-wait absorbed. Closed ask list, hands launch, ruling-fits-hold, named checks. Intakes I12 I13 I14 I15. Traps T35 T36 T37 T38.
 - 2026-09-17 Spark/waiver quarantine landed. factory/sparks.json look-not-law. factory/.waiver gitignored. sitting close. Intakes I16 I17. Traps T39 T40. S01 S02 open.
 - 2026-09-17 F8 landed. Alumni drops for Otto and Virbos. Intake I18. Trap T41. Decision D-15. Overlay is a later envelope, not this sitting.
+- 2026-09-17 F9 landed. access and commitCredit are catalog picks. Topologies public-fork and team-shared. Trap T42 T43. Decision D-16. Parent remains owner-only.

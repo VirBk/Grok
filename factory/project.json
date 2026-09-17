@@ -5,5 +5,7 @@
   "writerModel": "qwen3-coder",
   "isolate": "worktree",
   "land": "ff-only",
-  "envelopeStore": "git-blob"
+  "envelopeStore": "git-blob",
+  "access": "owner-only",
+  "commitCredit": "owner-account"
 }

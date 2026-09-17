@@ -62,6 +62,7 @@ Two writers at a time is a ceiling, not a target. A seat with no blocker on the 
 - API keys live in a seat's environment, never in git, never in a `VITE_` variable.
 - A cloud writer receives a worktree of the envelope holds, not the owner's disk.
 - A child never writes VirBk/Grok. Returns arrive as intakes. Absorbing is a Grok envelope.
+- GitHub write access is not a contributor. A contributor is a commit that landed on the default branch with an email on a GitHub account. Parent `access` is `owner-only`.
 - An intake without a check is refused. A trap without a check is a diary.
 - An absorbed reference is not a live child. It takes a drop from `factory/drops/` after its running seats finish, not the kit.
 
@@ -117,6 +118,7 @@ The repository is memory. The session is a fuse. Every model — Grok, Claude, G
 | How to copy | `factory/COPY.md` |
 | Runtimes | `factory/runtimes.json` |
 | PM picks | `factory/project.json` |
+| Contribute | `access`, `commitCredit` in `factory/project.json` |
 | Hands | `factory/tools/hands.mjs` |
 | Envelope blobs | `factory/envelopes/` |
 | Writer recipes | `factory/tools/seat.mjs` |

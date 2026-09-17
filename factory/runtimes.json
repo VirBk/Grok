@@ -8,40 +8,148 @@
     "writerModel": "qwen3-coder",
     "isolate": "worktree",
     "land": "ff-only",
-    "envelopeStore": "git-blob"
+    "envelopeStore": "git-blob",
+    "access": "owner-only",
+    "commitCredit": "owner-account"
   },
   "catalog": {
     "controlPlane": [
-      { "id": "grok-cloud", "recommended": true, "note": "Grok chat. Fuse. Successor is AGENTS, BOARD, envelope." },
-      { "id": "claude-desktop", "recommended": false, "note": "Optional. Claude Code as judgment if the project manager already has it." }
+      {
+        "id": "grok-cloud",
+        "recommended": true,
+        "note": "Grok chat. Fuse. Successor is AGENTS, BOARD, envelope."
+      },
+      {
+        "id": "claude-desktop",
+        "recommended": false,
+        "note": "Optional. Claude Code as judgment if the project manager already has it."
+      }
     ],
     "hands": [
-      { "id": "hands.mjs", "recommended": true, "note": "Dumb runner. No model. No keys. factory/tools/hands.mjs." },
-      { "id": "claude-code", "recommended": false, "note": "Hands stay inside Claude Code. Do not remap that session onto a cheap model." }
+      {
+        "id": "hands.mjs",
+        "recommended": true,
+        "note": "Dumb runner. No model. No keys. factory/tools/hands.mjs."
+      },
+      {
+        "id": "claude-code",
+        "recommended": false,
+        "note": "Hands stay inside Claude Code. Do not remap that session onto a cheap model."
+      }
     ],
     "writerHarness": [
-      { "id": "qwen-code", "recommended": true, "note": "Qwen Code. Local Ollama or DashScope." },
-      { "id": "aider", "recommended": true, "note": "Git-native CLI. OpenAI-compat." },
-      { "id": "opencode", "recommended": false, "note": "Multi-model local harness." },
-      { "id": "goose", "recommended": false, "note": "Recipe runner. Local." },
-      { "id": "deepseek-openai", "recommended": true, "note": "Any OpenAI-compat client pointed at DeepSeek." },
-      { "id": "claude-code", "recommended": false, "note": "Claude Code harness with ANTHROPIC_BASE_URL remapped. Writer seat only." }
+      {
+        "id": "qwen-code",
+        "recommended": true,
+        "note": "Qwen Code. Local Ollama or DashScope."
+      },
+      {
+        "id": "aider",
+        "recommended": true,
+        "note": "Git-native CLI. OpenAI-compat."
+      },
+      {
+        "id": "opencode",
+        "recommended": false,
+        "note": "Multi-model local harness."
+      },
+      {
+        "id": "goose",
+        "recommended": false,
+        "note": "Recipe runner. Local."
+      },
+      {
+        "id": "deepseek-openai",
+        "recommended": true,
+        "note": "Any OpenAI-compat client pointed at DeepSeek."
+      },
+      {
+        "id": "claude-code",
+        "recommended": false,
+        "note": "Claude Code harness with ANTHROPIC_BASE_URL remapped. Writer seat only."
+      }
     ],
     "writerModel": [
-      { "id": "qwen3-coder", "recommended": true, "note": "Local. Zero dollars." },
-      { "id": "deepseek-flash", "recommended": true, "note": "Sweep writer." },
-      { "id": "deepseek-v4-pro", "recommended": true, "note": "Keystone writer." }
+      {
+        "id": "qwen3-coder",
+        "recommended": true,
+        "note": "Local. Zero dollars."
+      },
+      {
+        "id": "deepseek-flash",
+        "recommended": true,
+        "note": "Sweep writer."
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "recommended": true,
+        "note": "Keystone writer."
+      }
     ],
     "isolate": [
-      { "id": "worktree", "recommended": true, "note": "git worktree from live main on the machine that runs hands." },
-      { "id": "cloud-clone", "recommended": true, "note": "Throwaway clone. Codespace, VPS, or Fly. Not the owner's disk." }
+      {
+        "id": "worktree",
+        "recommended": true,
+        "note": "git worktree from live main on the machine that runs hands."
+      },
+      {
+        "id": "cloud-clone",
+        "recommended": true,
+        "note": "Throwaway clone. Codespace, VPS, or Fly. Not the owner's disk."
+      }
     ],
     "land": [
-      { "id": "ff-only", "recommended": true, "note": "git merge --ff-only after APPROVED. Local hands." },
-      { "id": "github-rebase-after-approved", "recommended": true, "note": "PR rebase after VERDICT: APPROVED. Printed, not a red Action." }
+      {
+        "id": "ff-only",
+        "recommended": true,
+        "note": "git merge --ff-only after APPROVED. Local hands."
+      },
+      {
+        "id": "github-rebase-after-approved",
+        "recommended": true,
+        "note": "PR rebase after VERDICT: APPROVED. Printed, not a red Action."
+      }
     ],
     "envelopeStore": [
-      { "id": "git-blob", "recommended": true, "note": "factory/envelopes/<lane>.md. Deleted on land. Issues are not the board." }
+      {
+        "id": "git-blob",
+        "recommended": true,
+        "note": "factory/envelopes/<lane>.md. Deleted on land. Issues are not the board."
+      }
+    ],
+    "access": [
+      {
+        "id": "owner-only",
+        "recommended": true,
+        "note": "Only the GitHub owner produces landed commits. Children return intakes. Parent default. Collaborator invite is not this pick."
+      },
+      {
+        "id": "fork-and-pull",
+        "recommended": true,
+        "note": "Anyone with read forks and opens a PR. Merge credits them as a GitHub contributor. They never receive write. They never push main."
+      },
+      {
+        "id": "collaborator-write",
+        "recommended": false,
+        "note": "Invite write. Topic branches. Owner still lands main. Write access is not a contributor; a landed commit is."
+      }
+    ],
+    "commitCredit": [
+      {
+        "id": "owner-account",
+        "recommended": true,
+        "note": "Author email is on the owner's GitHub account. Else the commit is anonymous on Insights and the contribution graph."
+      },
+      {
+        "id": "github-noreply",
+        "recommended": true,
+        "note": "login@users.noreply.github.com (or id+login@). Counts if that noreply address is on the account."
+      },
+      {
+        "id": "co-authored-by-owner",
+        "recommended": true,
+        "note": "Seat may author. Message includes Co-authored-by: Name <email on the owner account>. Factory email grok@factory is a miss."
+      }
     ]
   },
   "topologies": [
@@ -55,7 +163,9 @@
         "writerModel": "qwen3-coder",
         "isolate": "worktree",
         "land": "ff-only",
-        "envelopeStore": "git-blob"
+        "envelopeStore": "git-blob",
+        "access": "owner-only",
+        "commitCredit": "owner-account"
       }
     },
     {
@@ -68,7 +178,9 @@
         "writerModel": "deepseek-flash",
         "isolate": "cloud-clone",
         "land": "github-rebase-after-approved",
-        "envelopeStore": "git-blob"
+        "envelopeStore": "git-blob",
+        "access": "owner-only",
+        "commitCredit": "owner-account"
       }
     },
     {
@@ -81,7 +193,9 @@
         "writerModel": "deepseek-flash",
         "isolate": "worktree",
         "land": "ff-only",
-        "envelopeStore": "git-blob"
+        "envelopeStore": "git-blob",
+        "access": "owner-only",
+        "commitCredit": "owner-account"
       }
     },
     {
@@ -94,7 +208,39 @@
         "writerModel": "qwen3-coder",
         "isolate": "worktree",
         "land": "ff-only",
-        "envelopeStore": "git-blob"
+        "envelopeStore": "git-blob",
+        "access": "owner-only",
+        "commitCredit": "owner-account"
+      }
+    },
+    {
+      "id": "public-fork",
+      "recommended": false,
+      "picks": {
+        "controlPlane": "grok-cloud",
+        "hands": "hands.mjs",
+        "writerHarness": "qwen-code",
+        "writerModel": "qwen3-coder",
+        "isolate": "worktree",
+        "land": "github-rebase-after-approved",
+        "envelopeStore": "git-blob",
+        "access": "fork-and-pull",
+        "commitCredit": "owner-account"
+      }
+    },
+    {
+      "id": "team-shared",
+      "recommended": false,
+      "picks": {
+        "controlPlane": "grok-cloud",
+        "hands": "hands.mjs",
+        "writerHarness": "qwen-code",
+        "writerModel": "qwen3-coder",
+        "isolate": "worktree",
+        "land": "ff-only",
+        "envelopeStore": "git-blob",
+        "access": "collaborator-write",
+        "commitCredit": "co-authored-by-owner"
       }
     }
   ],
@@ -107,11 +253,26 @@
   },
   "ratesUsdPerM": {
     "note": "Indicative September 2026. Derive from the vendor page before you spend.",
-    "claude-opus": { "in": 5, "out": 25 },
-    "claude-sonnet": { "in": 3, "out": 15 },
-    "deepseek-flash": { "in": 0.14, "out": 0.28 },
-    "deepseek-pro": { "in": 0.435, "out": 0.87 },
-    "qwen-local": { "in": 0, "out": 0 }
+    "claude-opus": {
+      "in": 5,
+      "out": 25
+    },
+    "claude-sonnet": {
+      "in": 3,
+      "out": 15
+    },
+    "deepseek-flash": {
+      "in": 0.14,
+      "out": 0.28
+    },
+    "deepseek-pro": {
+      "in": 0.435,
+      "out": 0.87
+    },
+    "qwen-local": {
+      "in": 0,
+      "out": 0
+    }
   },
   "recipes": [
     "qwen-code",
@@ -123,6 +284,8 @@
     "desktop-deepseek",
     "desktop-qwen",
     "cloud-grok",
-    "local-hands"
+    "local-hands",
+    "public-fork",
+    "team-shared"
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. F8 alumni drops landed. Otto and Virbos take factory/drops after running seats finish. Sparks S01-S05 open, look not law. S01 S02 due this sitting. F3 still queued on a writer key.",
+  "now": "Sitting 2. F9 contribute options landed. access and commitCredit are PM picks in project.json. Parent is owner-only + owner-account. Sparks S01-S05 open, look not law. S01 S02 due this sitting. F3 still queued on a writer key.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -86,6 +86,12 @@
       "title": "Alumni drops for Otto and Virbos",
       "state": "landed",
       "hold": "factory/drops/, factory/lineage.json"
+    },
+    {
+      "id": "F9",
+      "title": "GitHub contribute options",
+      "state": "landed",
+      "hold": "factory/project.json, factory/runtimes.json"
     }
   ],
   "keystones": [
@@ -208,6 +214,10 @@
     {
       "at": "2026-09-17",
       "event": "F8 landed. Alumni drops for Otto and Virbos. Intake I18. Trap T41. Decision D-15. Overlay is a later envelope, not this sitting."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "F9 landed. access and commitCredit are catalog picks. Topologies public-fork and team-shared. Trap T42 T43. Decision D-16. Parent remains owner-only."
     }
   ]
 }

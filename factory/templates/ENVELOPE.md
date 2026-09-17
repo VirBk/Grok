@@ -28,7 +28,7 @@ Look hardest at
   If this lane names a law, circular, IRR, RFC, or PDF: the control plane fetched it before issue. If this lane is a queue name: scopeSearch opened every container, including empty ones. Every sentence of the ruling is implementable in Holds. A tool-policy refusal is not a reason this envelope waits.
 
 Runtime
-  Stamp from factory/project.json (topology id, or local-hands | cloud-grok | desktop-two-process | desktop-qwen).
+  Stamp from factory/project.json (topology id, or local-hands | cloud-grok | desktop-two-process | desktop-qwen | public-fork | team-shared).
   Writer seat only. Do not remap the control-plane session. Print-mode in the worktree.
   Hands: node factory/tools/hands.mjs. Never a model.
 

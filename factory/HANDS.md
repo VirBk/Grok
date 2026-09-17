@@ -12,8 +12,12 @@ Live values: `factory/project.json`. Allowed ids: `factory/runtimes.json` `catal
 node factory/tools/hands.mjs pick
 node factory/tools/hands.mjs apply-topology local-hands
 node factory/tools/hands.mjs apply-topology cloud-grok
+node factory/tools/hands.mjs apply-topology public-fork
+node factory/tools/hands.mjs apply-topology team-shared
 node factory/tools/hands.mjs check
 ```
+
+`access` is who may produce a landed commit (`owner-only`, `fork-and-pull`, `collaborator-write`). `commitCredit` is which email GitHub attributes (`owner-account`, `github-noreply`, `co-authored-by-owner`). Parent live picks stay `owner-only` + `owner-account`. A child never writes VirBk/Grok.
 
 Change one field after applying a topology. `check` fails an unknown id. Mixes are allowed; unknown ids are not.
 

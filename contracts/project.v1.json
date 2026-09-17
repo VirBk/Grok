@@ -11,16 +11,47 @@
     "writerModel",
     "isolate",
     "land",
-    "envelopeStore"
+    "envelopeStore",
+    "access",
+    "commitCredit"
   ],
   "properties": {
-    "controlPlane": { "type": "string", "minLength": 1 },
-    "hands": { "type": "string", "minLength": 1 },
-    "writerHarness": { "type": "string", "minLength": 1 },
-    "writerModel": { "type": "string", "minLength": 1 },
-    "isolate": { "type": "string", "minLength": 1 },
-    "land": { "type": "string", "minLength": 1 },
-    "envelopeStore": { "type": "string", "minLength": 1 }
+    "controlPlane": {
+      "type": "string",
+      "minLength": 1
+    },
+    "hands": {
+      "type": "string",
+      "minLength": 1
+    },
+    "writerHarness": {
+      "type": "string",
+      "minLength": 1
+    },
+    "writerModel": {
+      "type": "string",
+      "minLength": 1
+    },
+    "isolate": {
+      "type": "string",
+      "minLength": 1
+    },
+    "land": {
+      "type": "string",
+      "minLength": 1
+    },
+    "envelopeStore": {
+      "type": "string",
+      "minLength": 1
+    },
+    "access": {
+      "type": "string",
+      "minLength": 1
+    },
+    "commitCredit": {
+      "type": "string",
+      "minLength": 1
+    }
   },
-  "description": "The project manager's live picks. Allowed ids live in factory/runtimes.json catalog. hands.mjs check is the gate."
+  "description": "The project manager's live picks. Allowed ids live in factory/runtimes.json catalog. hands.mjs check is the gate. access is who may produce a landed commit. commitCredit is which email GitHub attributes on the graph."
 }
