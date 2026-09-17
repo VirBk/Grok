@@ -74,6 +74,11 @@
       "id": "F14",
       "title": "Owner-picked writer ladder and path router",
       "status": "landed"
+    },
+    {
+      "id": "F15",
+      "title": "Map hosted writer model to a real DashScope id",
+      "status": "issued"
     }
   ]
 }

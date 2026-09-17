@@ -2,7 +2,7 @@
   "controlPlane": "grok-cloud",
   "hands": "hands.mjs",
   "writerHarness": "qwen-code",
-  "writerModel": "qwen3-coder",
+  "writerModel": "qwen3-coder-plus",
   "isolate": "worktree",
   "land": "ff-only",
   "envelopeStore": "git-blob",

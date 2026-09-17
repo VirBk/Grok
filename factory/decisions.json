@@ -153,6 +153,13 @@
       "status": "adopted",
       "summary": "F3 landed. First cheap writer return accepted: seat recipes launch at dashscope-intl, not Beijing. Catalog writerModel qwen3-coder is not a DashScope API id; hosted launch uses qwen3-coder-plus (fallback qwen3-coder-next, qwen3.7-flash) until the catalog maps. Native DeepSeek still off. Grok stayed control plane.",
       "reversible": true
+    },
+    {
+      "id": "D-24",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "Catalog id qwen3-coder is the local Ollama tag, not a DashScope API name. Hosted topologies pc-dashscope and cloud-dashscope pick qwen3-coder-plus. Live writerModel is qwen3-coder-plus until the owner picks another ladder id that DashScope serves. Seat recipes must print the live pick, not a hardcoded alias.",
+      "reversible": true
     }
   ]
 }

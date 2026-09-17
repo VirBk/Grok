@@ -83,7 +83,11 @@ Place `DASHSCOPE_API_KEY` for Qwen and for DeepSeek failover. Place `DEEPSEEK_AP
 
 ## Landed this sitting
 
-F3 — first cheap writer envelope. Topology pc-dashscope. Path dashscope. Hosted launch is dashscope-intl. Catalog `qwen3-coder` is not a DashScope API id; use `qwen3-coder-plus`.
+F3 — first cheap writer envelope. Topology pc-dashscope. Path dashscope. Hosted launch is dashscope-intl.
+
+## Issued
+
+F15 — map hosted writer model to a real DashScope id. Live pick `qwen3-coder-plus`. Catalog `qwen3-coder` is Ollama-only. Holds: factory/tools/seat.mjs, docs/log/f15.md.
 
 ## Successor
 

@@ -82,7 +82,7 @@
       {
         "id": "qwen3-coder",
         "recommended": true,
-        "note": "Local Ollama (local-kv) or DashScope token (provider-prefix). Not Claude Code."
+        "note": "Local Ollama tag. Not a DashScope API id. Hosted PAYG uses qwen3-coder-plus."
       },
       {
         "id": "deepseek-flash",
@@ -415,7 +415,7 @@
         "controlPlane": "grok-cloud",
         "hands": "hands.mjs",
         "writerHarness": "qwen-code",
-        "writerModel": "qwen3-coder",
+        "writerModel": "qwen3-coder-plus",
         "isolate": "worktree",
         "land": "ff-only",
         "envelopeStore": "git-blob",
@@ -431,7 +431,7 @@
         "controlPlane": "grok-cloud",
         "hands": "hands.mjs",
         "writerHarness": "qwen-code",
-        "writerModel": "qwen3-coder",
+        "writerModel": "qwen3-coder-plus",
         "isolate": "codespace",
         "land": "github-rebase-after-approved",
         "envelopeStore": "git-blob",

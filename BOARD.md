@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Sitting 2. F3 landed. Dual-runtime loop closed once. Path dashscope (native key absent). Sparks S01-S05 open.
+Sitting 2. F15 issued. Map hosted writerModel to a real DashScope API id. Live pick qwen3-coder-plus. Path dashscope. Sparks S01-S05 open.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -39,6 +39,7 @@ No envelope opens a gate.
 | F12 | landed | factory/project.json, factory/runtimes.json | Token-only writer, no Claude Code |
 | F13 | landed | factory/project.json, factory/runtimes.json | Sidecar factory for an ongoing product |
 | F14 | landed | factory/writer-paths.json, factory/tools/route.mjs | Owner-picked writer ladder and path router |
+| F15 | issued | factory/tools/seat.mjs, docs/log/f15.md | Map hosted writer model to a real DashScope id |
 
 ## Holds
 
@@ -91,3 +92,4 @@ No envelope opens a gate.
 - 2026-09-17 F14 landed. PAYG Singapore. Owner ladder. Path auto native/DashScope. T clock + probe. D-21. F3 still queued on the keys.
 - 2026-09-17 F3 issued. pc-dashscope. Path pinned dashscope until DEEPSEEK_API_KEY is in the seat. D-22. Writer is qwen-code, not this session.
 - 2026-09-17 F3 landed. Writer qwen3-coder-plus on PAYG Singapore. Seat recipes use dashscope-intl. D-23. Catalog id qwen3-coder is not a DashScope API name.
+- 2026-09-17 F15 issued. Catalog: qwen3-coder is Ollama-only. pc-dashscope and cloud-dashscope pick qwen3-coder-plus. Writer interpolates live writerModel. D-24.
