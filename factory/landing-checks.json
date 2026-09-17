@@ -33,6 +33,10 @@
     {
       "name": "Writer path clock and failover",
       "run": "node factory/tools/route.mjs --self-test"
+    },
+    {
+      "name": "Hosted DashScope model map",
+      "run": "node factory/tools/seat.mjs --self-test"
     }
   ]
 }

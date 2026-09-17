@@ -81,14 +81,14 @@
       "id": "D-12",
       "at": "2026-09-17",
       "status": "adopted",
-      "summary": "Control-plane derivation is factory/CONTROL_PLANE.md. Any control plane — Grok in the cloud or Claude Code on the desktop — opens every container before ZERO, fetches a named issuance, and stamps collection as a second fact. A markdown-only grep of the queue line is not a finding.",
+      "summary": "Control-plane derivation is factory/CONTROL_PLANE.md. Any control plane \u2014 Grok in the cloud or Claude Code on the desktop \u2014 opens every container before ZERO, fetches a named issuance, and stamps collection as a second fact. A markdown-only grep of the queue line is not a finding.",
       "reversible": true
     },
     {
       "id": "D-14",
       "at": "2026-09-17",
       "status": "adopted",
-      "summary": "Three grades of memory. Law is AGENTS, traps, owner-ask, CONTROL_PLANE, absorbed lineage. Sparks are factory/sparks.json — look, not law; absorb or drop next sitting. Waivers are envelope holds or gitignored factory/.waiver and die at sitting close. The tired session quarantines; the fresh session writes law. No handoff.md.",
+      "summary": "Three grades of memory. Law is AGENTS, traps, owner-ask, CONTROL_PLANE, absorbed lineage. Sparks are factory/sparks.json \u2014 look, not law; absorb or drop next sitting. Waivers are envelope holds or gitignored factory/.waiver and die at sitting close. The tired session quarantines; the fresh session writes law. No handoff.md.",
       "reversible": true
     },
     {
@@ -173,6 +173,13 @@
       "at": "2026-09-17",
       "status": "adopted",
       "summary": "F16 landed. Hosted qwen-code and pc-dashscope recipes print the live factory/project.json writerModel. Local Ollama keeps the qwen3-coder tag. Catalog mapping is now executable at launch, not only a note.",
+      "reversible": true
+    },
+    {
+      "id": "D-27",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "Owner word: native DeepSeek key is present; usage lag is not key-absent. Live writerModel is deepseek-v4.1-flash on DashScope PAYG Singapore. Path stays pinned dashscope until native credit posts. Same DASHSCOPE_API_KEY as Qwen. Catalog deepseek-flash is native-only; unversioned DashScope deepseek-v4-pro is the expensive alias. Grok stays control plane.",
       "reversible": true
     }
   ]

@@ -191,6 +191,16 @@ if (cmd === "--self-test") {
     "outage",
   );
 
+  const hosted = { writerModel: "deepseek-v4.1-flash", writerPath: "dashscope" };
+  want("hosted-family", familyOf("deepseek-v4.1-flash"), "deepseek");
+  want("hosted-pin", resolve(hosted, spec, new Date("2026-09-18T11:00:00Z"), true).reason, "pin-dashscope");
+  want("hosted-key", resolve(hosted, spec, new Date("2026-09-18T11:00:00Z"), true).key, "DASHSCOPE_API_KEY");
+  want(
+    "hosted-base",
+    resolve(hosted, spec, new Date("2026-09-18T11:00:00Z"), true).base,
+    spec.bases.dashscope,
+  );
+
   if (failed.length) {
     console.error("self-test failed");
     for (const f of failed) console.error("  " + f);

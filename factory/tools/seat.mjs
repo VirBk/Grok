@@ -30,6 +30,17 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "../..");
 
 const writerModel = JSON.parse(readFileSync(join(root, "factory", "project.json"), "utf8")).writerModel;
 
+// Native catalog ids are not DashScope API ids. Hosted recipes print the map.
+const HOSTED = {
+  "qwen3-coder": "qwen3-coder-plus",
+  "deepseek-flash": "deepseek-v4.1-flash",
+  "deepseek-v4-pro": "deepseek-v4-pro-0813",
+};
+function hostedModel(id) {
+  return HOSTED[id] || id;
+}
+const hosted = hostedModel(writerModel);
+
 const RECIPES = {
   "qwen-code": (m) => `# Writer seat — Qwen Code.
 # Control plane stays Grok (or Claude desktop). Do not remap the CP session.
@@ -176,12 +187,13 @@ export CLAUDE_CODE_SUBAGENT_MODEL="deepseek-flash"
 #    qwen --auth-type openai --model ${m}
 # 5. Writer pushes the branch only. Grok reviews and lands.
 `,
-  "cloud-dashscope": `# No Claude Code. Autobuild PC is off. Token is DashScope.
+  "cloud-dashscope": (m) => `# No Claude Code. Autobuild PC is off. Token is DashScope.
 
 # 1. Place DASHSCOPE_API_KEY as a Codespaces secret once.
 # 2. node factory/tools/hands.mjs apply-topology cloud-dashscope
 # 3. isolate prints gh codespace create. Recipe is qwen-code hosted.
 #    OPENAI_BASE_URL=https://dashscope-intl.aliyuncs.com/compatible-mode/v1
+#    qwen --auth-type openai --model ${m}
 # 4. Writer pushes the branch only. Grok reviews and lands.
 # Do not add a GitHub Action until the secret exists.
 `,
@@ -228,7 +240,7 @@ if (cmd === "recipe") {
     console.error("unknown recipe. try: " + Object.keys(RECIPES).join(", "));
     process.exit(1);
   }
-  const body = typeof entry === "function" ? entry(writerModel) : entry;
+  const body = typeof entry === "function" ? entry(hosted) : entry;
   process.stdout.write(body);
   process.exit(0);
 }
@@ -255,5 +267,28 @@ if (cmd === "worktree") {
   process.exit(0);
 }
 
-console.error("usage: node factory/tools/seat.mjs list|recipe|worktree");
+if (cmd === "--self-test") {
+  const failed = [];
+  function want(label, got, exp) {
+    if (got !== exp) failed.push(label + ": got " + got + " want " + exp);
+  }
+  want("flash", hostedModel("deepseek-flash"), "deepseek-v4.1-flash");
+  want("pro", hostedModel("deepseek-v4-pro"), "deepseek-v4-pro-0813");
+  want("plus", hostedModel("qwen3-coder"), "qwen3-coder-plus");
+  want("passthrough", hostedModel("deepseek-v4.1-flash"), "deepseek-v4.1-flash");
+  const recipe = RECIPES["pc-dashscope"](hosted);
+  if (!recipe.includes("--model " + hosted)) failed.push("pc-dashscope missing live hosted id");
+  if (recipe.includes("--model deepseek-flash\n") || recipe.includes("--model deepseek-flash\r")) {
+    failed.push("pc-dashscope leaked native id");
+  }
+  if (failed.length) {
+    console.error("self-test failed");
+    for (const f of failed) console.error("  " + f);
+    process.exit(1);
+  }
+  console.log("self-test ok");
+  process.exit(0);
+}
+
+console.error("usage: node factory/tools/seat.mjs list|recipe|worktree|--self-test");
 process.exit(1);

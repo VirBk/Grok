@@ -87,12 +87,22 @@
       {
         "id": "deepseek-flash",
         "recommended": true,
-        "note": "Sweep writer."
+        "note": "Native sweep (api.deepseek.com). Hosted DashScope id is deepseek-v4.1-flash."
       },
       {
         "id": "deepseek-v4-pro",
         "recommended": true,
-        "note": "Keystone writer."
+        "note": "Native keystone. Hosted snapshot is deepseek-v4-pro-0813. Unversioned DashScope deepseek-v4-pro is the $2.40/$4.80 alias."
+      },
+      {
+        "id": "deepseek-v4.1-flash",
+        "recommended": true,
+        "note": "DashScope Singapore sweep. Same meter as Qwen. Do not send native id deepseek-flash to DashScope."
+      },
+      {
+        "id": "deepseek-v4-pro-0813",
+        "recommended": true,
+        "note": "DashScope Singapore keystone snapshot. Peak/off-peak. Do not send unversioned deepseek-v4-pro."
       },
       {
         "id": "qwen3.8-max",

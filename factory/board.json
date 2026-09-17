@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. F16 landed. Hosted recipes print live writerModel. Path dashscope. Native key absent. Sparks S01-S05 open.",
+  "now": "Sitting 2. F17 landed. DashScope seat is deepseek-v4.1-flash. Path dashscope. Native credit not posted. F15 split. Sparks S01-S05 open.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -49,7 +49,7 @@
       "id": "F2",
       "title": "Name the product paragraph and never-move rules",
       "state": "landed",
-      "hold": "AGENTS.md §1 and §5"
+      "hold": "AGENTS.md \u00a71 and \u00a75"
     },
     {
       "id": "F3",
@@ -134,11 +134,17 @@
       "title": "Hosted recipes print the live DashScope model id",
       "state": "landed",
       "hold": "factory/tools/seat.mjs, docs/log/f16.md"
+    },
+    {
+      "id": "F17",
+      "title": "DashScope DeepSeek Flash on the live seat",
+      "state": "landed",
+      "hold": "factory/project.json, factory/tools/seat.mjs, docs/log/f17.md"
     }
   ],
   "keystones": [
-    "Dual-runtime closed loop: spec → runtime-stamped envelope → cheap writer return → strong review → land → spend in the lane log",
-    "Parent flywheel: copy → run → return intake → Grok absorbs under size budgets"
+    "Dual-runtime closed loop: spec \u2192 runtime-stamped envelope \u2192 cheap writer return \u2192 strong review \u2192 land \u2192 spend in the lane log",
+    "Parent flywheel: copy \u2192 run \u2192 return intake \u2192 Grok absorbs under size budgets"
   ],
   "holds": [
     {
@@ -308,6 +314,10 @@
     {
       "at": "2026-09-17",
       "event": "F16 landed. seat.mjs interpolates live writerModel (qwen3-coder-plus). F15 stays split. D-26."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "F17 landed. Same DASHSCOPE_API_KEY invokes deepseek-v4.1-flash. Hosted map: deepseek-flash \u2192 deepseek-v4.1-flash. Path stays dashscope until native credit posts. T48. D-27. F15 stays split."
     }
   ]
 }

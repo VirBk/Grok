@@ -235,3 +235,8 @@
   kind: portable
   title: Overlay factory onto an alumni to help it
   rule: To help Virbos or Otto, copy the kit into a new empty remote. Pick help-fork or help-collab. Name the target in factory/help.json. Isolate is a sibling clone. Product PRs contain no factory files. This factory never lands the target's main. Overlay-pin needs a quiet week, kit SHA, and owner word. Do not run one sitting as control plane of Grok and the target.
+
+- id: T48
+  kind: portable
+  title: Native catalog id sent as a DashScope model
+  rule: DashScope API ids are deepseek-v4.1-flash and deepseek-v4-pro-0813. deepseek-flash and deepseek-v4-pro are native names. Unversioned DashScope deepseek-v4-pro is the $2.40/$4.80 alias. Hosted recipes print the mapped id.

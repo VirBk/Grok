@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Sitting 2. F16 landed. Hosted recipes print live writerModel. Path dashscope. Native key absent. Sparks S01-S05 open.
+Sitting 2. F17 landed. DashScope seat is deepseek-v4.1-flash. Path dashscope. Native credit not posted. F15 split. Sparks S01-S05 open.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -41,6 +41,7 @@ No envelope opens a gate.
 | F14 | landed | factory/writer-paths.json, factory/tools/route.mjs | Owner-picked writer ladder and path router |
 | F15 | split | factory/tools/seat.mjs, docs/log/f15.md | Map hosted writer model to a real DashScope id |
 | F16 | landed | factory/tools/seat.mjs, docs/log/f16.md | Hosted recipes print the live DashScope model id |
+| F17 | landed | factory/project.json, factory/tools/seat.mjs, docs/log/f17.md | DashScope DeepSeek Flash on the live seat |
 
 ## Holds
 
@@ -96,3 +97,4 @@ No envelope opens a gate.
 - 2026-09-17 F15 issued. Catalog: qwen3-coder is Ollama-only. pc-dashscope and cloud-dashscope pick qwen3-coder-plus. Writer interpolates live writerModel. D-24.
 - 2026-09-17 F15 split. Writer escaped JS ${writerModel}; recipes printed a placeholder. F16 issued on qwen3.7-plus. D-25.
 - 2026-09-17 F16 landed. seat.mjs interpolates live writerModel (qwen3-coder-plus). F15 stays split. D-26.
+- 2026-09-17 F17 landed. Same DASHSCOPE_API_KEY invokes deepseek-v4.1-flash. Hosted map: deepseek-flash → deepseek-v4.1-flash. Path stays dashscope until native credit posts. T48. D-27. F15 stays split.
