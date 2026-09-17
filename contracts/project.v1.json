@@ -15,7 +15,9 @@
     "access",
     "commitCredit",
     "promptCache",
-    "helpMode"
+    "helpMode",
+    "writerMeter",
+    "writerPath"
   ],
   "properties": {
     "controlPlane": {
@@ -61,7 +63,15 @@
     "helpMode": {
       "type": "string",
       "minLength": 1
+    },
+    "writerMeter": {
+      "type": "string",
+      "minLength": 1
+    },
+    "writerPath": {
+      "type": "string",
+      "minLength": 1
     }
   },
-  "description": "The project manager's live picks. helpMode none means this repo is the product. fork-and-pr / collaborator-branch means this repo is a sidecar factory that helps another remote. Overlay is not a live pick."
+  "description": "The project manager's live picks. writerPath auto follows the DeepSeek clock and native probe. helpMode none means this repo is the product."
 }

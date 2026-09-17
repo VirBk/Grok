@@ -81,14 +81,14 @@
       "id": "D-12",
       "at": "2026-09-17",
       "status": "adopted",
-      "summary": "Control-plane derivation is factory/CONTROL_PLANE.md. Any control plane \u2014 Grok in the cloud or Claude Code on the desktop \u2014 opens every container before ZERO, fetches a named issuance, and stamps collection as a second fact. A markdown-only grep of the queue line is not a finding.",
+      "summary": "Control-plane derivation is factory/CONTROL_PLANE.md. Any control plane — Grok in the cloud or Claude Code on the desktop — opens every container before ZERO, fetches a named issuance, and stamps collection as a second fact. A markdown-only grep of the queue line is not a finding.",
       "reversible": true
     },
     {
       "id": "D-14",
       "at": "2026-09-17",
       "status": "adopted",
-      "summary": "Three grades of memory. Law is AGENTS, traps, owner-ask, CONTROL_PLANE, absorbed lineage. Sparks are factory/sparks.json \u2014 look, not law; absorb or drop next sitting. Waivers are envelope holds or gitignored factory/.waiver and die at sitting close. The tired session quarantines; the fresh session writes law. No handoff.md.",
+      "summary": "Three grades of memory. Law is AGENTS, traps, owner-ask, CONTROL_PLANE, absorbed lineage. Sparks are factory/sparks.json — look, not law; absorb or drop next sitting. Waivers are envelope holds or gitignored factory/.waiver and die at sitting close. The tired session quarantines; the fresh session writes law. No handoff.md.",
       "reversible": true
     },
     {
@@ -131,6 +131,13 @@
       "at": "2026-09-17",
       "status": "adopted",
       "summary": "To help an ongoing product (example: Virbos), copy the kit into a new empty remote and pick help-fork or help-collab. factory/help.json names the target. Isolate is a sibling clone. PRs contain product files only. This factory never lands the target's main, never overlays factory/ onto alumni, never writes VirBk/Grok, never runs as control plane of Grok and the target in one sitting. Overlay-pin stays shelf. Virbos stays alumni.",
+      "reversible": true
+    },
+    {
+      "id": "D-21",
+      "at": "2026-09-17",
+      "status": "adopted",
+      "summary": "Writer meter is Alibaba Model Studio PAYG (Singapore), not Token Plan. Owner picks the model from the Qwen and DeepSeek ladder, flagship down to the still-acceptable floor. Path auto uses native DeepSeek off-peak if healthy and DashScope PAYG on peak or native outage. Pin native or dashscope. Qwen is always DashScope. Keys stay in seat env.",
       "reversible": true
     }
   ]

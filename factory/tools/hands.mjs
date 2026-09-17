@@ -31,6 +31,8 @@ const PICK_KEYS = [
   "commitCredit",
   "promptCache",
   "helpMode",
+  "writerMeter",
+  "writerPath",
 ];
 
 function loadJson(path) {

@@ -1,0 +1,29 @@
+{
+  "meter": "dashscope-payg",
+  "region": "ap-southeast-1",
+  "peak": {
+    "provider": "deepseek-native",
+    "tz": "UTC",
+    "weekdays": [1, 2, 3, 4, 5],
+    "windowsUtc": [
+      ["01:00", "04:00"],
+      ["06:00", "10:00"]
+    ],
+    "note": "Peak hours are 01:00-04:00 and 06:00-10:00 UTC, Monday through Friday. All other hours are off-peak. Source: DeepSeek pricing footnote."
+  },
+  "paths": {
+    "auto": "Native DeepSeek off-peak if healthy. DashScope PAYG on peak, native timeout, or Qwen.",
+    "native": "Pin api.deepseek.com. Owner accepts peak rates. Outage still fails over.",
+    "dashscope": "Pin Model Studio PAYG Singapore."
+  },
+  "bases": {
+    "dashscope": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+    "native": "https://api.deepseek.com/v1"
+  },
+  "probe": {
+    "url": "https://api.deepseek.com/models",
+    "timeoutMs": 3000,
+    "up": "Any HTTP response, including 401.",
+    "down": "Timeout, DNS, or network error."
+  }
+}

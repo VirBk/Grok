@@ -9,5 +9,7 @@
   "access": "owner-only",
   "commitCredit": "owner-account",
   "promptCache": "local-kv",
-  "helpMode": "none"
+  "helpMode": "none",
+  "writerMeter": "dashscope-payg",
+  "writerPath": "auto"
 }

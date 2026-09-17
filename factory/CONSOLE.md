@@ -58,6 +58,29 @@ Prompt cache is native. DeepSeek, Grok, and Qwen already cache a matching prefix
 
 Forbidden cuts: remap this control plane onto DeepSeek or Qwen; skip review; writer reviews itself; skip the landing gate; staff local and cloud on the same lane; put a clock in the cached prefix.
 
+## Writer ladder
+
+Meter is DashScope PAYG (Singapore). Not Token Plan. Not provisioned throughput.
+
+The owner picks the model, flagship down to the still-acceptable floor:
+
+- Qwen: qwen3.8-max, qwen3.7-plus, qwen3-coder-plus, qwen3-coder-next, qwen3.7-flash
+- DeepSeek: deepseek-v4-pro, deepseek-flash
+
+Path:
+
+- `auto` — native DeepSeek off-peak if healthy; DashScope PAYG on peak (01:00–04:00 and 06:00–10:00 UTC, weekday) or if native does not answer. Qwen is always DashScope.
+- `native` — pin api.deepseek.com. Peak rates stand. Outage still fails over.
+- `dashscope` — pin Model Studio PAYG.
+
+```
+node factory/tools/route.mjs resolve
+node factory/tools/route.mjs peak
+node factory/tools/route.mjs probe
+```
+
+Place `DASHSCOPE_API_KEY` for Qwen and for DeepSeek failover. Place `DEEPSEEK_API_KEY` to take native off-peak. Never git, never `VITE_`.
+
 ## Queued
 
 F3 — first cheap writer envelope. Hold: a DeepSeek or Qwen key, or owner word that local Qwen is the writer.

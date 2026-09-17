@@ -1,6 +1,6 @@
 {
-  "product": "Dual-runtime factory. Strong control plane, dumb hands, cheap writer seats. Claude Code is absent by default. A DeepSeek or DashScope token is the writer, never the control plane.",
-  "mistake": "Do not remap the control-plane session to DeepSeek, Qwen, or Cursor Cloud Agent. Do not give hands a model. Do not add a GitHub Action while the writer secret is missing.",
+  "product": "Dual-runtime factory. Strong control plane, dumb hands, cheap writer seats. Owner picks the writer from the ladder. Meter is DashScope PAYG. Path auto is native DeepSeek off-peak if healthy, DashScope on peak or outage.",
+  "mistake": "Do not remap the control-plane session to DeepSeek, Qwen, or Cursor Cloud Agent. Do not give hands a model. Do not add a GitHub Action while the writer secret is missing. Do not buy Token Plan for F3.",
   "default": {
     "controlPlane": "grok-cloud",
     "hands": "hands.mjs",
@@ -12,7 +12,9 @@
     "access": "owner-only",
     "commitCredit": "owner-account",
     "promptCache": "local-kv",
-    "helpMode": "none"
+    "helpMode": "none",
+    "writerMeter": "dashscope-payg",
+    "writerPath": "auto"
   },
   "catalog": {
     "controlPlane": [
@@ -91,6 +93,31 @@
         "id": "deepseek-v4-pro",
         "recommended": true,
         "note": "Keystone writer."
+      },
+      {
+        "id": "qwen3.8-max",
+        "recommended": true,
+        "note": "Qwen flagship. Keystone only when named."
+      },
+      {
+        "id": "qwen3.7-plus",
+        "recommended": true,
+        "note": "Strong general sweep on DashScope PAYG."
+      },
+      {
+        "id": "qwen3-coder-plus",
+        "recommended": true,
+        "note": "Coding flagship on DashScope PAYG."
+      },
+      {
+        "id": "qwen3-coder-next",
+        "recommended": true,
+        "note": "Coding mid. Acceptable envelope writer."
+      },
+      {
+        "id": "qwen3.7-flash",
+        "recommended": true,
+        "note": "Floor that is still acceptable. Cheap PAYG sweep."
       }
     ],
     "isolate": [
@@ -215,6 +242,40 @@
         "id": "overlay-pin",
         "recommended": false,
         "note": "Copy the kit into the product. Alumni (Otto, Virbos) refuse this without a quiet week, kit SHA pin, and owner word. Not a GitHub fork of Grok."
+      }
+    ],
+    "writerMeter": [
+      {
+        "id": "dashscope-payg",
+        "recommended": true,
+        "note": "Alibaba Model Studio Singapore. Standard key. Qwen, DeepSeek, GLM. Not Token Plan."
+      },
+      {
+        "id": "deepseek-native",
+        "recommended": true,
+        "note": "api.deepseek.com. Cheaper off-peak. Pair with dashscope-payg for auto."
+      },
+      {
+        "id": "local-ollama",
+        "recommended": true,
+        "note": "Local Qwen. Zero token bill."
+      }
+    ],
+    "writerPath": [
+      {
+        "id": "auto",
+        "recommended": true,
+        "note": "Native DeepSeek off-peak if healthy. DashScope PAYG on peak, timeout, or Qwen."
+      },
+      {
+        "id": "native",
+        "recommended": true,
+        "note": "Pin api.deepseek.com. Owner accepts peak rates. Outage still fails over."
+      },
+      {
+        "id": "dashscope",
+        "recommended": true,
+        "note": "Pin Model Studio PAYG."
       }
     ]
   },
@@ -423,7 +484,9 @@
     "isolate": "git-bus if the autobuild PC is on; codespace if it is not",
     "promptCache": "Native to the model API or local runtime. Factory orchestrates prefix stability. Do not build an answer cache.",
     "tokenOnly": "Claude Code absent. Grok judges. Writer is aider+DeepSeek or qwen-code+DashScope. PC: pc-token / pc-dashscope. Cloud: cloud-grok / cloud-dashscope.",
-    "help": "Sidecar factory helps an ongoing product. Copy the kit into an empty remote. Name the target in factory/help.json. Do not overlay alumni. Do not land the target's main. Do not run one sitting as CP of Grok and Virbos."
+    "help": "Sidecar factory helps an ongoing product. Copy the kit into an empty remote. Name the target in factory/help.json. Do not overlay alumni. Do not land the target's main. Do not run one sitting as CP of Grok and Virbos.",
+    "writerPath": "Owner picks the model. auto: native DeepSeek off-peak if healthy; DashScope PAYG on peak or outage. Qwen is always DashScope. Pin native or dashscope to override.",
+    "writerMeter": "dashscope-payg is the unified Alibaba meter. Token Plan is not this pick."
   },
   "ratesUsdPerM": {
     "note": "Indicative September 2026. Derive from the vendor page before you spend. inCached is a cache hit, not a miss.",
@@ -436,18 +499,26 @@
       "out": 15
     },
     "deepseek-flash": {
-      "in": 0.14,
-      "out": 0.28,
-      "inCached": 0.006
+      "in": 0.15,
+      "out": 0.6,
+      "inCached": 0.003,
+      "peakIn": 0.3,
+      "peakOut": 1.2
     },
     "deepseek-pro": {
-      "in": 0.435,
-      "out": 0.87,
-      "inCached": 0.044
+      "in": 0.66,
+      "out": 1.98,
+      "inCached": 0.022,
+      "peakIn": 1.32,
+      "peakOut": 3.96
     },
     "qwen-local": {
       "in": 0,
       "out": 0
+    },
+    "qwen3.7-flash": {
+      "in": 0.03,
+      "out": 0.13
     }
   },
   "recipes": [
@@ -471,6 +542,7 @@
     "pc-dashscope",
     "cloud-dashscope",
     "help-fork",
-    "help-collab"
+    "help-collab",
+    "writer-path"
   ]
 }

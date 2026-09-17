@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Sitting 2. F13 sidecar help adopted. help-fork / help-collab. Virbos stays alumni. Overlay still shelf. F3 still queued on a writer key. Sparks S01-S05 open.
+Sitting 2. PAYG Singapore adopted. Owner picks the writer from the ladder. Path auto: native DeepSeek off-peak if healthy, DashScope on peak or outage. F3 still queued on keys in seat env. Sparks S01-S05 open.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -27,7 +27,7 @@ No envelope opens a gate.
 | F0 | landed | factory/, AGENTS.md | Stand up the factory kit |
 | F1 | landed | none | Owner specs land |
 | F2 | landed | AGENTS.md §1 and §5 | Name the product paragraph and never-move rules |
-| F3 | queued | a DeepSeek or Qwen key, or owner word that local Qwen is the writer | First cheap writer envelope |
+| F3 | queued | DashScope PAYG key, and DEEPSEEK_API_KEY if native path is used | First cheap writer envelope |
 | F4 | landed | factory/lineage.json | Parent factory lineage loop |
 | F5 | landed | factory/sessions.json | Session fuse protocol |
 | F6 | landed | factory/project.json, factory/tools/hands.mjs | Hands split; PM-pickable topologies |
@@ -38,6 +38,7 @@ No envelope opens a gate.
 | F11 | landed | factory/project.json, factory/runtimes.json | Prompt cache as a native prefix, orchestrated |
 | F12 | landed | factory/project.json, factory/runtimes.json | Token-only writer, no Claude Code |
 | F13 | landed | factory/project.json, factory/runtimes.json | Sidecar factory for an ongoing product |
+| F14 | landed | factory/writer-paths.json, factory/tools/route.mjs | Owner-picked writer ladder and path router |
 
 ## Holds
 
@@ -55,6 +56,8 @@ No envelope opens a gate.
 - factory/owner-ask.json — control plane
 - factory/sparks.json — control plane
 - factory/drops/ — control plane
+- factory/writer-paths.json — control plane
+- factory/tools/route.mjs — control plane
 
 ## Keystones
 
@@ -85,3 +88,4 @@ No envelope opens a gate.
 - 2026-09-17 F11 landed. promptCache pick. Trap T45. Decision D-18. No answer store. Prefix law in the envelope stamp.
 - 2026-09-17 F12 landed. Topologies pc-token, pc-dashscope, cloud-dashscope. Trap T46. Decision D-19. Token is the writer, never the control plane. F3 still queued on the key.
 - 2026-09-17 F13 landed. helpMode pick. Topologies help-fork and help-collab. Isolate help-clone. Trap T47. Decision D-20. Virbos stays alumni. Overlay still shelf.
+- 2026-09-17 F14 landed. PAYG Singapore. Owner ladder. Path auto native/DashScope. T clock + probe. D-21. F3 still queued on the keys.

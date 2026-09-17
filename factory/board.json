@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. F13 sidecar help adopted. help-fork / help-collab. Virbos stays alumni. Overlay still shelf. F3 still queued on a writer key. Sparks S01-S05 open.",
+  "now": "Sitting 2. PAYG Singapore adopted. Owner picks the writer from the ladder. Path auto: native DeepSeek off-peak if healthy, DashScope on peak or outage. F3 still queued on keys in seat env. Sparks S01-S05 open.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -49,13 +49,13 @@
       "id": "F2",
       "title": "Name the product paragraph and never-move rules",
       "state": "landed",
-      "hold": "AGENTS.md \u00a71 and \u00a75"
+      "hold": "AGENTS.md §1 and §5"
     },
     {
       "id": "F3",
       "title": "First cheap writer envelope",
       "state": "queued",
-      "hold": "a DeepSeek or Qwen key, or owner word that local Qwen is the writer"
+      "hold": "DashScope PAYG key, and DEEPSEEK_API_KEY if native path is used"
     },
     {
       "id": "F4",
@@ -116,11 +116,17 @@
       "title": "Sidecar factory for an ongoing product",
       "state": "landed",
       "hold": "factory/project.json, factory/runtimes.json"
+    },
+    {
+      "id": "F14",
+      "title": "Owner-picked writer ladder and path router",
+      "state": "landed",
+      "hold": "factory/writer-paths.json, factory/tools/route.mjs"
     }
   ],
   "keystones": [
-    "Dual-runtime closed loop: spec \u2192 runtime-stamped envelope \u2192 cheap writer return \u2192 strong review \u2192 land \u2192 spend in the lane log",
-    "Parent flywheel: copy \u2192 run \u2192 return intake \u2192 Grok absorbs under size budgets"
+    "Dual-runtime closed loop: spec → runtime-stamped envelope → cheap writer return → strong review → land → spend in the lane log",
+    "Parent flywheel: copy → run → return intake → Grok absorbs under size budgets"
   ],
   "holds": [
     {
@@ -177,6 +183,14 @@
     },
     {
       "name": "factory/drops/",
+      "holder": "control plane"
+    },
+    {
+      "name": "factory/writer-paths.json",
+      "holder": "control plane"
+    },
+    {
+      "name": "factory/tools/route.mjs",
       "holder": "control plane"
     }
   ],
@@ -258,6 +272,10 @@
     {
       "at": "2026-09-17",
       "event": "F13 landed. helpMode pick. Topologies help-fork and help-collab. Isolate help-clone. Trap T47. Decision D-20. Virbos stays alumni. Overlay still shelf."
+    },
+    {
+      "at": "2026-09-17",
+      "event": "F14 landed. PAYG Singapore. Owner ladder. Path auto native/DashScope. T clock + probe. D-21. F3 still queued on the keys."
     }
   ]
 }

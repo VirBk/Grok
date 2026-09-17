@@ -123,6 +123,7 @@ The repository is memory. The session is a fuse. Every model — Grok, Claude, G
 | Prompt cache | `promptCache` in `factory/project.json`. Native prefix. Do not store answers. |
 | Token only | `pc-token` / `pc-dashscope` / `cloud-grok` / `cloud-dashscope`. No Claude Code. |
 | Help a product | Sidecar: `help-fork` / `help-collab`. `factory/help.json`. Never overlay alumni. |
+| Writer path | Owner picks the model. `auto` = native DeepSeek off-peak if healthy, DashScope PAYG on peak or outage. `factory/writer-paths.json`, `factory/tools/route.mjs` |
 | Hands | `factory/tools/hands.mjs` |
 | Envelope blobs | `factory/envelopes/` |
 | Writer recipes | `factory/tools/seat.mjs` |
