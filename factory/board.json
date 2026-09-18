@@ -1,5 +1,5 @@
 {
-  "now": "Sitting 2. Public landing Action on VirBk/virbk. Writer runner still shelf. Overlay still shelf. Path dashscope.",
+  "now": "Sitting 2. Public landing Action and writer Action on VirBk/virbk. Overlay still shelf. Path dashscope.",
   "remote": "VirBk/Grok",
   "references": [
     "VirBk/Otto",
@@ -152,6 +152,12 @@
       "title": "Public-repo landing Action",
       "state": "landed",
       "hold": ".github/workflows/landing.yml, factory/landing-checks.json"
+    },
+    {
+      "id": "F20",
+      "title": "GitHub Action writer runner",
+      "state": "landed",
+      "hold": ".github/workflows/writer.yml, factory/tools/ghaWriter.mjs"
     }
   ],
   "keystones": [
@@ -229,10 +235,6 @@
     }
   ],
   "shelf": [
-    {
-      "item": "GitHub Action writer runner",
-      "trigger": "Owner places a writer secret. Do not add the workflow while it would stay red."
-    },
     {
       "item": "Kit overlay onto Otto or Virbos",
       "trigger": "Quiet week, no running seats, owner word. Pin a kit SHA. Never a GitHub fork."
@@ -370,6 +372,10 @@
     {
       "at": "2026-09-18",
       "event": "F19 landed. Owner: public repo. Landing Action runs the gate on ubuntu. No writer secret. Writer runner stays shelf. D-36."
+    },
+    {
+      "at": "2026-09-18",
+      "event": "F20 landed. Owner placed DASHSCOPE_API_KEY. Writer Action idles green; launches qwen-code on an envelope; never pushes main. D-37 T55."
     }
   ]
 }

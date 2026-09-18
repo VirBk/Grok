@@ -48,7 +48,11 @@
     },
     {
       "name": "Public landing Action stays green",
-      "run": "test -f .github/workflows/landing.yml && grep -q 'landingGate.mjs' .github/workflows/landing.yml && ! grep -E 'DASHSCOPE_API_KEY|DEEPSEEK_API_KEY' .github/workflows/*.yml"
+      "run": "test -f .github/workflows/landing.yml && grep -q 'landingGate.mjs' .github/workflows/landing.yml && ! grep -E 'DASHSCOPE_API_KEY|DEEPSEEK_API_KEY' .github/workflows/landing.yml"
+    },
+    {
+      "name": "Writer Action idles; never pushes main",
+      "run": "node factory/tools/ghaWriter.mjs --self-test"
     }
   ]
 }

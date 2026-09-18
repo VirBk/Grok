@@ -20,5 +20,6 @@
     { "id": "F17", "title": "DashScope DeepSeek Flash on the live seat", "status": "landed" },
     { "id": "F18", "title": "Close F15; absorb S01 as T49; drop S02", "status": "landed" },
     { "id": "F19", "title": "Public-repo landing Action", "status": "landed" }
+    { "id": "F20", "title": "GitHub Action writer runner", "status": "landed" }
   ]
 }

@@ -4,7 +4,7 @@ Generated from `factory/board.json`. Do not hand-edit this file. Restamp with `n
 
 ## Now
 
-Sitting 2. Public landing Action on VirBk/virbk. Writer runner still shelf. Overlay still shelf. Path dashscope.
+Sitting 2. Public landing Action and writer Action on VirBk/virbk. Overlay still shelf. Path dashscope.
 
 Remote: VirBk/Grok. References: VirBk/Otto, VirBk/virbos.
 
@@ -44,6 +44,7 @@ No envelope opens a gate.
 | F17 | landed | factory/project.json, factory/tools/seat.mjs, docs/log/f17.md | DashScope DeepSeek Flash on the live seat |
 | F18 | landed | factory/sparks.json, factory/tools/sitting.mjs, factory/traps.yaml, docs/log/f18.md | Close F15; absorb S01 as T49; drop S02 |
 | F19 | landed | .github/workflows/landing.yml, factory/landing-checks.json | Public-repo landing Action |
+| F20 | landed | .github/workflows/writer.yml, factory/tools/ghaWriter.mjs | GitHub Action writer runner |
 
 ## Holds
 
@@ -72,7 +73,6 @@ No envelope opens a gate.
 
 ## Shelf
 
-- GitHub Action writer runner — trigger: Owner places a writer secret. Do not add the workflow while it would stay red.
 - Kit overlay onto Otto or Virbos — trigger: Quiet week, no running seats, owner word. Pin a kit SHA. Never a GitHub fork.
 
 ## Ledger
@@ -110,3 +110,4 @@ No envelope opens a gate.
 - 2026-09-17 Owner reversed D-09. Original CP loop has no hands actor. F6 third seat is regression. D-33. D-04 stands.
 - 2026-09-17 D-35. Closed owner concerns recorded in factory/concerns.json. Plan remains packages.json. Conversation not stored. F7 outcomes stood; the questions did not.
 - 2026-09-18 F19 landed. Owner: public repo. Landing Action runs the gate on ubuntu. No writer secret. Writer runner stays shelf. D-36.
+- 2026-09-18 F20 landed. Owner placed DASHSCOPE_API_KEY. Writer Action idles green; launches qwen-code on an envelope; never pushes main. D-37 T55.
