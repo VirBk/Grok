@@ -48,6 +48,14 @@
       "charged": "Owner: setup the GitHub Action since VirBk/virbk is a public repo.",
       "summary": "Public-repo landing CI is allowed. .github/workflows/landing.yml runs factory/tools/landingGate.mjs on ubuntu-latest with no secrets. Writer runner stays shelf until a writer secret exists. A red Action is still a hard fail.",
       "reversible": true
+    },
+    {
+      "id": "D-37",
+      "at": "2026-09-18",
+      "status": "adopted",
+      "charged": "Owner placed DASHSCOPE_API_KEY as a GitHub Actions secret.",
+      "summary": "Writer Action is allowed. .github/workflows/writer.yml launches qwen-code on an issued envelope. Idle is success. Missing secret is a loud skip, not a red badge. Pushes writer/<lane> only. Never main. Grok stays control plane.",
+      "reversible": true
     }
   ]
 }

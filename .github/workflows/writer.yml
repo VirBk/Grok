@@ -1,0 +1,47 @@
+name: writer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - factory/envelopes/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: writer
+  cancel-in-progress: false
+
+jobs:
+  seat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Watch
+        id: watch
+        run: |
+          out=$(node factory/tools/ghaWriter.mjs watch)
+          echo "$out"
+          case "$out" in
+            idle) echo "state=idle" >> "$GITHUB_OUTPUT" ;;
+            issued*) echo "state=issued" >> "$GITHUB_OUTPUT" ;;
+            *) echo "state=idle" >> "$GITHUB_OUTPUT" ;;
+          esac
+      - name: Install qwen-code
+        if: steps.watch.outputs.state == 'issued'
+        run: npm install -g @qwen-code/qwen-code
+      - name: Write or idle
+        run: node factory/tools/ghaWriter.mjs run

@@ -271,3 +271,8 @@
   kind: portable
   title: Landing Action that needs a writer secret
   rule: Public landing CI runs factory/tools/landingGate.mjs with no secrets. Writer runner stays shelf until the owner places a key. Check is the landing-checks step Public landing Action stays green.
+
+- id: T55
+  kind: portable
+  title: Writer Action that stays red or pushes main
+  rule: Idle is success. Missing secret is a loud skip. Branch is writer/<lane> only. Check is node factory/tools/ghaWriter.mjs --self-test.
