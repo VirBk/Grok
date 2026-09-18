@@ -40,6 +40,14 @@
       "charged": "Owner asked whether the conversation, the concerns raised and answered, and the plan were in the repo. F7 stored outcomes. It did not store the questions.",
       "summary": "Closed owner concerns live in factory/concerns.json. Plan is factory/packages.json. Conversation is not stored. A new concern is a new id. Never reuse D-09. Read live main before any write to the parent.",
       "reversible": true
+    },
+    {
+      "id": "D-36",
+      "at": "2026-09-18",
+      "status": "adopted",
+      "charged": "Owner: setup the GitHub Action since VirBk/virbk is a public repo.",
+      "summary": "Public-repo landing CI is allowed. .github/workflows/landing.yml runs factory/tools/landingGate.mjs on ubuntu-latest with no secrets. Writer runner stays shelf until a writer secret exists. A red Action is still a hard fail.",
+      "reversible": true
     }
   ]
 }
