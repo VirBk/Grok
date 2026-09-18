@@ -18,6 +18,7 @@
     { "id": "F15", "title": "Map hosted writer model to a real DashScope id", "status": "dropped" },
     { "id": "F16", "title": "Hosted recipes print the live DashScope model id", "status": "landed" },
     { "id": "F17", "title": "DashScope DeepSeek Flash on the live seat", "status": "landed" },
-    { "id": "F18", "title": "Close F15; absorb S01 as T49; drop S02", "status": "landed" }
+    { "id": "F18", "title": "Close F15; absorb S01 as T49; drop S02", "status": "landed" },
+    { "id": "F19", "title": "Public-repo landing Action", "status": "landed" }
   ]
 }

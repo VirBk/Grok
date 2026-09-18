@@ -266,3 +266,8 @@
   title: Size archive issued on the product path
   rule: The size script fails; it does not split. Archive at 80% is a CP records commit between landings. First cut is Now-only. Do not issue a writer. A keystone does not wait on a split.
 
+
+- id: T54
+  kind: portable
+  title: Landing Action that needs a writer secret
+  rule: Public landing CI runs factory/tools/landingGate.mjs with no secrets. Writer runner stays shelf until the owner places a key. Check is the landing-checks step Public landing Action stays green.

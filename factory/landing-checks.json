@@ -45,6 +45,10 @@
     {
       "name": "Live sitting class",
       "run": "node factory/tools/sitting.mjs check"
+    },
+    {
+      "name": "Public landing Action stays green",
+      "run": "test -f .github/workflows/landing.yml && grep -q 'landingGate.mjs' .github/workflows/landing.yml && ! grep -E 'DASHSCOPE_API_KEY|DEEPSEEK_API_KEY' .github/workflows/*.yml"
     }
   ]
 }
