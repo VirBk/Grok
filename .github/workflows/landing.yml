@@ -20,7 +20,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          # The gate archives HEAD; it does not need commit history or tags.
+          fetch-depth: 1
       - name: Node
         uses: actions/setup-node@v4
         with:
